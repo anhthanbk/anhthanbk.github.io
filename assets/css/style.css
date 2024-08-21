@@ -1,0 +1,116 @@
+/* chuyển về các setup ban đầu */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+:root {
+  --bg-all--: rgb(223, 240, 213);
+}
+/* common */
+.container {
+  width: 1305px;
+  margin: 0 auto;
+  max-width: calc(100% - 48px);
+}
+/* header */
+.header-fixed {
+  padding-top: 10px;
+  position: sticky;
+  z-index: 1;
+  top: -28px;
+  background-image: url();
+}
+.header-top .container {
+  display: grid;
+  height: 20vh;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: minmax(4, 1fr);
+  grid-template-areas:
+    'logo letter letter letter letter letter'
+    'logo search search search search search'
+    'nav nav nav nav nav nav';
+  column-gap: 5px;
+  row-gap: 5px;
+}
+.header-fixed .search-container {
+  grid-area: search;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.web-logo {
+  grid-area: logo;
+  max-width: 80%;
+}
+.header-letter {
+  grid-area: letter;
+  height: 100px;
+  font-family: 'Bungee Tint', sans-serif;
+  font-size: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* navigation bar */
+.nav-bar {
+  grid-area: nav;
+  background-color: #dae547;
+}
+.navbar-list {
+  display: flex;
+  list-style: none;
+  padding-left: 20px 0;
+  margin: 0;
+  justify-content: space-between;
+}
+form input[type='text'] {
+  padding: 10px;
+  font-size: 1.6rem;
+  border: 2px solid #ccc;
+  border-radius: 50px;
+  width: 400px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+form input[type='text']:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+.search-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: all 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: #45a049;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.search-btn:active {
+  background-color: #3e8e41;
+  transform: translateY(2px);
+}
+.navbar-item {
+  padding: 20px 0;
+  font-weight: bold;
+}
