@@ -24,27 +24,26 @@ a {
   max-width: calc(100% - 48px);
 }
 /* header */
-.header {
+.header-top {
+  background-image: url(./tt.jpg);
+  background-size: cover;
+  padding-bottom: 10px;
+}
+.header-top .container {
+  padding-top: 20px;
   display: grid;
-  height: 20vh;
+  height: 150px;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: minmax(3, 1fr);
   grid-template-areas:
     'logo letter letter letter letter letter'
-    'logo search search search search search'
-    'nav nav nav nav nav nav';
+    'logo search search search search search';
   column-gap: 5px;
   row-gap: 5px;
 }
-.header-fixed .search-container {
-  grid-area: search;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
 .web-logo {
   grid-area: logo;
-  max-width: 10%;
+  max-width: 60%;
 }
 .header-letter {
   grid-area: letter;
@@ -55,17 +54,11 @@ a {
   align-items: center;
   justify-content: center;
 }
-/* navigation bar */
-.nav-bar {
-  grid-area: nav;
-  background-color: #dae547;
-}
-.navbar-list {
+.search-container {
+  grid-area: search;
   display: flex;
-  list-style: none;
-  padding-left: 20px 0;
-  margin: 0;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: flex-end;
 }
 form input[type='text'] {
   padding: 10px;
@@ -103,11 +96,74 @@ form input[type='text']:focus {
   background-color: #3e8e41;
   transform: translateY(2px);
 }
+
+/* navigation bar */
+.nav-bar {
+  background-color: #dae547;
+  position: sticky;
+}
+.navbar-list {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
 .navbar-item {
-  padding: 20px 0;
   font-weight: bold;
 }
 .navbar-item:hover,
 .navbar-item-active {
-  text-shadow: 1px 0 0 red;
+  text-shadow: 1px 0 0 rgb(23, 22, 22);
+}
+/* slide show */
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 200px;
+  background-color: #ddd;
+}
+
+.slider {
+  display: flex;
+  position: absolute;
+  animation: slide 50s linear infinite;
+}
+
+.slider img {
+  width: 300px;
+  height: 200px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.paused {
+  animation-play-state: paused;
+}
+.slider h2 {
+  display: flex;
+  align-items: center;
+  color: rgb(209, 119, 23);
+}
+/* main content */
+.main_content .title {
+  padding: 40px 0 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: orange;
+}
+.main_content .detailed {
+  font-size: 2rem;
 }
