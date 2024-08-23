@@ -37,13 +37,15 @@
             width="100%"
           />
           <!-- tiêu đề -->
-          <p class="header-letter">KHÁM PHÁ NÉT ĐẸP ĐẤT CỐ ĐÔ</p>
+          <p class="header-letter">KHÁM PHÁ NÉT ĐẸP ĐẤT CỐ ĐÔ THỪA THIÊN HUẾ</p>
           <!-- tạo nút search -->
           <div class="search-container">
-            <form action="/search" method="GET">
-              <input type="text" placeholder="Nội dung" name="TÌM KIẾM" />
-              <button type="submit" class="search-btn">TÌM KIẾM</button>
-            </form>
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Nhập từ khóa tìm kiếm..."
+            />
+            <button onclick="search()" class="search-btn">Tìm kiếm</button>
           </div>
         </div>
       </div>
@@ -75,58 +77,65 @@
     </header>
     <!-- main content -->
     <main class="main_content">
-      <div class="slider-container">
-        <div class="slider">
-          <img
-            src="./assets/Images/chua-huyen-khong-son-thuong-hue.jpg"
-            alt="Image 1"
-          />
-          <img src="./assets/Images/chua-tu-dam.jpg" alt="Image 2" />
-          <img src="./assets/Images/thien-vien-bach-lam-ma.jpg" alt="Image 3" />
-          <img src="./assets/Images/4-4-1-768x408.jpg" alt="Image 4" />
-          <img src="./assets/Images/bili2911-768x768.jpg" alt="Image 5" />
-          <img src="./assets/Images/cau truong tien.jpg" alt="Image 5" />
-          <img src="./assets/Images/chua-bao-quoc.jpg" alt="Image 5" />
-          <img src="./assets/Images/chua-thien-mu.jpg" alt="Image 5" />
-          <img
-            src="./assets/Images/chua-huyen-khong-son-thuong-hue.jpg"
-            alt="Image 5"
-          />
-          <img src="./assets/Images/cung an dinh.jpg" alt="Image 5" />
-          <img src="./assets/Images/dai noi.jpg" alt="Image 5" />
-          <img
-            src="./assets/Images/doi-vong-canh-o-hue-768x768.jpg"
-            alt="Image 5"
-          />
-          <img src="./assets/Images/Imperial-4-768x432.jpg" alt="Image 5" />
-          <img src="./assets/Images/lăng khải định.jpg" alt="Image 5" />
-          <img
-            src="./assets/Images/suoi-khoang-thanh-tan-768x481.jpg"
-            alt="Image 5"
-          />
-          <img src="./assets/Images/thien-vien-bach-lam-ma.jpg" alt="Image 5" />
-          <img src="./assets/Images/truong quoc hoc.jpg" alt="Image 5" />
-          <img
-            src="./assets/Images/canh-dep-o-hue-5-768x485.jpg"
-            alt="Image 5"
-          />
-          <img
-            src="./assets/Images/canh-dep-o-hue-1-768x511.webp"
-            alt="Image 5"
-          />
-          <h2>
-            Chân thành cảm ơn các bạn để ghé thăm vùng đất cố đô đầy thân thương
-            !!!
-          </h2>
-        </div>
-      </div>
-
-      <div class="dot-container">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-      </div>
       <div class="container">
+        <div class="introduction">
+          <div class="int-overview">
+            <h2 class="gioithieuhue">GIỚI THIỆU TỔNG QUAN VỀ HUẾ</h2>
+            <p>
+              Thành phố Huế nằm ở miền Trung Việt Nam, thuộc tỉnh Thừa Thiên
+              Huế. Về vị trí địa lý:
+            </p>
+            <ul>
+              <li>Phía Bắc: Giáp tỉnh Quảng Trị.</li>
+              <li>Phía Nam: Giáp tỉnh Quảng Nam và thành phố Đà Nẵng.</li>
+              <li>Phía Tây: Giáp dãy Trường Sơn và biên giới với Lào.</li>
+              <li>Phía Đông: Giáp biển Đông.</li>
+            </ul>
+            <p>
+              Huế nằm bên bờ sông Hương, cách biển khoảng 14 km về phía đông, và
+              cách Đà Nẵng khoảng 100 km về phía nam. Thành phố này nằm ở vị trí
+              giao thoa giữa hai miền Bắc và Nam Việt Nam, có khí hậu nhiệt đới
+              gió mùa, đặc trưng bởi mùa mưa và mùa khô rõ rệt.
+            </p>
+            <p>
+              Huế, một thành phố nằm ở miền Trung Việt Nam, nổi tiếng với bề dày
+              lịch sử và văn hóa phong phú, là một trong những điểm du lịch hấp
+              dẫn nhất cả nước. Thành phố này từng là kinh đô của triều đại nhà
+              Nguyễn (1802-1945), và được UNESCO công nhận là Di sản Văn hóa Thế
+              giới vào năm 1993.
+            </p>
+          </div>
+          <div class="slide-show">
+            <div class="list-images">
+              <img src="./assets/Images/1.png" alt="" width="100%" />
+              <img src="./assets/Images/2.png" alt="" width="100%" />
+              <img src="./assets/Images/3.png" alt="" width="100%" />
+              <img src="./assets/Images/4.png" alt="" width="100%" />
+              <img src="./assets/Images/5.png" alt="" width="100%" />
+              <img src="./assets/Images/6.png" alt="" width="100%" />
+              <img src="./assets/Images/7.png" alt="" width="100%" />
+              <img src="./assets/Images/8.png" alt="" width="100%" />
+            </div>
+            <div class="arrows">
+              <div class="arrow-left arrow">
+                <i class="bx bx-chevron-left"></i>
+              </div>
+              <div class="arrow-right arrow">
+                <i class="bx bx-chevron-right"></i>
+              </div>
+            </div>
+            <div class="index-images">
+              <div class="index-item index-item-0 active"></div>
+              <div class="index-item index-item-1"></div>
+              <div class="index-item index-item-2"></div>
+              <div class="index-item index-item-3"></div>
+              <div class="index-item index-item-4"></div>
+              <div class="index-item index-item-5"></div>
+              <div class="index-item index-item-6"></div>
+              <div class="index-item index-item-7"></div>
+            </div>
+          </div>
+        </div>
         <div class="content-title">
           <h1 class="title">HỆ THỐNG CHÙA CHIỀN TẠI HUẾ</h1>
           <p class="detailed">
