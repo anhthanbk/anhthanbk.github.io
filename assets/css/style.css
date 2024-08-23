@@ -120,24 +120,36 @@ a {
   background-color: #dae547;
 }
 .navbar-list {
-  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   list-style: none;
 }
-
+#toggle {
+  display: none;
+  background: grey;
+  padding: 10px;
+  cursor: pointer;
+}
 .navbar-item {
   font-weight: bold;
+  padding: 10px;
 }
 .navbar-item:hover,
 .navbar-item-active {
   text-shadow: 1px 0 0 rgb(23, 22, 22);
+  background: rgb(199, 223, 199);
+  transition: all 0.3s;
 }
 /* Ẩn input và nút tìm kiếm khi màn hình nhỏ hơn 768px */
 @media screen and (max-width: 768px) {
-  .nav-bar {
+  .navbar-list {
+    flex-direction: column;
     display: none;
+    align-items: flex-start;
+  }
+  #toggle {
+    display: block;
   }
 }
 /* slide show */

@@ -88,3 +88,9 @@ function search() {
     paragraph.innerHTML = highlightedText;
   }
 }
+// menu
+$(document).ready(function () {
+  $('#toggle').click(function () {
+    $('.navbar-list').slideToggle();
+  });
+});
