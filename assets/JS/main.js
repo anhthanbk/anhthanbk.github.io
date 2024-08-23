@@ -89,8 +89,11 @@ function search() {
   }
 }
 // menu
-$(document).ready(function () {
-  $('#toggle').on('click touchstart', function () {
-    $('.navbar-list').slideToggle();
-  });
+document.getElementById('toggle').addEventListener('click', function () {
+  var navbarList = document.querySelector('.navbar-list');
+  if (navbarList.style.display === 'none' || navbarList.style.display === '') {
+    navbarList.style.display = 'block';
+  } else {
+    navbarList.style.display = 'none';
+  }
 });
