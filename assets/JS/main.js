@@ -97,3 +97,27 @@ document.getElementById('toggle').addEventListener('click', function () {
     navbarList.style.display = 'none';
   }
 });
+// detailed slide
+const slides = document.querySelector('.slides');
+const slideCount = document.querySelectorAll('.slide').length;
+const slideWidth = document.querySelector('.slide').clientWidth;
+const totalWidth = slideWidth * slideCount;
+
+let index = 0;
+
+document.querySelector('.next').addEventListener('click', () => {
+  index++;
+  if (index >= slideCount / 3) index = 0;
+  updateSlidePosition();
+});
+
+document.querySelector('.prev').addEventListener('click', () => {
+  index--;
+  if (index < 0) index = Math.ceil(slideCount / 3) - 1;
+  updateSlidePosition();
+});
+
+function updateSlidePosition() {
+  const offset = -index * slideWidth * 3; // Di chuyển 3 ảnh một lần
+  slides.style.transform = `translateX(${offset}px)`;
+}

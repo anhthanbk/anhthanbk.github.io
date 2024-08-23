@@ -27,7 +27,7 @@ a {
 .header {
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 1000;
 }
 .header-top {
   background-image: url(./tt.jpg);
@@ -164,6 +164,8 @@ a {
 .int-overview {
   width: 30vw;
   margin-right: 20px;
+  padding: 2px;
+  border: 1px solid #333;
 }
 .main_content .container .slide-show {
   width: 80%;
@@ -173,6 +175,7 @@ a {
 .main_content .list-images {
   display: flex;
   transition: 0.5s;
+  padding-bottom: 10px;
 }
 .main_content .slide-show .arrow {
   display: flex;
@@ -214,12 +217,15 @@ a {
     align-items: flex-start;
   }
   .int-overview {
-    width: 100vw;
+    width: 90vw;
+    margin-bottom: 2px;
   }
 }
-/* main content */
+/* detailed slide */
 .main_content .title {
-  padding: 40px 0 20px 0;
+  padding: 60px 0 20px 0;
+  font-size: 3rem;
+  font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -227,4 +233,49 @@ a {
 }
 .main_content .detailed {
   font-size: 2rem;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  min-width: 33.33%; /* Hiển thị 3 ảnh một lần */
+  box-sizing: border-box;
+}
+.slide:nth-of-type(n + 2) {
+  margin-left: 20px; /* Tạo khoảng cách cho các hình ảnh thứ hai trở đi */
+}
+
+.slide img {
+  width: 100%;
+  display: block;
+}
+
+.content-title button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
 }
