@@ -90,7 +90,7 @@ function search() {
 }
 // menu
 $(document).ready(function () {
-  $('#toggle').click(function () {
+  $('#toggle').on('click touchstart', function () {
     $('.navbar-list').slideToggle();
   });
 });
