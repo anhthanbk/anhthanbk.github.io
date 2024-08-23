@@ -147,9 +147,13 @@ a {
     flex-direction: column;
     display: none;
     align-items: flex-start;
+    background-color: #f1efef;
   }
   #toggle {
     display: block;
+  }
+  .nav-bar {
+    background-color: #fff;
   }
 }
 /* slide show */
