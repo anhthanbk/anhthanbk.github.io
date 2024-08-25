@@ -320,15 +320,13 @@ a {
 footer {
   background-color: green;
   background-size: cover;
-  padding: 30px 0;
+  padding: 10px 0;
 }
 
 .footer-container .container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-
-  padding: 20px;
 }
 
 .footer-section {
@@ -346,7 +344,7 @@ footer {
 .footer-section ul,
 .footer-section li {
   font-size: 2rem;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   color: wheat;
 }
 
@@ -368,9 +366,22 @@ footer {
 
 .footer-bottom {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 20px;
   font-size: 1.8rem;
   border-top: 1px solid #7f8c8d;
-  padding-top: 20px;
+  padding-top: 10px;
   color: orange;
+}
+@media screen and (max-width: 768px) {
+  .introduction {
+    flex-direction: column; /* Chuyển navbar về dạng cột */
+    align-items: flex-start;
+  }
+  .int-overview {
+    width: 80vw;
+    margin-bottom: 2px;
+  }
+  .main_content .container .slide-show {
+    width: 100%;
+  }
 }
