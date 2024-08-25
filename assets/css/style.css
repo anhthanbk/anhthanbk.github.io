@@ -279,6 +279,9 @@ a {
   width: 100%;
   display: block;
 }
+.slide h1 {
+  padding: 10px 0;
+}
 
 .content-title button {
   position: absolute;
