@@ -118,7 +118,7 @@ a {
 }
 /* navigation bar */
 .nav-bar {
-  background-color: #dae547;
+  background-color: green;
 }
 .navbar-list {
   display: flex;
@@ -135,6 +135,9 @@ a {
 .navbar-item {
   font-weight: bold;
   padding: 10px;
+}
+.navbar-link {
+  color: orange;
 }
 .navbar-item:hover,
 .navbar-item-active {
@@ -315,7 +318,7 @@ a {
 }
 /* footer */
 footer {
-  background-color: #d8eed9;
+  background-color: green;
   background-size: cover;
   padding: 30px 0;
 }
@@ -336,7 +339,7 @@ footer {
   font-size: 25px;
   font-weight: bold;
   margin-bottom: 20px;
-  color: red;
+  color: orange;
 }
 
 .footer-section p,
@@ -344,16 +347,19 @@ footer {
 .footer-section li {
   font-size: 2rem;
   margin-bottom: 10px;
+  color: wheat;
 }
 
 .footer-section ul {
   list-style: none;
   padding: 0;
+  color: wheat;
 }
 
 .footer-section ul li a {
   text-decoration: none;
   transition: color 0.3s;
+  color: wheat;
 }
 
 .footer-section ul li a:hover {
@@ -366,4 +372,5 @@ footer {
   font-size: 1.8rem;
   border-top: 1px solid #7f8c8d;
   padding-top: 20px;
+  color: orange;
 }
