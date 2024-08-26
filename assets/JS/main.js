@@ -98,8 +98,7 @@ document.getElementById("toggle").addEventListener("click", function () {
   }
 });
 // detailed slide
-// slide 1
-const slides = document.querySelector(".sld-1");
+const slides = document.querySelector(".slides");
 const slideCount = document.querySelectorAll(".slide").length;
 const slideWidth = document.querySelector(".slide").clientWidth;
 const totalWidth = slideWidth * slideCount;
@@ -121,4 +120,9 @@ document.querySelector(".prev").addEventListener("click", () => {
 function updateSlidePosition() {
   const offset = -index * slideWidth * 3; // Di chuyển 3 ảnh một lần
   slides.style.transform = `translateX(${offset}px)`;
+}
+
+// Khi người dùng nhấp vào nút, di chuyển về đầu trang
+function topFunction() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }

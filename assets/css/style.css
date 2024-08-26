@@ -9,7 +9,7 @@ html {
 }
 body {
   font-size: 1.6rem;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 a {
   text-decoration: none;
@@ -42,8 +42,8 @@ a {
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: minmax(3, 1fr);
   grid-template-areas:
-    "logo letter letter letter letter letter"
-    "logo search search search search search";
+    'logo letter letter letter letter letter'
+    'logo search search search search search';
   column-gap: 5px;
   row-gap: 5px;
 }
@@ -54,7 +54,7 @@ a {
 .header-letter {
   grid-area: letter;
   height: 80px;
-  font-family: "Bungee Tint", sans-serif;
+  font-family: 'Bungee Tint', sans-serif;
   font-size: 40px;
   display: flex;
   align-items: center;
@@ -68,7 +68,7 @@ a {
   justify-content: flex-end;
   padding-top: 20px;
 }
-.search-container input[type="text"] {
+.search-container input[type='text'] {
   padding: 10px;
   font-size: 1.6rem;
   border: 2px solid #ccc;
@@ -78,7 +78,7 @@ a {
   transition: all 0.3s ease;
 }
 
-.search-container input[type="text"]:focus {
+.search-container input[type='text']:focus {
   border-color: #4caf50;
   outline: none;
 }
@@ -163,31 +163,29 @@ a {
 }
 .main_content .introduction {
   display: flex;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 .int-overview {
-  width: 65vw;
-  margin-right: 20px;
-  padding: 2px;
-  border: 1px solid #333;
+  width: 40vw;
 }
 .int-overview h1 {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   color: red;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 5px;
 }
 .int-overview ul,
 .int-overview p {
-  font-size: 2rem;
-  padding: 10px;
+  font-size: 1.5rem;
+  padding-top: 5px;
 }
 .main_content .container .slide-show {
-  width: 80%;
+  width: 100%;
   position: relative;
   overflow: hidden;
+  margin-left: 20px;
 }
 .main_content .list-images {
   display: flex;
@@ -239,6 +237,7 @@ a {
   }
   .main_content .container .slide-show {
     width: 100%;
+    margin-left: 0;
   }
 }
 /* detailed slide */
@@ -373,15 +372,32 @@ footer {
   color: orange;
 }
 @media screen and (max-width: 768px) {
-  .introduction {
+  .footer-container .container {
     flex-direction: column; /* Chuyển navbar về dạng cột */
     align-items: flex-start;
   }
-  .int-overview {
+  .footer-section {
     width: 80vw;
     margin-bottom: 2px;
   }
-  .main_content .container .slide-show {
-    width: 100%;
-  }
+}
+/* nút về đầu trang */
+
+#btnTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 2.2rem;
+  background-color: orange;
+  color: black;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 60%;
+}
+
+#btnTop:hover {
+  opacity: 100%;
 }
