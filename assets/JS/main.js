@@ -98,7 +98,8 @@ document.getElementById("toggle").addEventListener("click", function () {
   }
 });
 // detailed slide
-const slides = document.querySelector(".slides");
+// slide 1
+const slides = document.querySelector(".sld-1");
 const slideCount = document.querySelectorAll(".slide").length;
 const slideWidth = document.querySelector(".slide").clientWidth;
 const totalWidth = slideWidth * slideCount;
