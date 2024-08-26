@@ -9,7 +9,7 @@ html {
 }
 body {
   font-size: 1.6rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 a {
   text-decoration: none;
@@ -42,8 +42,8 @@ a {
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: minmax(3, 1fr);
   grid-template-areas:
-    'logo letter letter letter letter letter'
-    'logo search search search search search';
+    "logo letter letter letter letter letter"
+    "logo search search search search search";
   column-gap: 5px;
   row-gap: 5px;
 }
@@ -54,7 +54,7 @@ a {
 .header-letter {
   grid-area: letter;
   height: 80px;
-  font-family: 'Bungee Tint', sans-serif;
+  font-family: "Bungee Tint", sans-serif;
   font-size: 40px;
   display: flex;
   align-items: center;
@@ -68,7 +68,7 @@ a {
   justify-content: flex-end;
   padding-top: 20px;
 }
-.search-container input[type='text'] {
+.search-container input[type="text"] {
   padding: 10px;
   font-size: 1.6rem;
   border: 2px solid #ccc;
@@ -78,7 +78,7 @@ a {
   transition: all 0.3s ease;
 }
 
-.search-container input[type='text']:focus {
+.search-container input[type="text"]:focus {
   border-color: #4caf50;
   outline: none;
 }
@@ -289,11 +289,26 @@ a {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
-  padding: 10px;
+  font-size: 5rem;
+  padding: 200px 10px;
   cursor: pointer;
   z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 
+.sldr-1:hover .pr-1,
+.sldr-1:hover .nxt-1,
+.sldr-2:hover .pr-2,
+.sldr-2:hover .nxt-2,
+.sldr-3:hover .pr-3,
+.sldr-3:hover .nxt-3,
+.sldr-4:hover .pr-4,
+.sldr-4:hover .nxt-4,
+.sldr-5:hover .pr-5,
+.sldr-5:hover .nxt-5 {
+  opacity: 1;
+}
 .prev {
   left: 0;
 }

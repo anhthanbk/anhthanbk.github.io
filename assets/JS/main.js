@@ -98,30 +98,53 @@ document.getElementById("toggle").addEventListener("click", function () {
   }
 });
 // detailed slide
-const slides = document.querySelector(".slides");
-const slideCount = document.querySelectorAll(".slide").length;
-const slideWidth = document.querySelector(".slide").clientWidth;
-const totalWidth = slideWidth * slideCount;
+// slide 1
+const slides1 = document.querySelector(".sld-1");
+const slideCount1 = document.querySelectorAll(".slide").length;
+const slideWidth1 = document.querySelector(".slide").clientWidth;
+const totalWidth1 = slideWidth1 * slideCount1;
 
-let index = 0;
+let index1 = 0;
 
-document.querySelector(".next").addEventListener("click", () => {
-  index++;
-  if (index >= slideCount / 3) index = 0;
-  updateSlidePosition();
+document.querySelector(".nxt-1").addEventListener("click", () => {
+  index1++;
+  if (index1 >= slideCount1 / 3) index1 = 0;
+  updateSlidePosition1();
 });
 
-document.querySelector(".prev").addEventListener("click", () => {
-  index--;
-  if (index < 0) index = Math.ceil(slideCount / 3) - 1;
-  updateSlidePosition();
+document.querySelector(".pr-1").addEventListener("click", () => {
+  index1--;
+  if (index1 < 0) index1 = Math.ceil(slideCount1 / 3) - 1;
+  updateSlidePosition1();
 });
-
-function updateSlidePosition() {
-  const offset = -index * slideWidth * 3; // Di chuyển 3 ảnh một lần
-  slides.style.transform = `translateX(${offset}px)`;
+function updateSlidePosition1() {
+  const offset1 = -index1 * slideWidth1; // Di chuyển 3 ảnh một lần
+  slides1.style.transform = `translateX(${offset1 + 20}px)`;
 }
 
+// slide 2
+const slides2 = document.querySelector(".sld-2");
+const slideCount2 = document.querySelectorAll(".slide").length;
+const slideWidth2 = document.querySelector(".slide").clientWidth;
+const totalWidth2 = slideWidth2 * slideCount2;
+
+let index2 = 0;
+
+document.querySelector(".nxt-2").addEventListener("click", () => {
+  index2++;
+  if (index2 >= slideCount2 / 3) index2 = 0;
+  updateSlidePosition2();
+});
+
+document.querySelector(".pr-2").addEventListener("click", () => {
+  index2--;
+  if (index2 < 0) index2 = Math.ceil(slideCount2 / 3) - 1;
+  updateSlidePosition2();
+});
+function updateSlidePosition2() {
+  const offset2 = -index2 * slideWidth2; // Di chuyển 3 ảnh một lần
+  slides2.style.transform = `translateX(${offset2 + 20}px)`;
+}
 // Khi người dùng nhấp vào nút, di chuyển về đầu trang
 function topFunction() {
   window.scrollTo({ top: 0, behavior: "smooth" });
