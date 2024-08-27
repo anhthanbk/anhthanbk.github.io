@@ -250,6 +250,10 @@ a {
   justify-content: center;
   color: orange;
 }
+.main_content .title:hover {
+  text-shadow: 3px 0 0 rgb(23, 22, 22);
+  transition: all 0.3s;
+}
 .main_content .detailed {
   font-size: 2rem;
 }
@@ -428,3 +432,4 @@ footer {
 #btnTop:hover {
   opacity: 100%;
 }
+/* =======================html con */
