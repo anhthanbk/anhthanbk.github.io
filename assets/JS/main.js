@@ -48,6 +48,7 @@ btnLeft.addEventListener('click', () => {
   }
   handleEvent = setInterval(handleChangeSlide, 4000);
 });
+
 // tìm kiếm
 function search() {
   // Lấy giá trị tìm kiếm từ input
@@ -88,6 +89,7 @@ function search() {
     paragraph.innerHTML = highlightedText;
   }
 }
+
 // menu
 document.getElementById('toggle').addEventListener('click', function () {
   var navbarList = document.querySelector('.navbar-list');
@@ -97,6 +99,7 @@ document.getElementById('toggle').addEventListener('click', function () {
     navbarList.style.display = 'none';
   }
 });
+
 // detailed slide
 const slides = document.querySelector('.slides');
 const slideCount = document.querySelectorAll('.slide').length;
