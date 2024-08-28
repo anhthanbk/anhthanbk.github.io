@@ -160,3 +160,7 @@ const scrollToClass = (scrollTarget) => {
     element.scrollIntoView({ behavior: 'smooth' });
   }
 };
+// ===========nút gọi điện
+function makeCall() {
+  window.location.href = 'tel:+84819931165';
+}

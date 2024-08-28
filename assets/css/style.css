@@ -432,4 +432,23 @@ footer {
 #btnTop:hover {
   opacity: 100%;
 }
+/* ==========nút gọi điện */
+.call-button {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  z-index: 99;
+  font-size: 2.2rem;
+  background-color: orange;
+  color: black;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 60%;
+}
+
+.call-button:hover {
+  opacity: 100%;
+}
 /* =======================html con */
