@@ -396,11 +396,20 @@ footer {
 
 .footer-bottom {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 1.8rem;
-  border-top: 1px solid #7f8c8d;
-  padding-top: 10px;
+
   color: orange;
+}
+.footer-bottom a {
+  color: orange;
+  padding-bottom: 20px;
+}
+.footer-bottom a:hover {
+  font-weight: bold;
+}
+.footer-bottom p {
+  padding-top: 10px;
 }
 @media screen and (max-width: 768px) {
   .footer-container .container {
@@ -435,7 +444,7 @@ footer {
 /* ==========nút gọi điện */
 .call-button {
   position: fixed;
-  bottom: 80px;
+  bottom: 140px;
   right: 20px;
   z-index: 99;
   font-size: 2.2rem;
@@ -451,4 +460,45 @@ footer {
 .call-button:hover {
   opacity: 100%;
 }
+/* ==========nút email */
+.email-button {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  z-index: 99;
+  font-size: 2.2rem;
+  background-color: orange;
+  color: black;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 60%;
+}
+
+.email-button:hover {
+  opacity: 100%;
+}
 /* =======================html con */
+.dt-bg {
+  background-color: rgb(215, 225, 194);
+}
+.container h1 {
+  padding: 20px 0;
+  font-size: 4rem;
+  font-weight: bold;
+}
+.container h2 {
+  padding: 20px 0;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+.container h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.container li,
+.container p {
+  padding: 10px 0;
+  font-size: 1.8rem;
+}

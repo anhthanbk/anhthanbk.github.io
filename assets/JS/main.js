@@ -164,3 +164,7 @@ const scrollToClass = (scrollTarget) => {
 function makeCall() {
   window.location.href = 'tel:+84819931165';
 }
+// ===========nút gọi điện
+function makeEmail() {
+  window.location.href = `mailto:'canhdephue@gmail.com`;
+}

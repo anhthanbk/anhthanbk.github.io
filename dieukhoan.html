@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- link reset CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- link box icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Review cảnh đẹp Huế - Việt Nam</title>
+    <!-- Link Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- embed font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="content">
+    <header class="header">
+      <div class="header-top">
+        <div class="container">
+          <!-- logo web -->
+          <a href="./index.html" class="web-logo">
+            <img
+              src="./assets/Images/reviewhue-logo.png"
+              alt="review cảnh đẹp Huế"
+              width="100%"
+            />
+          </a>
+          <!-- tiêu đề -->
+          <p class="header-letter">KHÁM PHÁ NÉT ĐẸP ĐẤT CỐ ĐÔ THỪA THIÊN HUẾ</p>
+          <!-- tạo nút search -->
+          <div class="search-container">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Nhập từ khóa tìm kiếm..."
+            />
+            <button onclick="search()" class="search-btn">
+              <i class="bx bx-search"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Navigation bar -->
+      <nav class="nav-bar">
+        <div class="container">
+          <div id="toggle"><i class="fa-solid fa-bars"></i></div>
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="./index.html" class="navbar-link">TRANG CHỦ</a>
+            </li>
+            <li class="navbar-item">
+              <a
+                href="javascript:void(0);"
+                onclick="scrollToClass('.introduction')"
+                class="navbar-link"
+                >CHÙA CHIỀN</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="javascript:void(0);"
+                onclick="scrollToClass('.sldr-1')"
+                class="navbar-link"
+                >DI TÍCH LỊCH SỬ</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="javascript:void(0);"
+                onclick="scrollToClass('.sldr-2')"
+                class="navbar-link"
+                >CẢNH ĐẸP THIÊN NHIÊN</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="javascript:void(0);"
+                onclick="scrollToClass('.sldr-3')"
+                class="navbar-link"
+                >HỆ THỐNG SUỐI VÀ BÃI TẮM</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="javascript:void(0);"
+                onclick="scrollToClass('.sldr-4')"
+                class="navbar-link"
+                >KIẾN TRÚC NGHỆ THUẬT</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="javascript:void(0);"
+                onclick="scrollToClass('.sldr-5')"
+                class="navbar-link"
+                >HỆ THỐNG LĂNG TẨM</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- header main content -->
+    <main class="dt-bg">
+      <div class="container">
+        <h1>Điều kiện và Điều khoản</h1>
+<p>Chào mừng bạn đến với <span style="font-weight: bold;">canhdephue.click</span>! Trước khi bạn sử dụng hoặc truy cập vào trang web này, vui lòng đọc kỹ và hiểu rõ các điều kiện và điều khoản dưới đây. Bằng cách sử dụng trang web này, bạn đồng ý tuân thủ các điều kiện và điều khoản sau đây. Nếu bạn không đồng ý với bất kỳ điều khoản nào, vui lòng không sử dụng trang web này.</p>
+
+<h3>Sử dụng Trang Web</h3>
+<p>– Bằng cách truy cập và sử dụng trang web này, bạn đồng ý tuân thủ tất cả các luật pháp liên quan và quy định, và đồng ý chịu trách nhiệm về việc tuân thủ bất kỳ luật pháp địa phương nào cũng như các quy định quốc tế.</p>
+
+<p>– Bạn đồng ý không sử dụng trang web này để thực hiện bất kỳ hành động nào vi phạm, bao gồm nhưng không giới hạn: vi phạm bản quyền, lừa đảo, hoặc phạm tội hình sự.</p>
+
+<h3>Nội Dung</h3>
+<p>– Mọi thông tin, nội dung và tài liệu trên trang web này chỉ được cung cấp cho mục đích thông tin chung. Chúng không phản ánh quan điểm hoặc quyền lợi của bất kỳ cá nhân hoặc tổ chức nào nếu không có sự xác nhận rõ ràng.</p>
+
+<p>– Chúng tôi không chịu trách nhiệm về bất kỳ thiệt hại nào phát sinh từ việc sử dụng hoặc không thể sử dụng thông tin trên trang web này.</p>
+
+<h3>Quyền Sở Hữu Trí Tuệ</h3>
+<p>– Tất cả các quyền sở hữu trí tuệ và bản quyền liên quan đến nội dung và tài liệu trên trang web này thuộc sở hữu của chúng tôi hoặc các bên thứ ba có liên quan. Việc sao chép, phân phối hoặc sử dụng lại một phần nào đó của nội dung hoặc tài liệu mà không có sự cho phép của chúng tôi là vi phạm bản quyền và có thể chịu trách nhiệm pháp lý.</p>
+
+<h3>Thay Đổi</h3>
+<p>– Chúng tôi có quyền thay đổi hoặc cập nhật bất kỳ phần nào của các điều kiện và điều khoản này mà không cần thông báo trước. Việc tiếp tục sử dụng trang web sau khi các thay đổi này được đăng tải đồng nghĩa với việc bạn chấp nhận và tuân thủ các thay đổi đó.</p>
+
+<h3>Liên Hệ</h3>
+<p>– Nếu bạn có bất kỳ câu hỏi hoặc đề xuất nào về các điều kiện và điều khoản này, vui lòng liên hệ với chúng tôi qua thông tin được cung cấp trong phần Liên hệ của trang web này.</p>
+      </div>
+    </main>
+    <script src="assets/JS/main.js"></script>
+    <footer>
+      <div class="footer-container">
+        <div class="container">
+          <div class="footer-section about">
+            <h3>Review Huế</h3>
+            <p>
+              Huế, cố đô của Việt Nam, nổi tiếng với vẻ đẹp cổ kính, các công
+              trình kiến trúc lịch sử và di sản văn hóa phong phú. Hãy khám phá
+              các danh lam thắng cảnh và nét đẹp riêng có của Huế.
+            </p>
+          </div>
+
+          <div class="footer-section links">
+            <h3>Danh mục</h3>
+            <ul>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  onclick="scrollToClass('.introduction')"
+                  >Hệ thống chùa chiền</a
+                >
+              </li>
+              <hr />
+              <li>
+                <a href="javascript:void(0);" onclick="scrollToClass('.sldr-1')"
+                  >Di tích lịch sử</a
+                >
+              </li>
+              <hr />
+              <li>
+                <a href="javascript:void(0);" onclick="scrollToClass('.sldr-2')"
+                  >Cảnh đẹp thiên nhiên</a
+                >
+              </li>
+              <hr />
+              <li>
+                <a href="javascript:void(0);" onclick="scrollToClass('.sldr-3')"
+                  >Hệ thống suối và bãi tắm</a
+                >
+              </li>
+              <hr />
+              <li>
+                <a href="javascript:void(0);" onclick="scrollToClass('.sldr-4')"
+                  >Kiến trúc nghệ thuât</a
+                >
+              </li>
+              <hr />
+              <li>
+                <a href="javascript:void(0);" onclick="scrollToClass('.sldr-5')"
+                  >Hệ thống lăng tẩm</a
+                >
+              </li>
+              <hr />
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h3>Liên hệ</h3>
+            <a href="mailto:canhdephue@gmail.com"
+              ><i class="bx bxl-gmail"></i
+            ></a>
+            <a href="tel:+84819931165"
+              ><i class='bx bxs-phone-call' ></i></i
+            ></a>
+            <a href="https://maps.app.goo.gl/YY6NmZg5LfjnAxcK6"
+              ><i class='bx bx-map' ></i></a>
+            <p>Email: canhdephue@gmail.com</p>
+            <p>Điện thoại: +84 819 931 165</p>
+            <p>Địa chỉ: 184 Phan Chu Trinh, TP.Huế, Thừa Thiên Huế, Việt Nam</p>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="footer-bottom">
+        <a href="#!">Giới thiệu</a>
+        <a href="#!">  /  Chính sách bảo mật</a>
+        <a href="#!">  /  Điều khoản</a>
+        <a href="#!">  /  Liên hệ</a>
+        <p class="copyright">
+          &copy; 2024 canhdephue.click | Thiết kế bởi
+          <span style="font-weight: bold">Its.Co</span>
+        </p>
+      </div>
+    </footer>
+    <!-- Nút "Về đầu trang" -->
+    <button onclick="topFunction()" id="btnTop" title="Về đầu trang">
+      <i class="bx bx-up-arrow-circle"></i>
+    </button>
+    <!-- nút gọi điện -->
+    <button class="call-button" onclick="makeCall()"><i class='bx bxs-phone-call' ></i></button>
+    <!-- nút email -->
+    <button class="email-button" onclick="makeEmail()"><i class='bx bx-envelope'></i></button>
+  </body>
+</html>
