@@ -9,7 +9,7 @@ html {
 }
 body {
   font-size: 1.6rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 a {
   text-decoration: none;
@@ -42,8 +42,8 @@ a {
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: minmax(3, 1fr);
   grid-template-areas:
-    'logo letter letter letter letter letter'
-    'logo search search search search search';
+    "logo letter letter letter letter letter"
+    "logo search search search search search";
   column-gap: 5px;
   row-gap: 5px;
 }
@@ -54,7 +54,7 @@ a {
 .header-letter {
   grid-area: letter;
   height: 80px;
-  font-family: 'Bungee Tint', sans-serif;
+  font-family: "Bungee Tint", sans-serif;
   font-size: 40px;
   display: flex;
   align-items: center;
@@ -68,7 +68,7 @@ a {
   justify-content: flex-end;
   padding-top: 20px;
 }
-.search-container input[type='text'] {
+.search-container input[type="text"] {
   padding: 10px;
   font-size: 1.6rem;
   border: 2px solid #ccc;
@@ -78,7 +78,7 @@ a {
   transition: all 0.3s ease;
 }
 
-.search-container input[type='text']:focus {
+.search-container input[type="text"]:focus {
   border-color: #4caf50;
   outline: none;
 }
@@ -227,6 +227,9 @@ a {
   background-color: #999;
 }
 @media screen and (max-width: 1200px) {
+  .header-top .header-letter {
+    font-size: 3rem;
+  }
   .introduction {
     flex-direction: column; /* Chuyển navbar về dạng cột */
     align-items: flex-start;
@@ -480,25 +483,33 @@ footer {
   opacity: 100%;
 }
 /* =======================html con */
-.dt-bg {
-  background-color: rgb(215, 225, 194);
+.main_content .lv1 {
+  display: flex;
 }
-.container h1 {
-  padding: 20px 0;
-  font-size: 4rem;
+
+.main_content .lv1 .old-info {
+  width: 60vw;
+  margin-right: 20px;
+}
+.main_content .lv1 .new-info {
+  width: 20vw;
+}
+
+.lv1 .old-title {
+  font-size: 3rem;
   font-weight: bold;
+  text-align: center;
+  margin: 20px auto;
 }
-.container h2 {
-  padding: 20px 0;
-  font-size: 2.2rem;
-  font-weight: bold;
+.main_content .lv1 img {
+  display: block;
+  width: 100%;
 }
-.container h3 {
-  font-size: 2rem;
-  font-weight: bold;
-}
-.container li,
-.container p {
-  padding: 10px 0;
+.lv1 .description h2 {
   font-size: 1.8rem;
+  font-weight: bold;
+  padding: 10px 0;
+}
+.lv1 .description p {
+  font-style: italic;
 }
