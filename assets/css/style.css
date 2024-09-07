@@ -532,6 +532,11 @@ footer {
   font-weight: bold;
   text-align: center;
   margin: 20px auto;
+  color: orange;
+}
+.lv1 .old-title:hover {
+  text-shadow: 3px 0 0 rgb(23, 22, 22);
+  transition: all 0.3s;
 }
 .main_content .lv1 img {
   display: block;
@@ -544,4 +549,62 @@ footer {
 }
 .lv1 .description p {
   font-style: italic;
+  padding: 5px 0;
+}
+.new-info .booking {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.new-info .contact-to-me {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 2.2rem;
+  padding-bottom: 20px;
+  color: red;
+}
+.new-info .booking .btn {
+  font-size: 2rem;
+  background-color: red;
+  border: none;
+  color: wheat;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid black;
+  margin: 0 10px;
+}
+.new-info .booking .btn:hover {
+  background-color: #3e8e41;
+  transition: 0.3s;
+  border: none;
+}
+.new-info iframe {
+  height: 40vh;
+  border: 2px solid black;
+  padding-bottom: 20px;
+}
+.new-info .book-des p {
+  font-weight: bold;
+  font-style: italic;
+  color: red;
+}
+.new-info .book-des i {
+  color: red;
+  padding: 10px;
+}
+.new-info .book-des a:hover {
+  font-weight: bold;
+  background-color: #4caf50;
+  transition: 0.3s;
+  padding: 3px;
+}
+@media screen and (max-width: 768px) {
+  .main_content .lv1 {
+    flex-direction: column;
+  }
+  .main_content .lv1 .old-info,
+  .main_content .lv1 .new-info {
+    width: 80vw;
+  }
 }
