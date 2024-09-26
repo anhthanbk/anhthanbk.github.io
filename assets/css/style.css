@@ -227,6 +227,9 @@ a {
   background-color: #999;
 }
 @media screen and (max-width: 1200px) {
+  .header-top .header-letter {
+    font-size: 3rem;
+  }
   .introduction {
     flex-direction: column; /* Chuyển navbar về dạng cột */
     align-items: flex-start;
@@ -480,25 +483,116 @@ footer {
   opacity: 100%;
 }
 /* =======================html con */
-.dt-bg {
-  background-color: rgb(215, 225, 194);
+.dt-bg .info {
+  display: flex;
 }
-.dt-bg .container h1 {
+.dt-bg .top-info {
+  width: 35vw;
+}
+.container h1 {
   padding: 20px 0;
-  font-size: 4rem;
+}
+.dt-bg .top-info h2 {
+  font-size: 1.8rem;
   font-weight: bold;
 }
-.dt-bg .container h2 {
+.container h2 {
   padding: 20px 0;
+}
+.dt-bg .top-info p {
+  padding-top: 10px;
+}
+.dt-bg iframe {
+  margin: 20px 0;
+  border: 1px solid #ccc;
+}
+@media screen and (max-width: 768px) {
+  .dt-bg .info {
+    flex-direction: column;
+  }
+  .dt-bg iframe {
+    width: 80vw;
+  }
+}
+.main_content .lv1 {
+  display: flex;
+}
+
+.main_content .lv1 .old-info {
+  width: 60vw;
+  margin-right: 20px;
+}
+.main_content .lv1 .new-info {
+  width: 20vw;
+  padding-top: 70px;
+}
+
+.lv1 .old-title {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px auto;
+  color: orange;
+}
+.lv1 .old-title:hover {
+  text-shadow: 3px 0 0 rgb(23, 22, 22);
+  transition: all 0.3s;
+}
+.main_content .lv1 img {
+  display: block;
+  width: 100%;
+}
+.lv1 .description h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 10px 0;
+}
+.lv1 .description p {
+  font-style: italic;
+  padding: 5px 0;
+}
+.new-info .booking {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.new-info .contact-to-me {
+  font-weight: bold;
+  text-decoration: underline;
   font-size: 2.2rem;
+  padding-bottom: 20px;
+  color: red;
+}
+.new-info .booking .btn {
+  font-size: 2rem;
+  background-color: red;
+  border: none;
+  color: wheat;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid black;
+  margin: 0 10px;
+}
+.new-info .booking .btn:hover {
+  background-color: #3e8e41;
+  transition: 0.3s;
+  border: none;
+}
+.new-info iframe {
+  height: 40vh;
+  border: 2px solid black;
+  padding-bottom: 20px;
+}
+.new-info .book-des p {
   font-weight: bold;
 }
-.dt-bg .container h3 {
+.container h3 {
   font-size: 2rem;
   font-weight: bold;
 }
-.dt-bg.container li,
-.dt-bg .container p {
+.container li,
+.container p {
   padding: 10px 0;
   font-size: 1.8rem;
 }
