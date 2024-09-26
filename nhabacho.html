@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- link reset CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- link box icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Review cảnh đẹp Huế - Việt Nam</title>
+    <!-- Link Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- embed font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="content">
+    <header class="header">
+      <div class="header-top">
+        <div class="container">
+          <!-- logo web -->
+          <a href="./index.html" class="web-logo">
+            <img
+              src="./assets/Images/reviewhue-logo.png"
+              alt="review cảnh đẹp Huế"
+              width="100%"
+            />
+          </a>
+          <!-- tiêu đề -->
+          <p class="header-letter">KHÁM PHÁ NÉT ĐẸP ĐẤT CỐ ĐÔ THỪA THIÊN HUẾ</p>
+          <!-- tạo nút search -->
+          <div class="search-container">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Nhập từ khóa tìm kiếm..."
+            />
+            <button onclick="search()" class="search-btn">
+              <i class="bx bx-search"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Navigation bar -->
+      <nav class="nav-bar">
+        <div class="container">
+          <div id="toggle"><i class="fa-solid fa-bars"></i></div>
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="./index.html" class="navbar-link">TRANG CHỦ</a>
+            </li>
+            <li class="navbar-item">
+              <a
+                href="javascript:void(0);"
+                onclick="scrollToClass('.introduction')"
+                class="navbar-link"
+                >CHÙA CHIỀN</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="javascript:void(0);"
+                onclick="scrollToClass('.sldr-1')"
+                class="navbar-link"
+                >DI TÍCH LỊCH SỬ</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="javascript:void(0);"
+                onclick="scrollToClass('.sldr-2')"
+                class="navbar-link"
+                >CẢNH ĐẸP THIÊN NHIÊN</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="javascript:void(0);"
+                onclick="scrollToClass('.sldr-3')"
+                class="navbar-link"
+                >HỆ THỐNG SUỐI VÀ BÃI TẮM</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="javascript:void(0);"
+                onclick="scrollToClass('.sldr-4')"
+                class="navbar-link"
+                >KIẾN TRÚC NGHỆ THUẬT</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="javascript:void(0);"
+                onclick="scrollToClass('.sldr-5')"
+                class="navbar-link"
+                >HỆ THỐNG LĂNG TẨM</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- header main content -->
+    <main class="main_content">
+      <div class="container lv1">        
+        <div class="old-info">
+          <div class="old-title">Nhà Bác Hồ</div>
+          <!-- <img src="./assets/Images/NhaBacHo.jpg" alt="" class="old-img"> -->
+          <div class="description">
+            <h2>Giới thiệu chung</h2>
+            <img src="./assets/Images/NhaBacHo.jpg" alt="" class="old-img">
+            <p>Quê hương của Chủ tịch Hồ Chí Minh ở Nam Đàn, Nghệ An và tuổi thơ của Người không chỉ gắn bó với làng Sen-Kim Liên mà còn gắn bó nhiều năm ở cố đô Huế. Những năm gần đây, rất nhiều đoàn khách trong nước và quốc tế khi đến Thừa Thiên - Huế thường tìm đến những nơi Bác Hồ đã từng ở. Bởi nơi đó đã khắc ghi bao thăng trầm trong cuộc đời của Bác.</p>
+            <h2>Lịch sử hình thành</h2>
+            <img src="./assets/Images/NhaBacHo2.png" alt="" class="old-img">
+            <p>Năm 1894, ông Nguyễn Sinh Sắc (thân sinh Chủ tịch Hồ Chí Minh) thi đỗ Cử nhân ở trường thi Hương Nghệ An. Năm 1895 vào Huế thi Hội nhưng không đỗ. Để chuẩn bị cho kỳ thi tiếp theo ông xin vào học trường Quốc Tử Giám - Huế và được chấp nhận. Tuy nhiên học bổng của trường rất ít, không đủ để ông sinh sống tại đất kinh đô.</p>            
+            <p>Vì vậy, ông về quê bàn với gia đình đưa vợ con cùng vào Huế để gia đình có điều kiện giúp đỡ ông học hành, và ông cũng có thời gian chăm sóc và nuôi dạy các con. Đến Huế nhờ người quen giới thiệu ông đã thuê được một gian nhà nhỏ ở đường Đông Ba (là ngôi nhà di tích hiện nay).</p>            
+            <h2>Đặc điểm nổi bật</h2>
+            <img src="./assets/Images/NhaBacHo3.png" alt="" class="old-img">
+            <p>Đây là ngôi nhà Chủ tịch Hồ Chí Minh đã sống khi theo gia đình vào Huế lần thứ I từ 1895 – 1901.</p>
+            <p>Nhà lưu niệm Bác Hồ tại 112 - Mai Thúc Loan là một ngôi nhà gỗ rộng 3 gian, gồm 4 vài cột, kiến trúc theo kiểu nhà rường truyền thống của Huế mái lợp ngói liệt, tường bao quanh bằng gạch vồ, mặt trước là hệ thống cửa bản khoa “thượng song, hạ đố”, nối với nhà chính là nhà bếp, vách trát đất, mái lợp tranh. Ngôi nhà nằm trong một tổng thể nhà - sân - vườn hoàn chỉnh.</p>
+            <p>Ngôi nhà đã lưu giữ nhiều kỷ niệm thuở thiếu thời của Chủ tịch Hồ Chí Minh, chứng kiến những năm tháng miệt mài đèn sách, khổ công học hành của ông Nguyễn Sinh Sắc, sự trung hậu, đảm đang của bà Hoàng Thị Loan, chứng khiến sự lớn lên và trưởng thành của hai anh em Nguyễn Sinh Khiêm và Nguyễn Sinh Cung (Chủ tịch Hồ Chí Minh). Đặc biệt ngôi nhà này là nơi bà Hoàng Thị Loan sinh người con thứ tư là cậu bé Nguyễn Sinh Xin. </p>
+            <p>Những kỷ vật trong ngôi nhà rường như giá sách, khung cửi, mâm cơm… gắn liền với thời thơ ấu của Bác Hồ. Năm 1901, cũng chính trong ngôi nhà này, khi cụ Nguyễn Sinh Sắc làm thư ký tại Thanh Hóa, bà Hoàng Thị Loan đã trút hơi thở cuối cùng ở tuổi 33 vào ngày 22 tháng Chạp năm Canh Tý (tức ngày 10/2/1901) để lại cậu bé Nguyễn Sinh Cung lúc ấy mới 11 tuổi, người em Nguyễn Sinh Xin mới chào đời, chẳng bao lâu em Xin cũng mất.</p>
+            <img src="./assets/Images/NhaBacHo1.jpg" alt="" class="old-img">
+            <h2>Vị trí</h2>
+            <p>Ngôi nhà ở số số 158 (số cũ 112) đường Mai Thúc Loan, phường Thuận Lộc, TP Huế thuộc khu Thành Nội với nhiều cây xanh mát.</p>
+
+          </div>
+        </div>  
+        <div class="new-info">
+          <div class="contact-to-me">
+            <p>LIÊN HỆ ĐỂ ĐẶT TOUR:</p>
+          </div>
+          <div class="booking">
+            <a href="" class="btn booking-call"><i class='bx bxs-phone-call'></i> Call to me</a>
+            <a href="" class="btn booking-mail"><i class='bx bxl-gmail' ></i>  Mail to me</a>
+          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.999122995678!2d107.57806217590148!3d16.47558208426429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3141a12ea34109d3%3A0x9cc237817245f79a!2zRGkgdMOtY2ggTmjDoCBsxrB1IG5p4buHbSBCw6FjIEjhu5M!5e0!3m2!1svi!2s!4v1727325526012!5m2!1svi!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="book-des">
+            <p>Để có được trải nghiệm tuyệt vời nhất khi đến với vùng đất cố đô. Quy khách vui lòng gọi điện hoặc email liên hệ với chúng tôi !</p>
+            <div><i class='bx bx-phone-call' ></i> SĐT:<a href="tel:+84819931165"> +84 819 931 165</a></div>
+            <div><i class='bx bx-envelope' ></i> Email:<a href="mailto:canhdephue@gmail.com"> canhdephue@gmail.com</a></div>
+          </div> 
+        </div>
+             
+      </div>
+    </main>
+    <script src="assets/JS/main.js"></script>
+    <footer>
+      <div class="footer-container">
+        <div class="container">
+          <div class="footer-section about">
+            <h3>Review Huế</h3>
+            <p>
+              Huế, cố đô của Việt Nam, nổi tiếng với vẻ đẹp cổ kính, các công
+              trình kiến trúc lịch sử và di sản văn hóa phong phú. Hãy khám phá
+              các danh lam thắng cảnh và nét đẹp riêng có của Huế.
+            </p>
+          </div>
+
+          <div class="footer-section links">
+            <h3>Danh mục</h3>
+            <ul>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  onclick="scrollToClass('.introduction')"
+                  >Hệ thống chùa chiền</a
+                >
+              </li>
+              <hr />
+              <li>
+                <a href="javascript:void(0);" onclick="scrollToClass('.sldr-1')"
+                  >Di tích lịch sử</a
+                >
+              </li>
+              <hr />
+              <li>
+                <a href="javascript:void(0);" onclick="scrollToClass('.sldr-2')"
+                  >Cảnh đẹp thiên nhiên</a
+                >
+              </li>
+              <hr />
+              <li>
+                <a href="javascript:void(0);" onclick="scrollToClass('.sldr-3')"
+                  >Hệ thống suối và bãi tắm</a
+                >
+              </li>
+              <hr />
+              <li>
+                <a href="javascript:void(0);" onclick="scrollToClass('.sldr-4')"
+                  >Kiến trúc nghệ thuât</a
+                >
+              </li>
+              <hr />
+              <li>
+                <a href="javascript:void(0);" onclick="scrollToClass('.sldr-5')"
+                  >Hệ thống lăng tẩm</a
+                >
+              </li>
+              <hr />
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h3>Liên hệ</h3>
+            <a href="mailto:canhdephue@gmail.com"
+              ><i class="bx bxl-gmail"></i
+            ></a>
+            <a href="tel:+84819931165"
+              ><i class='bx bxs-phone-call' ></i></i
+            ></a>
+            <a href="https://maps.app.goo.gl/YY6NmZg5LfjnAxcK6"
+              ><i class='bx bx-map' ></i></a>
+            <p>Email: canhdephue@gmail.com</p>
+            <p>Điện thoại: +84 819 931 165</p>
+            <p>Địa chỉ: 184 Phan Chu Trinh, TP.Huế, Thừa Thiên Huế, Việt Nam</p>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="footer-bottom">
+        <a href="./gioithieu.html">Giới thiệu</a>
+        <a href="./baomatthongtin.html">  /  Chính sách bảo mật</a>
+        <a href="./dieukhoan.html">  /  Điều khoản</a>
+        <a href="./lienhe.html">  /  Liên hệ</a>
+        <p class="copyright">
+          &copy; 2024 canhdephue.click | Thiết kế bởi
+          <span style="font-weight: bold">Its.Co</span>
+        </p>
+      </div>
+    </footer>
+    <!-- Nút "Về đầu trang" -->
+    <button onclick="topFunction()" id="btnTop" title="Về đầu trang">
+      <i class="bx bx-up-arrow-circle"></i>
+    </button>
+    <!-- nút gọi điện -->
+    <button class="call-button" onclick="makeCall()"><i class='bx bxs-phone-call' ></i></button>
+    <!-- nút email -->
+    <button class="email-button" onclick="makeEmail()"><i class='bx bx-envelope'></i></button>
+  </body>
+</html>
