@@ -483,22 +483,22 @@ footer {
 .dt-bg {
   background-color: rgb(215, 225, 194);
 }
-.container h1 {
+.dt-bg .container h1 {
   padding: 20px 0;
   font-size: 4rem;
   font-weight: bold;
 }
-.container h2 {
+.dt-bg .container h2 {
   padding: 20px 0;
   font-size: 2.2rem;
   font-weight: bold;
 }
-.container h3 {
+.dt-bg .container h3 {
   font-size: 2rem;
   font-weight: bold;
 }
-.container li,
-.container p {
+.dt-bg.container li,
+.dt-bg .container p {
   padding: 10px 0;
   font-size: 1.8rem;
 }
