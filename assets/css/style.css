@@ -483,6 +483,9 @@ footer {
   opacity: 100%;
 }
 /* =======================html con */
+.dt-bg {
+  padding-top: 20px;
+}
 .dt-bg .info {
   display: flex;
 }
@@ -491,12 +494,13 @@ footer {
 }
 .container h1 {
   padding: 20px 0;
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: orange;
 }
 .dt-bg .top-info h2 {
   font-size: 1.8rem;
   font-weight: bold;
-}
-.container h2 {
   padding: 20px 0;
 }
 .dt-bg .top-info p {
@@ -510,10 +514,14 @@ footer {
   .dt-bg .info {
     flex-direction: column;
   }
+  .dt-bg .top-info {
+    width: 80vw;
+  }
   .dt-bg iframe {
     width: 80vw;
   }
 }
+/* ===================trang con lv2 */
 .main_content .lv1 {
   display: flex;
 }
