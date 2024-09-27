@@ -51,11 +51,11 @@ a {
   grid-area: logo;
   width: 140px;
 }
-.header-letter {
+.header-top .header-letter {
   grid-area: letter;
   height: 80px;
   font-family: 'Bungee Tint', sans-serif;
-  font-size: 40px;
+  font-size: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
