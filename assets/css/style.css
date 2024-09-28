@@ -107,9 +107,9 @@ a {
 .highlight {
   background-color: yellow;
 }
-/* Ẩn input và nút tìm kiếm khi màn hình nhỏ hơn 768px */
+/* Ẩn header letter khi màn hình nhỏ hơn 768px */
 @media screen and (max-width: 768px) {
-  .header-letter {
+  .header-top .header-letter {
     display: none;
   }
 }
@@ -140,15 +140,24 @@ a {
 .navbar-item-active {
   text-shadow: 1px 0 0 rgb(23, 22, 22);
   background: rgb(199, 223, 199);
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 /* Ẩn input và nút tìm kiếm khi màn hình nhỏ hơn 768px */
 @media screen and (max-width: 768px) {
   .navbar-list {
+    position: absolute; /* Đặt ở vị trí tuyệt đối */
     flex-direction: column;
     display: none;
     align-items: flex-start;
     background-color: #f1efef;
+    width: 80vw;
+    z-index: 100; /* Đảm bảo nằm trên các phần tử khác */
+  }
+  .navbar-item {
+    width: 80vw;
+  }
+  .nav-bar:hover .navbar-list {
+    display: flex; /* Hiển thị danh sách khi di chuột vào navbar */
   }
   #toggle {
     display: block;
@@ -231,7 +240,7 @@ a {
     font-size: 3rem;
   }
   .introduction {
-    flex-direction: column; /* Chuyển navbar về dạng cột */
+    flex-direction: column;
     align-items: flex-start;
   }
   .int-overview {
@@ -416,7 +425,7 @@ footer {
 }
 @media screen and (max-width: 768px) {
   .footer-container .container {
-    flex-direction: column; /* Chuyển navbar về dạng cột */
+    flex-direction: column;
     align-items: flex-start;
   }
   .footer-section {
@@ -525,7 +534,19 @@ footer {
 .main_content .lv1 {
   display: flex;
 }
-
+@media screen and (max-width: 768px) {
+  .main_content .lv1 {
+    flex-direction: column;
+  }
+  .lv1 .old-title,
+  .lv1 .description,
+  .new-info .booking,
+  .new-info .contact-to-me,
+  .new-info iframe,
+  .new-info .book-des {
+    width: 80vw;
+  }
+}
 .main_content .lv1 .old-info {
   width: 60vw;
   margin-right: 20px;
@@ -594,6 +615,10 @@ footer {
 }
 .new-info .book-des p {
   font-weight: bold;
+}
+.new-info .book-des a {
+  color: red;
+  font-size: 1.8rem;
 }
 .container h3 {
   font-size: 2rem;

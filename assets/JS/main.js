@@ -91,16 +91,6 @@ function search() {
   }
 }
 
-//================= menu
-document.getElementById('toggle').addEventListener('click', function () {
-  var navbarList = document.querySelector('.navbar-list');
-  if (navbarList.style.display === 'none' || navbarList.style.display === '') {
-    navbarList.style.display = 'block';
-  } else {
-    navbarList.style.display = 'none';
-  }
-});
-
 //=========== detailed slide
 // Slide 1
 const initSlider = (sliderClass, btnLeftClass, btnRightClass) => {
