@@ -171,11 +171,8 @@ a {
   padding-bottom: 100px;
 }
 .main_content .introduction {
-  display: flex;
   padding-top: 10px;
-}
-.int-overview {
-  width: 40vw;
+  display: flex;
 }
 .int-overview h1 {
   font-size: 2.3rem;
@@ -190,11 +187,22 @@ a {
   font-size: 1.5rem;
   padding-top: 5px;
 }
+.int-overview {
+  width: 40vw; /* Đặt chiều rộng theo mong muốn */
+  max-height: 100%; /* Đặt chiều cao tối đa để khớp với chiều cao của slide-show */
+  overflow-y: auto; /* Hiển thị thanh cuộn khi nội dung vượt quá */
+  display: flex;
+  flex-direction: column; /* Căn nội dung theo chiều dọc */
+  box-sizing: border-box; /* Đảm bảo padding và border không làm ảnh hưởng đến kích thước */
+  margin: 0 auto; /* Căn giữa nếu cần */
+}
 .main_content .container .slide-show {
-  width: 100%;
+  width: 100%; /* Chiều rộng của slide-show */
   position: relative;
   overflow: hidden;
-  margin-left: 20px;
+  margin: 10px auto; /* Căn giữa slide-show */
+  height: 100%; /* Đặt chiều cao tự động */
+  display: block; /* Đảm bảo rằng slide-show là một khối */
 }
 .main_content .list-images {
   display: flex;

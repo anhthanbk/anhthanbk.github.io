@@ -90,6 +90,34 @@ function search() {
     paragraph.innerHTML = highlightedText;
   }
 }
+// Hàm để đồng bộ chiều cao
+function syncHeight() {
+  // Kiểm tra kích thước màn hình
+  if (window.innerWidth > 1200) {
+    const slideShow = document.querySelector('.slide-show');
+    const intOverview = document.querySelector('.int-overview');
+
+    if (slideShow && intOverview) {
+      // Lấy chiều cao của slide-show
+      const slideHeight = slideShow.offsetHeight;
+
+      // Gán chiều cao cho int-overview
+      intOverview.style.height = slideHeight + 'px';
+    }
+  } else {
+    // Đặt lại chiều cao khi màn hình nhỏ hơn hoặc bằng 1200px
+    const intOverview = document.querySelector('.int-overview');
+    if (intOverview) {
+      intOverview.style.height = 'auto'; // hoặc có thể đặt giá trị khác phù hợp
+    }
+  }
+}
+
+// Chạy hàm đồng bộ khi trang được tải
+window.addEventListener('load', syncHeight);
+
+// Cập nhật chiều cao khi thay đổi kích thước cửa sổ
+window.addEventListener('resize', syncHeight);
 
 //=========== detailed slide
 // Slide 1
