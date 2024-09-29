@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- link reset CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- link box icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Review cảnh đẹp Huế - Việt Nam</title>
+    <!-- Link Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- embed font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="content">
+    <header class="header">
+      <div class="header-top">
+        <div class="container">
+          <!-- logo web -->
+          <a href="./index.html" class="web-logo">
+            <img
+              src="./assets/Images/reviewhue-logo.png"
+              alt="review cảnh đẹp Huế"
+              width="100%"
+            />
+          </a>
+          <!-- tiêu đề -->
+          <p class="header-letter">KHÁM PHÁ NÉT ĐẸP ĐẤT CỐ ĐÔ THỪA THIÊN HUẾ</p>
+          <!-- tạo nút search -->
+          <div class="search-container">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Nhập từ khóa tìm kiếm..."
+            />
+            <button onclick="search()" class="search-btn">
+              <i class="bx bx-search"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Navigation bar -->
+      <nav class="nav-bar">
+        <div class="container">
+          <div id="toggle"><i class="fa-solid fa-bars"></i></div>
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="./index.html" class="navbar-link">TRANG CHỦ</a>
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./1chuachien.html" class="navbar-link"
+                >CHÙA CHIỀN</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./2ditichlichsu.html" class="navbar-link"
+                >DI TÍCH LỊCH SỬ</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./3canhdepthienhien.html" class="navbar-link"
+                >CẢNH ĐẸP THIÊN NHIÊN</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./4songsuoibaitam.html" class="navbar-link"
+                >HỆ THỐNG SÔNG SUỐI BÃI TĂM</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./5kientrucnghethuat.html" class="navbar-link"
+                >KIẾN TRÚC NGHỆ THUẬT</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./6hethonglangtam.html" class="navbar-link"
+                >HỆ THỐNG LĂNG TẨM</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- header main content -->
+    <main class="main_content">
+      <div class="container lv1">        
+        <div class="old-info">
+          <div class="old-title">Chùa Tường Vân</div>          
+          <div class="description">
+            <h2>Giới thiệu chung</h2>
+            <img src="./assets/Images/chua-thien-lam.png" alt="" class="old-img">
+            <p>Chùa Thiền Lâm tọa lạc ngay trên đồi Quảng Tế, thuộc Phường Thủy Xuân, thành phố Huế. Có vị trí rất đắc địa, với phong cảnh thiên nhiên say đắm lòng người, không gian yên tĩnh, không khí trong lành, mát mẻ. Chùa Thiền Lâm còn có tên gọi khác là chùa Phật đứng - Phật nằm, thuộc hệ phái Nam Tông do ngài Hộ Nhẫn lấp nên.</p>
+            <h2>Lịch sử hình thành</h2>
+            <img src="./assets/Images/ChuaThienLam (1).jpg" alt="" class="old-img">
+            <p>Năm 1960, Hòa thượng Hộ Nhẫn nhận lời thỉnh cầu của Phật tử Huế, đã đến đồi Quảng Tế để xây dựng một ngôi chùa. Hai năm sau, vào năm 1962, một thảo am nhỏ được dựng lên và được đặt tên là “Tịnh thất Thiền Lâm”. Đến năm 1964, chùa chính thức được thành lập. Sau đó công nhận là một tự viện thuộc hệ phái Phật giáo Nam Tông.</p>
+            <p>Từ khi thành lập, Chùa Thiền Lâm trải qua nhiều giai đoạn trùng tu và mở rộng. Năm 1966, Chánh điện, nhà Tăng, nhà khách,… được xây dựng, tạo nên diện mạo ban đầu cho chùa. Năm 1971, tượng Phật Nằm uy nghi được hoàn thành. Đây là một trong những tượng Phật Nằm lớn nhất Việt Nam. Hai năm sau, tháp chuông được xây dựng, góp phần tô điểm cho cảnh quan chùa. Năm 1974, tượng Phật Đứng được hoàn thành, đánh dấu sự phát triển mạnh mẽ của Chùa Thiền Lâm.</p>
+            <h2>Đặc điểm nổi bật</h2>
+            <img src="./assets/Images/ChuaThienLam (2).jpg" alt="" class="old-img">
+            <p>Tên gọi “Chùa Thiền Lâm” không chỉ đơn thuần là một danh xưng. Mà nó ẩn chứa trong đó là những ý nghĩa sâu sắc về cả tâm linh và văn hóa. “Thiền” tượng trưng cho sự tĩnh lặng, thanh tịnh, tập trung – những yếu tố cốt lõi trong Thiền tông Phật giáo. “Lâm” thể hiện sự hòa hợp giữa con người và thiên nhiên, con người và Phật pháp. Từ đó gợi nhắc đến hình ảnh rừng thiền thanh bình, nơi tu tập và giác ngộ.</p>
+            <p>Ngay từ cổng vào chùa, du khách đã ấn tượng với cổng vào mang phong cách Phật giáo Nam tông nhẹ nhàng, với các họa tiết tinh xảo, tông màu vàng làm chủ đạo, màu sắc tâm linh của chùa. Bên cạnh đó, các công trình kiến trúc, không gian của ngôi chùa vẫn mang đậm chất thiền, linh thiêng và trầm mặc.</p>
+            <p>Tiếp là con đường dẫn vào bên trong, đi qua những bậc phân cấp, du khách sẽ thấy được sự thư thái, an yên trong tâm hồn. Từ xa, bạn có thể nhìn thấy 2 bức tượng Phật ở tư thế đứng và nằm rất uy nghiêm, được chạm khắc một cách tinh xảo. 2 bức tượng tọa lạc trên đỉnh đồi Quảng Tế, dáng vẻ tự tại mang cảm giác bình yên, giúp bạn xua tan đi những muộn phiền.</p>
+            <p>Điều gây ấn tượng cho du khách đó chính là hai bức tượng được thiết kế với hai tư thế khác nhau, tạo sự độc đáo, thu hút du khách. Tượng Phật đứng với dáng vẻ uy nghi, tượng Phật nằm mang phong thái thanh thoát.</p>
+            <p>Đi vào bên trong chùa, bạn sẽ khá ngỡ ngàng trước những pho tượng, tất cả đều tái hiện lại cuộc đời của Đức Phật. Phía bên trái khuôn viên là tượng Phật Thích Ca đang tọa thiền dưới sự bảo vệ của Xà Vương và Đức Thế Tôn. Phía bên phải là vườn Ngự Uyển xinh đẹp cùng hoàng hậu Ma Gia và các tỳ nữ, tất cả tạo nên một khung cảnh tuyệt trần, giúp du khách có thể hiểu hơn về cuộc đời Đức Phật.</p>
+            <p>Không dừng lại ở đó, bên cạnh đó thầy trò Đường Tăng đi thỉnh kinh, cũng được tái hiện một cách chân thực, sinh động.</p>
+            <img src="./assets/Images/ChuaThienLam (3).jpg" alt="" class="old-img">
+            <p>Ngoài ra, khuôn viên chùa còn có tượng đức Phật Thích Ca tọa thiền trên tòa sen cao 5.2m, đặt trên bảo đài 3 tầng, cao 9m, cùng bức tượng mô phỏng 7 bước chân của Ngài khi mới sinh ra.</p>
+            <p>Nói đến Chùa Thiên Lâm tại Huế thì ai cũng ấn tượng bởi tòa bảo tháp cao 15m, được thiết kế một cách độc đáo. Phần thân dưới màu trắng, còn phần trên được sơn màu vàng. Phần đỉnh tháp nhọn cao vút, những chi tiết trang trí đều bằng phù điêu, hoa văn giản dị, tinh tế. Tòa tháp lấy cảm hứng từ chùa Sirimagala của Myanmar và các ngôi chùa dát vàng Thái Lan.</p>
+            <p>Bảo tàng tháp được thiết kế với 2 phần khác nhau: bên dưới là chánh điện, bên trên là tôn thờ Xá Lợi Phật Thích Ca và chư Thánh Tăng. Không gian ở chánh điện rất trang nghiêm, với các bức tranh khắc họa cuộc đời của Đức Phật từ khi sinh ra đến khi niết bàn.</p>
+            <p>Ngoài ra, bên trong chánh điện còn có pho tượng Phật Thích Ca trên bảo tọa cao 2m, kề 2 bên là tượng Hòa thượng Hộ Nhẫn được tạo từ sáp, với tư thế ngồi thiền trong như thật và quả Đài hồng chung nặng khoảng 700kg.</p>
+            <h2>Vị trí</h2>
+            <img src="./assets/Images/ChuaThienLam (4).jpg" alt="" class="old-img">
+            <p>Số 22/54 đường Lê Ngô Cát, Phường Thủy Xuân, Thành phố Huế, Tỉnh Thừa Thiên – Huế.</p>
+
+          </div>
+        </div>  
+        <div class="new-info">
+          <div class="contact-to-me">
+            <p>LIÊN HỆ ĐỂ ĐẶT TOUR:</p>
+          </div>
+          <div class="booking">
+            <a href="" class="btn booking-call"><i class='bx bxs-phone-call'></i> Call to me</a>
+            <a href="" class="btn booking-mail"><i class='bx bxl-gmail' ></i>  Mail to me</a>
+          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.4426676093744!2d107.54233197586981!3d16.45310818428342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3141a6972c6005d3%3A0xf7268b7a4cf579ba!2zQ2jDuWEgVGhpw6puIE3hu6U!5e0!3m2!1svi!2s!4v1725542160816!5m2!1svi!2s" width="100%" height="100%" style="border:1px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="book-des">
+            <p>Để có được trải nghiệm tuyệt vời nhất khi đến với vùng đất cố đô. Quy khách vui lòng gọi điện hoặc email liên hệ với chúng tôi !</p>
+            <a href="tel:+84819931165"><i class='bx bx-phone-call' ></i></a><span> SĐT: +84 819 931 165</span> <br>
+            <a href="mailto:canhdephue@gmail.com"><i class='bx bx-envelope' ></i></a><span> Email: canhdephue@gmail.com</span>
+          </div> 
+        </div>           
+      </div>
+    </main>
+    <script src="assets/JS/main.js"></script>
+    <footer>
+      <div class="footer-container">
+        <div class="container">
+          <div class="footer-section about">
+            <h3>Review Huế</h3>
+            <p>
+              Huế, cố đô của Việt Nam, nổi tiếng với vẻ đẹp cổ kính, các công
+              trình kiến trúc lịch sử và di sản văn hóa phong phú. Hãy khám phá
+              các danh lam thắng cảnh và nét đẹp riêng có của Huế.
+            </p>
+          </div>
+
+          <div class="footer-section links">
+            <h3>Danh mục</h3>
+            <ul>
+              <li>
+                <a href="./index.html" class="navbar-link">Trang chủ</a>
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./1chuachien.html">Chùa chiền</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./2ditichlichsu.html">Di tích lịch sử</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./3canhdepthienhien.html">Cảnh đẹp thiên nhiên</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./4songsuoibaitam.html">Hệ thống sông suối bãi tắm</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./5kientrucnghethuat.html">Kiến trúc nghệ thuật</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./6hethonglangtam.html">Hệ thống lăng tẩm</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h3>Liên hệ</h3>
+            <a href="mailto:canhdephue@gmail.com"
+              ><i class="bx bxl-gmail"></i
+            ></a>
+            <a href="tel:+84819931165"
+              ><i class='bx bxs-phone-call' ></i></i
+            ></a>
+            <a href="https://maps.app.goo.gl/YY6NmZg5LfjnAxcK6"
+              ><i class='bx bx-map' ></i></a>
+            <p>Email: canhdephue@gmail.com</p>
+            <p>Điện thoại: +84 819 931 165</p>
+            <p>Địa chỉ: 184 Phan Chu Trinh, TP.Huế, Thừa Thiên Huế, Việt Nam</p>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="footer-bottom">
+        <a href="gioithieu.html">Giới thiệu</a>
+        <a href="baomatthongtin.html">  /  Chính sách bảo mật</a>
+        <a href="dieukhoan.html">  /  Điều khoản</a>
+        <a href="lienhe.html">  /  Liên hệ</a>
+        <p class="copyright">
+          &copy; 2024 canhdephue.click | Thiết kế bởi
+          <span style="font-weight: bold">Its.Co</span>
+        </p>
+      </div>
+    </footer>
+    <!-- Nút "Về đầu trang" -->
+    <button onclick="topFunction()" id="btnTop" title="Về đầu trang">
+      <i class="bx bx-up-arrow-circle"></i>
+    </button>
+    <!-- nút gọi điện -->
+    <button class="call-button" onclick="makeCall()"><i class='bx bxs-phone-call' ></i></button>
+    <!-- nút email -->
+    <button class="email-button" onclick="makeEmail()"><i class='bx bx-envelope'></i></button>
+  </body>
+</html>
