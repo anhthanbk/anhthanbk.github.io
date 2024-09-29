@@ -9,7 +9,7 @@ html {
 }
 body {
   font-size: 1.6rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 a {
   text-decoration: none;
@@ -42,8 +42,8 @@ a {
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: minmax(3, 1fr);
   grid-template-areas:
-    'logo letter letter letter letter letter'
-    'logo search search search search search';
+    "logo letter letter letter letter letter"
+    "logo search search search search search";
   column-gap: 5px;
   row-gap: 5px;
 }
@@ -54,7 +54,7 @@ a {
 .header-top .header-letter {
   grid-area: letter;
   height: 80px;
-  font-family: 'Bungee Tint', sans-serif;
+  font-family: "Bungee Tint", sans-serif;
   font-size: 4rem;
   display: flex;
   align-items: center;
@@ -68,7 +68,7 @@ a {
   justify-content: flex-end;
   padding-top: 20px;
 }
-.search-container input[type='text'] {
+.search-container input[type="text"] {
   padding: 10px;
   font-size: 1.6rem;
   border: 2px solid #ccc;
@@ -78,7 +78,7 @@ a {
   transition: all 0.3s ease;
 }
 
-.search-container input[type='text']:focus {
+.search-container input[type="text"]:focus {
   border-color: #4caf50;
   outline: none;
 }
@@ -636,4 +636,53 @@ footer {
 .container p {
   padding: 10px 0;
   font-size: 1.8rem;
+}
+/* ===================Trang thứ */
+.main_content .trangthu {
+  display: flex;
+  justify-content: space-between;
+}
+.main_content .List-location {
+  min-width: 60vw;
+  margin-right: 50px;
+}
+.List-location img {
+  width: 100%;
+}
+.List-location .location-info {
+  text-align: center;
+}
+.main_content .new-location {
+  width: 20vw;
+  margin-left: 30px;
+  text-align: center;
+}
+.new-location .new-lct-info {
+  text-align: center;
+}
+.new-location hr {
+  margin: 10px 0;
+}
+.new-location .new-lct-info h2 {
+  color: orange;
+  font-weight: bold;
+}
+.new-location .new-lct-info:hover,
+.List-location .location-info:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.new-location img {
+  width: 100%;
+  margin-top: 5px;
+}
+@media screen and (max-width: 768px) {
+  .trangthu {
+    flex-direction: column;
+  }
+  .main_content .List-location {
+    width: 80vw;
+  }
+  .main_content .new-location {
+    width: 80vw;
+  }
 }
