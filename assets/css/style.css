@@ -9,7 +9,7 @@ html {
 }
 body {
   font-size: 1.6rem;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 a {
   text-decoration: none;
@@ -42,8 +42,8 @@ a {
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: minmax(3, 1fr);
   grid-template-areas:
-    "logo letter letter letter letter letter"
-    "logo search search search search search";
+    'logo letter letter letter letter letter'
+    'logo search search search search search';
   column-gap: 5px;
   row-gap: 5px;
 }
@@ -54,7 +54,7 @@ a {
 .header-top .header-letter {
   grid-area: letter;
   height: 80px;
-  font-family: "Bungee Tint", sans-serif;
+  font-family: 'Bungee Tint', sans-serif;
   font-size: 4rem;
   display: flex;
   align-items: center;
@@ -68,7 +68,7 @@ a {
   justify-content: flex-end;
   padding-top: 20px;
 }
-.search-container input[type="text"] {
+.search-container input[type='text'] {
   padding: 10px;
   font-size: 1.6rem;
   border: 2px solid #ccc;
@@ -78,7 +78,7 @@ a {
   transition: all 0.3s ease;
 }
 
-.search-container input[type="text"]:focus {
+.search-container input[type='text']:focus {
   border-color: #4caf50;
   outline: none;
 }
@@ -188,7 +188,7 @@ a {
   padding-top: 5px;
 }
 .int-overview {
-  width: 40vw; /* Đặt chiều rộng theo mong muốn */
+  width: 50vw; /* Đặt chiều rộng theo mong muốn */
   max-height: 100%; /* Đặt chiều cao tối đa để khớp với chiều cao của slide-show */
   overflow-y: auto; /* Hiển thị thanh cuộn khi nội dung vượt quá */
   display: flex;
