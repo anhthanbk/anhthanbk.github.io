@@ -262,7 +262,7 @@ a {
 }
 /* detailed slide */
 .main_content .title {
-  padding: 100px 0 40px 0;
+  padding: 50px 0 40px 0;
   font-size: 3rem;
   font-weight: bold;
   display: flex;
@@ -277,7 +277,9 @@ a {
 .main_content .detailed {
   font-size: 2rem;
 }
-
+.main_content hr {
+  margin-top: 20px;
+}
 .slider {
   position: relative;
   width: 100%;
@@ -547,6 +549,9 @@ footer {
     flex-direction: column;
   }
   .lv1 .old-title,
+  .lv1 h3,
+  .lv1 hr,
+  .lv1 h4,
   .lv1 .description,
   .new-info .booking,
   .new-info .contact-to-me,
@@ -554,6 +559,18 @@ footer {
   .new-info .book-des {
     width: 80vw;
   }
+}
+.main_content .old-info h3 {
+  text-align: center;
+  margin-top: 20px;
+  color: #999;
+}
+.main_content .old-info .slogan {
+  color: black;
+}
+.main_content .old-info h4 {
+  font-style: italic;
+  color: #999;
 }
 .main_content .lv1 .old-info {
   width: 60vw;
@@ -583,6 +600,7 @@ footer {
   font-size: 1.8rem;
   font-weight: bold;
   padding: 10px 0;
+  margin-top: 20px;
 }
 .lv1 .description p {
   font-style: italic;
@@ -638,7 +656,7 @@ footer {
   font-size: 1.8rem;
 }
 /* ===================Trang thứ */
-.main_content .trangthu {
+.main_content .Page-lv2 {
   display: flex;
   justify-content: space-between;
 }
@@ -663,6 +681,9 @@ footer {
 .new-location hr {
   margin: 10px 0;
 }
+.new-location .baivietmoi {
+  color: #999;
+}
 .new-location .new-lct-info h2 {
   color: orange;
   font-weight: bold;
@@ -676,7 +697,7 @@ footer {
   margin-top: 5px;
 }
 @media screen and (max-width: 768px) {
-  .trangthu {
+  .Page-lv2 {
     flex-direction: column;
   }
   .main_content .List-location {
@@ -684,5 +705,26 @@ footer {
   }
   .main_content .new-location {
     width: 80vw;
+    margin-left: 0;
   }
+}
+.listPage {
+  padding: 10px;
+  text-align: center;
+  list-style: none;
+}
+.listPage li {
+  background-color: #ffffffbd;
+  padding: 10px;
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+  border: 1px solid green;
+  border-radius: 10px;
+}
+.listPage li:hover,
+.listPage .active {
+  background-color: green;
+  color: #fff;
+  transition: 0.5s;
 }

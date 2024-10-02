@@ -117,14 +117,15 @@
     <!-- header main content -->
     <main class="main_content">
       <div class="container">
-        <div class="trangthu">
+        <div class="Page-lv2">
+         <div class="list">
           <div class="List-location">
             <a href="#!" class="location-info">
               <h1 class="lct-title">Chùa Thiên Mụ</h1>
               <img src="./assets/Images/chua-thien-mu.png" alt="" class="lct-img">
               <p class="lct-description">là một trong những ngôi chùa cổ kính và nổi tiếng nhất của Việt Nam, nằm bên bờ sông Hương ở thành phố Huế, tỉnh Thừa Thiên Huế. Ngôi chùa này không chỉ có giá trị về mặt tôn giáo mà còn là một biểu tượng văn hóa, lịch sử đặc sắc của cố đô Huế.</p>              
             </a>
-            <hr>
+            
             <a href="#!" class="location-info">
               <h1 class="lct-title">Chùa Huyền Không Sơn Thượng</h1>
               <img src="./assets/Images/huyen-khong-son-thuong.png" alt="" class="lct-img">
@@ -133,7 +134,7 @@
                 thiên nhiên. Chùa có cảnh quan đẹp và là nơi nhiều người tìm
                 đến để thiền định.</p>              
             </a>   
-            <hr>         
+                     
             <a href="#!" class="location-info">
               <h1 class="lct-title">Chùa Từ Đàm</h1>
               <img src="./assets/Images/chua-tu-dam.png" alt="" class="lct-img">
@@ -142,7 +143,7 @@
                 trong lịch sử Phật giáo Việt Nam. Chùa có kiến trúc giản dị
                 nhưng trang nghiêm.</p>              
             </a> 
-            <hr>           
+                       
             <a href="#!" class="location-info">
               <h1 class="lct-title">Chùa Từ Hiếu</h1>
               <img src="./assets/Images/chua-tu-hieu.png" alt="" class="lct-img">
@@ -151,7 +152,7 @@
                 thanh tịnh, yên bình và được bao quanh bởi những cây xanh cổ
                 thụ.</p>              
             </a>            
-            <hr>           
+                       
             <a href="#!" class="location-info">
               <h1 class="lct-title">Chùa Phật Đứng</h1>
               <img src="./assets/Images/chua-phat-dung.png" alt="" class="lct-img">
@@ -160,7 +161,7 @@
                 giới. Với không gian yên bình và tươi đẹp, chùa mang đến cho
                 người ta cảm giác thanh thản và an yên.</p>              
             </a>            
-            <hr>           
+                       
             <a href="#!" class="location-info">
               <h1 class="lct-title">Chùa Thiền Lâm</h1>
               <img src="./assets/Images/chua-thien-lam.png" alt="" class="lct-img">
@@ -168,13 +169,71 @@
                 từ Phật giáo Nam Tông Thái Lan. Chùa có tượng Phật lớn với tư
                 thế đứng uy nghi, được gọi là chùa Phật Đứng.</p>              
             </a>            
-            <hr>           
+                       
             <a href="#!" class="location-info">
               <h1 class="lct-title">Chùa Diệu Đế</h1>
               <img src="./assets/Images/chua-dieu-de.png" alt="" class="lct-img">
               <p class="lct-description">Di tích Hổ Quyền là một trong những công trình kiến trúc độc đáo chỉ riêng Việt Nam có. Được xây dựng dưới thời vua Minh Mạng, nơi đây là đấu trường của những cuộc tử chiến giữa voi và hổ. Việc tổ chức các cuộc đấu giữa voi và hổ xuất phát từ nhu cầu rèn luyện tượng binh(quân voi), một trong những binh chủng lợi hại quân đội xứ Đàng Trong.</p>              
             </a>      
-          </div>  
+          </div>
+          <ul class="listPage">
+            
+          </ul>
+          <script>            
+           let thisPage = 1;
+           let limit = 5;
+          let list = document.querySelectorAll(
+           '.main_content .List-location .location-info'
+           );
+
+          function loadItem() {
+          let beginGet = limit * (thisPage - 1);
+          let endGet = limit * thisPage - 1;
+          list.forEach((item, key) => {
+           if (key >= beginGet && key <= endGet) {
+            item.style.display = 'block';
+           } else {
+              item.style.display = 'none';
+           }
+            });
+           listPage();
+           }
+          loadItem();
+            function listPage() {
+             let count = Math.ceil(list.length / limit);
+             document.querySelector('.listPage').innerHTML = '';
+
+             if (thisPage != 1) {
+              let prev = document.createElement('li');
+              prev.innerText = '<';
+              prev.setAttribute('onclick', 'changePage(' + (thisPage - 1) + ')');
+              document.querySelector('.listPage').appendChild(prev);
+             }
+
+             for (i = 1; i <= count; i++) {
+              let newPage = document.createElement('li');
+              newPage.innerText = i;
+             if (i == thisPage) {
+              newPage.classList.add('active');
+             }
+             newPage.setAttribute('onclick', 'changePage(' + i + ')');
+             document.querySelector('.listPage').appendChild(newPage);
+             }
+
+             if (thisPage != count) {
+             let next = document.createElement('li');
+             next.innerText = '>';
+             next.setAttribute('onclick', 'changePage(' + (thisPage + 1) + ')');
+             document.querySelector('.listPage').appendChild(next);
+             }
+             }
+            function changePage(i) {
+             thisPage = i;
+             loadItem();
+            }
+          </script> 
+
+         </div> 
           <hr>
           <div class="new-location">
             <p class="baivietmoi" style="font-weight: bold;">BÀI VIẾT MỚI</p> 

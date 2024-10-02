@@ -117,14 +117,15 @@
     <!-- header main content -->
     <main class="main_content">
       <div class="container">
-        <div class="trangthu">
+        <div class="Page-lv2">
+         <div class="list">
           <div class="List-location">
             <a href="./dainoihue.html" class="location-info">
               <h1 class="lct-title">Đại nội Huế </h1>
               <img src="./assets/Images/dai-noi.png" alt="" class="lct-img">
               <p class="lct-description">là một trong những ngôi chùa cổ kính và nổi tiếng nhất của Việt Nam, nằm bên bờ sông Hương ở thành phố Huế, tỉnh Thừa Thiên Huế. Ngôi chùa này không chỉ có giá trị về mặt tôn giáo mà còn là một biểu tượng văn hóa, lịch sử đặc sắc của cố đô Huế.</p>              
             </a>
-            <hr>
+            
             <a href="./dienhonchen.html" class="location-info">
               <h1 class="lct-title">Điện Hòn Chén</h1>
               <img src="./assets/Images/dien-hon-chen.png" alt="" class="lct-img">
@@ -133,7 +134,7 @@
                 thiên nhiên. Chùa có cảnh quan đẹp và là nơi nhiều người tìm
                 đến để thiền định.</p>              
             </a>   
-            <hr>         
+                     
             <a href="./dannamgiao.html" class="location-info">
               <h1 class="lct-title">Đàn Nam Giao</h1>
               <img src="./assets/Images/dan-nam-giao.png" alt="" class="lct-img">
@@ -142,7 +143,7 @@
                 trong lịch sử Phật giáo Việt Nam. Chùa có kiến trúc giản dị
                 nhưng trang nghiêm.</p>              
             </a> 
-            <hr>           
+                       
             <a href="./chodongba.html" class="location-info">
               <h1 class="lct-title">Chợ Đông Ba</h1>
               <img src="./assets/Images/cho-dong-ba.png" alt="" class="lct-img">
@@ -151,7 +152,7 @@
                 thanh tịnh, yên bình và được bao quanh bởi những cây xanh cổ
                 thụ.</p>              
             </a>            
-            <hr>           
+                      
             <a href="./gahue.html" class="location-info">
               <h1 class="lct-title">Ga Huế</h1>
               <img src="./assets/Images/ga-hue.png" alt="" class="lct-img">
@@ -160,7 +161,7 @@
                 giới. Với không gian yên bình và tươi đẹp, chùa mang đến cho
                 người ta cảm giác thanh thản và an yên.</p>              
             </a>            
-            <hr>           
+                      
             <a href="./vanthanhhue.html" class="location-info">
               <h1 class="lct-title">Văn Thánh Huế</h1>
               <img src="./assets/Images/van-thanh-hue.png" alt="" class="lct-img">
@@ -168,25 +169,82 @@
                 Đây là nơi lưu giữ các giá trị văn hóa giáo dục và là nơi tổ
                 chức các kỳ thi Nho học dưới triều Nguyễn.</p>              
             </a>                    
-            <hr>           
+                     
             <a href="./cuuvithancong.html" class="location-info">
               <h1 class="lct-title">Cửu vị thần công</h1>
               <img src="./assets/Images/CuuViThanCong (2).jpg" alt="" class="lct-img">
               <p class="lct-description">Cố đô Huế nổi tiếng với những bảo vật cung đình, là minh chứng cho sự tồn tại hơn 140 năm của vương triều Nguyễn. Trong số những báu vật ấy, đáng chú ý bậc nhất là 9 khẩu súng thần công đặt trước cửa Ngọ Môn.</p>              
             </a>
-            <hr>           
+                      
             <a href="./nhabacho.html" class="location-info">
               <h1 class="lct-title">Nhà Bác Hồ</h1>
               <img src="./assets/Images/NhaBacHo.jpg" alt="" class="lct-img">
               <p class="lct-description">Quê hương của Chủ tịch Hồ Chí Minh ở Nam Đàn, Nghệ An và tuổi thơ của Người không chỉ gắn bó với làng Sen-Kim Liên mà còn gắn bó nhiều năm ở cố đô Huế. Những năm gần đây, rất nhiều đoàn khách trong nước và quốc tế khi đến Thừa Thiên - Huế thường tìm đến những nơi Bác Hồ đã từng ở. Bởi nơi đó đã khắc ghi bao thăng trầm trong cuộc đời của Bác.</p>              
             </a>   
-            <hr>           
+                      
             <a href="./hoquyen.html" class="location-info">
               <h1 class="lct-title">Hồ Quyền</h1>
               <img src="./assets/Images/HoQuyen.jpg" alt="" class="lct-img">
               <p class="lct-description">Di tích Hổ Quyền là một trong những công trình kiến trúc độc đáo chỉ riêng Việt Nam có. Được xây dựng dưới thời vua Minh Mạng, nơi đây là đấu trường của những cuộc tử chiến giữa voi và hổ. Việc tổ chức các cuộc đấu giữa voi và hổ xuất phát từ nhu cầu rèn luyện tượng binh(quân voi), một trong những binh chủng lợi hại quân đội xứ Đàng Trong.</p>              
             </a>                 
-          </div>  
+          </div>
+          <ul class="listPage">
+            
+          </ul>
+          <script>            
+           let thisPage = 1;
+           let limit = 5;
+          let list = document.querySelectorAll(
+           '.main_content .List-location .location-info'
+           );
+
+          function loadItem() {
+          let beginGet = limit * (thisPage - 1);
+          let endGet = limit * thisPage - 1;
+          list.forEach((item, key) => {
+           if (key >= beginGet && key <= endGet) {
+            item.style.display = 'block';
+           } else {
+              item.style.display = 'none';
+           }
+            });
+           listPage();
+           }
+          loadItem();
+            function listPage() {
+             let count = Math.ceil(list.length / limit);
+             document.querySelector('.listPage').innerHTML = '';
+
+             if (thisPage != 1) {
+              let prev = document.createElement('li');
+              prev.innerText = '<';
+              prev.setAttribute('onclick', 'changePage(' + (thisPage - 1) + ')');
+              document.querySelector('.listPage').appendChild(prev);
+             }
+
+             for (i = 1; i <= count; i++) {
+              let newPage = document.createElement('li');
+              newPage.innerText = i;
+             if (i == thisPage) {
+              newPage.classList.add('active');
+             }
+             newPage.setAttribute('onclick', 'changePage(' + i + ')');
+             document.querySelector('.listPage').appendChild(newPage);
+             }
+
+             if (thisPage != count) {
+             let next = document.createElement('li');
+             next.innerText = '>';
+             next.setAttribute('onclick', 'changePage(' + (thisPage + 1) + ')');
+             document.querySelector('.listPage').appendChild(next);
+             }
+             }
+            function changePage(i) {
+             thisPage = i;
+             loadItem();
+            }
+          </script> 
+         </div> 
           <hr>
           <div class="new-location">
             <p class="baivietmoi" style="font-weight: bold;">BÀI VIẾT MỚI</p> 
