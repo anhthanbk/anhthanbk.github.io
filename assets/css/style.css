@@ -20,9 +20,9 @@ a {
 }
 /* common */
 .container {
-  width: 70vw;
+  width: 80vw;
   margin: 0 auto;
-  max-width: calc(100% - 48px);
+  max-width: 1305px;
 }
 /* header */
 .header {
@@ -154,11 +154,11 @@ a {
     display: none;
     align-items: flex-start;
     background-color: #f1efef;
-    width: 70vw;
+    width: 80vw;
     z-index: 100; /* Đảm bảo nằm trên các phần tử khác */
   }
   .navbar-item {
-    width: 70vw;
+    width: 80vw;
   }
   .nav-bar:hover .navbar-list {
     display: flex; /* Hiển thị danh sách khi di chuột vào navbar */
@@ -256,7 +256,7 @@ a {
     align-items: flex-start;
   }
   .int-overview {
-    width: 70vw;
+    width: 80vw;
     margin-bottom: 2px;
   }
   .main_content .container .slide-show {
@@ -441,7 +441,7 @@ footer {
     align-items: flex-start;
   }
   .footer-section {
-    width: 70vw;
+    width: 80vw;
     margin-bottom: 2px;
   }
 }
@@ -536,10 +536,10 @@ footer {
     flex-direction: column;
   }
   .dt-bg .top-info {
-    width: 70vw;
+    width: 80vw;
   }
   .dt-bg iframe {
-    width: 70vw;
+    width: 80vw;
   }
 }
 /* ===================trang con lv2 */
@@ -559,7 +559,7 @@ footer {
   .new-info .contact-to-me,
   .new-info iframe,
   .new-info .book-des {
-    width: 70vw;
+    width: 80vw;
   }
 }
 .main_content .old-info h3 {
@@ -706,10 +706,10 @@ footer {
     flex-direction: column;
   }
   .main_content .List-location {
-    width: 70vw;
+    width: 80vw;
   }
   .main_content .new-location {
-    width: 70vw;
+    width: 80vw;
     margin-left: 0;
   }
 }
