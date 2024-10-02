@@ -20,7 +20,7 @@ a {
 }
 /* common */
 .container {
-  width: 80vw;
+  width: 70vw;
   margin: 0 auto;
   max-width: calc(100% - 48px);
 }
@@ -135,6 +135,10 @@ a {
 }
 .navbar-link {
   color: orange;
+  font-size: 1.5rem;
+}
+.nav-bar .navbar-link:nth-last-of-type(n + 2) {
+  padding-left: 5px;
 }
 .navbar-item:hover,
 .navbar-item-active {
@@ -150,11 +154,11 @@ a {
     display: none;
     align-items: flex-start;
     background-color: #f1efef;
-    width: 80vw;
+    width: 70vw;
     z-index: 100; /* Đảm bảo nằm trên các phần tử khác */
   }
   .navbar-item {
-    width: 80vw;
+    width: 70vw;
   }
   .nav-bar:hover .navbar-list {
     display: flex; /* Hiển thị danh sách khi di chuột vào navbar */
@@ -252,7 +256,7 @@ a {
     align-items: flex-start;
   }
   .int-overview {
-    width: 80vw;
+    width: 70vw;
     margin-bottom: 2px;
   }
   .main_content .container .slide-show {
@@ -439,7 +443,7 @@ footer {
     align-items: flex-start;
   }
   .footer-section {
-    width: 80vw;
+    width: 70vw;
     margin-bottom: 2px;
   }
 }
@@ -534,10 +538,10 @@ footer {
     flex-direction: column;
   }
   .dt-bg .top-info {
-    width: 80vw;
+    width: 70vw;
   }
   .dt-bg iframe {
-    width: 80vw;
+    width: 70vw;
   }
 }
 /* ===================trang con lv2 */
@@ -557,7 +561,7 @@ footer {
   .new-info .contact-to-me,
   .new-info iframe,
   .new-info .book-des {
-    width: 80vw;
+    width: 70vw;
   }
 }
 .main_content .old-info h3 {
@@ -566,7 +570,8 @@ footer {
   color: #999;
 }
 .main_content .old-info .slogan {
-  color: black;
+  color: green;
+  font-size: 2.2rem;
 }
 .main_content .old-info h4 {
   font-style: italic;
@@ -601,6 +606,7 @@ footer {
   font-weight: bold;
   padding: 10px 0;
   margin-top: 20px;
+  color: green;
 }
 .lv1 .description p {
   font-style: italic;
@@ -614,19 +620,19 @@ footer {
 }
 .new-info .contact-to-me {
   font-weight: bold;
-  text-decoration: underline;
   font-size: 2.2rem;
   padding-bottom: 20px;
-  color: red;
+  color: green;
 }
 .new-info .booking .btn {
-  font-size: 2rem;
+  font-size: 1.3rem;
+  text-align: center;
   background-color: red;
   border: none;
   color: wheat;
   padding: 10px;
   border-radius: 5px;
-  border: 2px solid black;
+  border: 1px solid black;
   margin: 0 10px;
 }
 .new-info .booking .btn:hover {
@@ -641,9 +647,10 @@ footer {
 }
 .new-info .book-des p {
   font-weight: bold;
+  color: green;
 }
 .new-info .book-des a {
-  color: red;
+  color: green;
   font-size: 1.8rem;
 }
 .container h3 {
@@ -701,10 +708,10 @@ footer {
     flex-direction: column;
   }
   .main_content .List-location {
-    width: 80vw;
+    width: 70vw;
   }
   .main_content .new-location {
-    width: 80vw;
+    width: 70vw;
     margin-left: 0;
   }
 }
