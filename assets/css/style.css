@@ -665,7 +665,7 @@ footer {
   justify-content: space-between;
 }
 .main_content .List-location {
-  min-width: 60vw;
+  min-width: 50vw;
   margin-right: 50px;
 }
 .List-location img {
@@ -675,7 +675,7 @@ footer {
   text-align: center;
 }
 .main_content .new-location {
-  width: 20vw;
+  width: 30vw;
   margin-left: 30px;
   text-align: center;
 }
