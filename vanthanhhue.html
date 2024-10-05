@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- link reset CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- link box icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Review cảnh đẹp Huế - Việt Nam</title>
+    <!-- Link Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- embed font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="content">
+    <header class="header">
+      <div class="header-top">
+        <div class="container">
+          <!-- logo web -->
+          <a href="./index.html" class="web-logo">
+            <img
+              src="./assets/Images/reviewhue-logo.png"
+              alt="review cảnh đẹp Huế"
+              width="100%"
+            />
+          </a>
+          <!-- tiêu đề -->
+          <p class="header-letter">KHÁM PHÁ NÉT ĐẸP ĐẤT CỐ ĐÔ THỪA THIÊN HUẾ</p>
+          <!-- tạo nút search -->
+          <div class="search-container">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Nhập từ khóa tìm kiếm..."
+            />
+            <button onclick="search()" class="search-btn">
+              <i class="bx bx-search"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Navigation bar -->
+      <nav class="nav-bar">
+        <div class="container">
+          <div id="toggle"><i class="fa-solid fa-bars"></i></div>
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="./index.html" class="navbar-link">TRANG CHỦ</a>
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./1chuachien.html" class="navbar-link"
+                >CHÙA CHIỀN</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./2ditichlichsu.html" class="navbar-link"
+                >DI TÍCH LỊCH SỬ</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./3canhdepthienhien.html" class="navbar-link"
+                >CẢNH ĐẸP THIÊN NHIÊN</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./4songsuoibaitam.html" class="navbar-link"
+                >HỆ THỐNG SÔNG SUỐI BÃI TĂM</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./5kientrucnghethuat.html" class="navbar-link"
+                >KIẾN TRÚC NGHỆ THUẬT</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./6hethonglangtam.html" class="navbar-link"
+                >HỆ THỐNG LĂNG TẨM</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- header main content -->
+    <main class="main_content">
+      <div class="container lv1">        
+        <div class="old-info">
+          <h3>DI TÍCH LỊCH SỬ</h3>
+          <div class="old-title">Văn Thánh Huế</div>
+          <h4><i class='bx bxs-calendar'></i> Ngày đăng: 7/10/2024 - 10:15</h4>
+          <hr>  
+          <h3 class="slogan">Giữ gìn hồn Việt, phát triển tương lai.</h3>  
+          <div class="description">
+            <h2>Giới thiệu chung</h2>            
+            <img src="./assets/Images/VanThanhHue (3).jpg" alt="" class="old-img">
+            <p>Văn Thánh Huế là điểm đến thú vị của những ai ưa du lịch khám phá văn hóa, lịch sử Việt Nam nói chung và mảnh đất cố đô thơ mộng nói riêng. Đến Văn Thánh Huế, du khách không chỉ được đắm chìm vào không gian yên tĩnh mà còn có cơ hội chiêm nghiệm về một giai đoạn phát triển hưng thịnh của Nho học trong lịch sử nước nhà.</p>
+            <h2>Lịch sử hình thành</h2>
+            <img src="./assets/Images/VanThanhHue (2).jpg" alt="" class="old-img">
+            <p>Khi các chúa Nguyễn mở mang khai phá phương Nam, Văn Miếu được thiết lập ở Phú Xuân, tại làng Triều Sơn và được xem như Văn Miếu riêng của Đàng Trong, nhưng không rõ thời điểm xây dựng. Đến năm Canh Dần (1770) dưới triều của Định Vương Nguyễn Phúc Khoát, Văn Miếu được dời đến xã Long Hồ. </p>
+            <p>Năm 1808, dưới triều vua Gia Long, nhà vua cùng triều đình đã quyết định chọn một quả đồi gần chùa Thiên Mụ, sát tả ngạn sông Hương để xây Văn Miếu (vị trí Văn Thánh Miếu hiện nay) và mở trường Quốc Tử Giám. Công việc xây dựng Văn Miếu được khởi công ngày 17/4/1808 đến ngày 12/9/1808 thì hoàn thành. Ngôi miếu cũ được giữ lại để làm Khải Thánh Từ (miếu thờ cha, mẹ Khổng Tử).</p>
+            <p>Cũng là Văn Miếu, nhưng ở Huế thì Văn Miếu được gọi là Văn Thánh Miếu, ngôi miếu thờ vị Thánh về Văn, người được hậu thế tôn vinh là “Vạn Thế Sư Biểu”, (Người thầy của muôn đời).</p>
+            <h2>Đặc điểm nổi bật</h2>
+            <img src="./assets/Images/VanThanhHue (1).jpg" alt="" class="old-img">
+            <p>Mặt tiền Văn Thánh Miếu quay mặt về hướng nam, nhìn ra dòng sông Hương thơ mộng. Toàn bộ khuôn viên Văn Thánh Miếu hình vuông cạnh là 160m, xung quanh có la thành bao bọc. Bên trong có chừng 50 công trình kiến trúc lớn, nhỏ. Điện thờ chính trong Văn Thánh Miếu là đức Khổng Tử và Tứ Phối, thập nhị triết. Đông vu và Tây vu thờ thập nhị Hiền và các tiên nhỏ; Trần Trù; Trần Khố; Nhà Tổ Công... các công trình đều được kết cấu mái bằng gỗ quý. Kiến trúc và các đồ tự khí đều mang tính đăng đối, uy nghi.</p>
+            <img src="./assets/Images/van-thanh-hue.png" alt="" class="old-img">
+            <p>Phía ngoài cổng Đại thành là hai dãy gồm 32 tấm bia, khắc tên 293 vị Tiến sĩ triều Nguyễn bắt đầu từ khoa thi đầu tiên năm Minh Mạng thứ 3 (1822) đến khoa thi cuối cùng 1919 được khắc tên họ, năm sinh, quê quán vào bia. Tất cả 32 bia đều có rùa đội bia và bằng đá cẩm thạch. Bia tiến sĩ ở đây không to lớn bằng bia ở Văn Miếu tại Hà Nội nhưng đều đặn hơn, dạng thức và trang trí sinh động hơn. Trước sân miếu có 2 nhà bia, bên phải có tấm bia khắc bài văn bia của vua Minh Mạng (dựng vào ngày 17/3/1836) với nội dung: "Thánh tổ Nhân Hoàng Đế Dụ: Cung giám bất đắc liệt tấn thân” dụ về việc: Thái giám không được liệt vào hạng quan lại; Bên trái là bài dụ của vua Thiệu Trị (dựng ngày 02/12/1844) với nội dung “Hiến tổ chương Hoàng Đế dụ: Ngoại thích bất đắc thân chính” nghĩa là: Bà con bên ngoại của vua không được tham gia chính quyền.</p>
+            <img src="./assets/Images/VanThanhHue (4).jpg" alt="" class="old-img">
+            <p>Bên cạnh Đại Thành Môn và 32 bia đá tiến sĩ thì một công trình kiến trúc vẫn còn sót lại cho đến ngày này chính là Linh Tinh Môn. Cửa Linh Tinh Môn hướng ra dòng sông Hương thơ mộng, được thiết kế bao gồm 4 trụ xây bằng gạch, phía bên trên được trang trí pháp lam vô cùng nổi bật và tinh xảo. Ở giữa có tấm biển, phần mặt trước được đề bốn chữ Hán “Đạo Tại Lưỡng Gian” (có nghĩa là đạo giữa trời đất), còn phần mặt sau đề bốn chữ đối ứng “Trác Việt Thiên Cổ” (có nghĩa là vượt cao ngàn xưa).</p>
+            <h2>Vị trí</h2>
+            <p>Vị trí chính xác của Văn Thánh nằm trên Đường Văn Thánh, Phường Hương Hồ, thị xã Hương Trà, Thừa Thiên Huế, cách chùa Thiên Mụ Huế khoảng 1km.</p>
+
+          </div>
+        </div>  
+        <div class="new-info">
+          <div class="contact-to-me">
+            <p>LIÊN HỆ ĐỂ ĐẶT TOUR:</p>
+          </div>
+          <div class="booking">
+            <a href="tel:+84819931165" class="btn booking-call"><i class='bx bxs-phone-call'></i> Call to me</a>
+            <a href="mailto:canhdephue@gmail.com" class="btn booking-mail"><i class='bx bxl-gmail' ></i>  Mail to me</a>
+          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.451147461396!2d107.53640187460763!3d16.452678229059668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3141a6901c0aa7f1%3A0xa1baa5196d542e09!2zVsSDbiBUaMOhbmggSHXhur8!5e0!3m2!1svi!2s!4v1728116572715!5m2!1svi!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>          <div class="book-des">
+            <p>Để có được trải nghiệm tuyệt vời nhất khi đến với vùng đất cố đô. Quy khách vui lòng gọi điện hoặc email liên hệ với chúng tôi !</p>
+            <a href="tel:+84819931165"><i class='bx bx-phone-call' ></i></a><span> SĐT: +84 819 931 165</span> <br>
+            <a href="mailto:canhdephue@gmail.com"><i class='bx bx-envelope' ></i></a><span> Email: canhdephue@gmail.com</span>
+          </div> 
+        </div>
+             
+      </div>
+    </main>
+    <script src="assets/JS/main.js"></script>
+    <footer>
+      <div class="footer-container">
+        <div class="container">
+          <div class="footer-section about">
+            <h3>Review Huế</h3>
+            <p>
+              Huế, cố đô của Việt Nam, nổi tiếng với vẻ đẹp cổ kính, các công
+              trình kiến trúc lịch sử và di sản văn hóa phong phú. Hãy khám phá
+              các danh lam thắng cảnh và nét đẹp riêng có của Huế.
+            </p>
+          </div>
+
+          <div class="footer-section links">
+            <h3>Danh mục</h3>
+            <ul>
+              <li>
+                <a href="./index.html" class="navbar-link">Trang chủ</a>
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./1chuachien.html">Chùa chiền</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./2ditichlichsu.html">Di tích lịch sử</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./3canhdepthienhien.html">Cảnh đẹp thiên nhiên</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./4songsuoibaitam.html">Hệ thống sông suối bãi tắm</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./5kientrucnghethuat.html">Kiến trúc nghệ thuật</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./6hethonglangtam.html">Hệ thống lăng tẩm</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h3>Liên hệ</h3>
+            <a href="mailto:canhdephue@gmail.com"
+              ><i class="bx bxl-gmail"></i
+            ></a>
+            <a href="tel:+84819931165"
+              ><i class='bx bxs-phone-call' ></i></i
+            ></a>
+            <a href="https://maps.app.goo.gl/YY6NmZg5LfjnAxcK6"
+              ><i class='bx bx-map' ></i></a>
+            <p>Email: canhdephue@gmail.com</p>
+            <p>Điện thoại: +84 819 931 165</p>
+            <p>Địa chỉ: 184 Phan Chu Trinh, TP.Huế, Thừa Thiên Huế, Việt Nam</p>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="footer-bottom">
+        <a href="gioithieu.html">Giới thiệu</a>
+        <a href="baomatthongtin.html">  /  Chính sách bảo mật</a>
+        <a href="dieukhoan.html">  /  Điều khoản</a>
+        <a href="lienhe.html">  /  Liên hệ</a>
+        <p class="copyright">
+          &copy; 2024 canhdephue.click | Thiết kế bởi
+          <span style="font-weight: bold">Its.Co</span>
+        </p>
+      </div>
+    </footer>
+    <!-- Nút "Về đầu trang" -->
+    <button onclick="topFunction()" id="btnTop" title="Về đầu trang">
+      <i class="bx bx-up-arrow-circle"></i>
+    </button>
+    <!-- nút gọi điện -->
+    <button class="call-button" onclick="makeCall()"><i class='bx bxs-phone-call' ></i></button>
+    <!-- nút email -->
+    <button class="email-button" onclick="makeEmail()"><i class='bx bx-envelope'></i></button>
+  </body>
+</html>
