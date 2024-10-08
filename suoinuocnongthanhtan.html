@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- link reset CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- link box icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Review cảnh đẹp Huế - Việt Nam</title>
+    <!-- Link Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- embed font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="content">
+    <header class="header">
+      <div class="header-top">
+        <div class="container">
+          <!-- logo web -->
+          <a href="./index.html" class="web-logo">
+            <img
+              src="./assets/Images/reviewhue-logo.png"
+              alt="review cảnh đẹp Huế"
+              width="100%"
+            />
+          </a>
+          <!-- tiêu đề -->
+          <p class="header-letter">KHÁM PHÁ NÉT ĐẸP ĐẤT CỐ ĐÔ THỪA THIÊN HUẾ</p>
+          <!-- tạo nút search -->
+          <div class="search-container">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Nhập từ khóa tìm kiếm..."
+            />
+            <button onclick="search()" class="search-btn">
+              <i class="bx bx-search"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Navigation bar -->
+      <nav class="nav-bar">
+        <div class="container">
+          <div id="toggle"><i class="fa-solid fa-bars"></i></div>
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="./index.html" class="navbar-link">TRANG CHỦ</a>
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./1chuachien.html" class="navbar-link"
+                >CHÙA CHIỀN</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./2ditichlichsu.html" class="navbar-link"
+                >DI TÍCH LỊCH SỬ</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./3canhdepthienhien.html" class="navbar-link"
+                >CẢNH ĐẸP THIÊN NHIÊN</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./4songsuoibaitam.html" class="navbar-link"
+                >HỆ THỐNG SÔNG SUỐI BÃI TĂM</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./5kientrucnghethuat.html" class="navbar-link"
+                >KIẾN TRÚC NGHỆ THUẬT</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./6hethonglangtam.html" class="navbar-link"
+                >HỆ THỐNG LĂNG TẨM</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- header main content -->
+    <main class="main_content">
+      <div class="container lv1">        
+        <div class="old-info">
+          <h3>HỆ THỐNG SUỐI VÀ BÃI TẮM</h3>
+          <div class="old-title">Suối nước nóng Thanh Tân</div>
+          <h4><i class='bx bxs-calendar'></i> Ngày đăng: 21/09/2024 - 10:15</h4>
+          <hr>  
+          <h3 class="slogan">Đàn Nam Giao – Linh Thiêng Tế Lễ, Gìn Giữ Tinh Hoa Văn Hóa</h3>              
+          <div class="description">
+            <h2>Giới thiệu chung</h2>
+            <img src="./assets/Images/thanh-tan.png" alt="" class="old-img">
+            <p>Đàn Nam Giao ngày nay là một điểm tham quan du lịch Huế tọa lạc tại khu vực làng Dương Xuân, phía Nam kinh thành xưa. Nơi đây được khởi công xây dựng vào ngày 25 tháng 3 năm 1806 dưới triều vua Gia Long. Có mười vị vua triều Nguyễn đã tổ chức tế trời đất ở đây. Tổng cộng đại lễ được diễn ra do vua  hoặc người thay thế chủ trì là 98. </p>
+            <h2>Lịch sử hình thành</h2>
+            <img src="./assets/Images/DanNamGiao (1).jpg" alt="" class="old-img">
+            <p>Dưới thời chúa Nguyễn Phúc Lan (1635-1648), đàn tế Trời được lập ở một khoảng đất rộng thuộc làng Kim Long gần nơi chúa đóng thủ phủ. Đây là đàn tế đầu tiên của vương triều họ Nguyễn. Qua đến đời nhà Tây Sơn (1788- 1800), lễ tế Trời được diễn ra tại một ngọn núi có tên là Bân sơn (ngọn núi này có ba tầng nên người dân còn gọi là núi Ba tầng).</p>
+            <p>Sau khi lên ngôi, vua Gia Long đã cho tế trời ở làng An Ninh vào năm 1803. Năm 1806 đàn được dời về phía Nam của Kinh Thành ở làng Dương Xuân (nay là địa phận phường Trường An, thành phố Huế).</p>
+            <p>Đây là đàn tế Trời duy nhất còn khá nguyên vẹn ở Việt Nam, cũng là đàn tế duy nhất còn tồn tại trong số nhiều đàn tế cổ ở Huế.</p>
+            <h2>Đặc điểm nổi bật</h2>
+            <img src="./assets/Images/DanNamGiao (2).jpg" alt="" class="old-img">
+            <p>Tế Nam Giao là buổi tế quan trọng bậc nhất dưới chế độ quân chủ nhằm khẳng định tính chính thống của triều đại, uy quyền của Hoàng đế. Theo thuyết Thiên mệnh của đạo Nho xưa, vua là con Trời: (Thiên tử) nhận lệnh Trời xuống trần gian cai trị thiên hạ, cho nên chỉ có vua mới được quyền cúng tế trời đất (cha mẹ của vua), để cầu cho mưa thuận gió hòa, quốc thái dân an, tạ ơn trời đất.</p>
+            <p>Đàn Nam Giao được xây dựng trên khu đất rộng 10ha. Quần thể kiến trúc này bao gồm công trình chính Giao Đàn và các công trình phụ trợ (như Trại Cung, Thần Trụ, Thần Kho,...).</p>
+            <p>Bốn mặt của đàn, Đông, Tây, Nam, Bắc đều khoét thành bốn cửa, trong đó cửa chính là cửa Nam. Một bức bình phong bằng đá có chiều rộng 12,5m, cao 3,2m và dày 0,8m đứng trước mỗi cánh cửa này. Hiện công trình chỉ còn lưu giữ ba bức tranh ở cửa Đông, Tây và Nam.</p>
+            <p>Bao quanh công trình là một rừng thông xanh mướt nhưng đã không còn nguyên vẹn theo thời gian và đã bị cây cối khác thay thế. Trước đây, nhà vua, hoàng tử và các quan chức cấp cao khác đều được yêu cầu trồng và chăm sóc những cây thông của họ ở đây. Loài cây này là biểu tượng của người quân tử hào hiệp và dũng cảm thời bấy giờ.</p>
+            <img src="./assets/Images/DanNamGiao (3).jpg" alt="" class="old-img">            
+            <p style="font-weight: bold;font-style: normal;">Giao đàn:</p>
+            <p>Giao Đàn là trung tâm của Đàn Nam Giao, cũng là nơi diễn ra các nghi lễ chính của lễ Nam Giao. Khuôn viên được thiết kế như một khuôn viên hình chữ nhật với diện tích 390m x 265m và ba tầng. Kiến trúc hạng mục này tuân theo thuyết Tam tài của văn hóa phương Đông: Thiên - Địa - Nhân, Trời tròn - Đất vuông.</p>
+            <p>- Tầng một là Viên Đàn, xây theo hình tròn, quét vôi màu xanh lá cây. Hàm ý Thiên Thanh, tức trời xanh.</p>
+            <p>- Tầng thứ hai gọi là Phương Đàn, hình vuông, quét vôi vàng tượng trưng cho Địa Hoàng, tượng trưng cho đất. </p>
+            <p>- Tầng 3 hình vuông quét vôi đỏ tượng trưng cho Nhân loại, con người.</p>
+            <p style="font-weight: bold;font-style: normal;">Các công trình khác ở đàn Nam Giao</p>
+            <img src="./assets/Images/DanNamGiao (4).jpg" alt="" class="old-img">
+            <p>Trước khi chủ trì lễ Giao tế, nhà vua đã cử hành giới thanh tịnh trong cung. Bao quanh mũi là bức tường gạch hình chữ nhật dài 85m, rộng 65m. Công trình nằm ở phía tây nam của Giao Đàn và được xây dựng theo hướng "bắc nam".</p>
+            <p>Cửa chính Trai Cung ở hướng Nam, cửa phụ ở hướng Bắc. Các điểm tham quan chính của Trai Cung bao gồm Chính Cung, Nhà Tả Túc, Nhà Hữu Túc, Thượng Trà Phòng, Thượng Thiện Sở, v.v.</p>
+            <p>Đàn Nam Giao còn một số công trình phụ tiêu biểu khác nay đã không còn. Chẳng hạn như:</p>
+            <p><span style="font-weight: bold;">- Tế sinh sở:</span> Nơi giết mổ những con vật sẽ đem cúng trong buổi tế lễ</p>
+            <p><span style="font-weight: bold;">- Thần trù: </span>Nhà bếp để chuẩn bị các đồ vật dùng trong buổi tế lễ. </p>
+            <p><span style="font-weight: bold;">- Thần khố:</span> Khu vực nhà kho nơi để các đồ tế khí.</p>
+            <h2>Vị trí</h2>            
+            <p>Hổ Quyền là địa điểm du lịch Huế cách trung tâm thành phố khoảng 4 km về phía Tây. Di tích lịch sử này tọa lạc tại Tổ 1 Trường Đá, phường Thủy Biều, thành phố Huế, Thừa Thiên – Huế</p>
+          </div>
+        </div>  
+        <div class="new-info">
+          <div class="contact-to-me">
+            <p>LIÊN HỆ ĐỂ ĐẶT TOUR:</p>
+          </div>
+          <div class="booking">
+            <a href="tel:+84819931165" class="btn booking-call"><i class='bx bxs-phone-call'></i> Call to me</a>
+            <a href="mailto:canhdephue@gmail.com" class="btn booking-mail"><i class='bx bxl-gmail' ></i>  Mail to me</a>
+          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15302.843493343966!2d107.3822031!3d16.490171399999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3141abd77183b0c9%3A0x65da1964e5f71cf3!2sSu%E1%BB%91i%20Kho%C3%A1ng%20N%C3%B3ng%20Alba%20Thanh%20T%C3%A2n%20-%20Alba%20Hot%20Spring%20Resort!5e0!3m2!1svi!2s!4v1728376294837!5m2!1svi!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>          <div class="book-des">
+            <p>Để có được trải nghiệm tuyệt vời nhất khi đến với vùng đất cố đô. Quy khách vui lòng gọi điện hoặc email liên hệ với chúng tôi !</p>
+            <a href="tel:+84819931165"><i class='bx bx-phone-call' ></i></a><span> SĐT: +84 819 931 165</span> <br>
+            <a href="mailto:canhdephue@gmail.com"><i class='bx bx-envelope' ></i></a><span> Email: canhdephue@gmail.com</span>
+          </div> 
+        </div>           
+      </div>
+    </main>
+    <script src="assets/JS/main.js"></script>
+    <footer>
+      <div class="footer-container">
+        <div class="container">
+          <div class="footer-section about">
+            <h3>Review Huế</h3>
+            <p>
+              Huế, cố đô của Việt Nam, nổi tiếng với vẻ đẹp cổ kính, các công
+              trình kiến trúc lịch sử và di sản văn hóa phong phú. Hãy khám phá
+              các danh lam thắng cảnh và nét đẹp riêng có của Huế.
+            </p>
+          </div>
+
+          <div class="footer-section links">
+            <h3>Danh mục</h3>
+            <ul>
+              <li>
+                <a href="./index.html" class="navbar-link">Trang chủ</a>
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./1chuachien.html">Chùa chiền</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./2ditichlichsu.html">Di tích lịch sử</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./3canhdepthienhien.html">Cảnh đẹp thiên nhiên</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./4songsuoibaitam.html">Hệ thống sông suối bãi tắm</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./5kientrucnghethuat.html">Kiến trúc nghệ thuật</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./6hethonglangtam.html">Hệ thống lăng tẩm</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h3>Liên hệ</h3>
+            <a href="mailto:canhdephue@gmail.com"
+              ><i class="bx bxl-gmail"></i
+            ></a>
+            <a href="tel:+84819931165"
+              ><i class='bx bxs-phone-call' ></i></i
+            ></a>
+            <a href="https://maps.app.goo.gl/YY6NmZg5LfjnAxcK6"
+              ><i class='bx bx-map' ></i></a>
+            <p>Email: canhdephue@gmail.com</p>
+            <p>Điện thoại: +84 819 931 165</p>
+            <p>Địa chỉ: 184 Phan Chu Trinh, TP.Huế, Thừa Thiên Huế, Việt Nam</p>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="footer-bottom">
+        <a href="gioithieu.html">Giới thiệu</a>
+        <a href="baomatthongtin.html">  /  Chính sách bảo mật</a>
+        <a href="dieukhoan.html">  /  Điều khoản</a>
+        <a href="lienhe.html">  /  Liên hệ</a>
+        <p class="copyright">
+          &copy; 2024 canhdephue.click | Thiết kế bởi
+          <span style="font-weight: bold">Its.Co</span>
+        </p>
+      </div>
+    </footer>
+    <!-- Nút "Về đầu trang" -->
+    <button onclick="topFunction()" id="btnTop" title="Về đầu trang">
+      <i class="bx bx-up-arrow-circle"></i>
+    </button>
+    <!-- nút gọi điện -->
+    <button class="call-button" onclick="makeCall()"><i class='bx bxs-phone-call' ></i></button>
+    <!-- nút email -->
+    <button class="email-button" onclick="makeEmail()"><i class='bx bx-envelope'></i></button>
+  </body>
+</html>
