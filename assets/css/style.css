@@ -189,6 +189,7 @@ a {
 .int-overview p {
   font-size: 1.5rem;
   padding-top: 5px;
+  color: #3e8e41;
 }
 .int-overview {
   width: 50vw; /* Đặt chiều rộng theo mong muốn */
