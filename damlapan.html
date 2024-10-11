@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- link reset CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- link box icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Review cảnh đẹp Huế - Việt Nam</title>
+    <!-- Link Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- embed font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="content">
+    <header class="header">
+      <div class="header-top">
+        <div class="container">
+          <!-- logo web -->
+          <a href="./index.html" class="web-logo">
+            <img
+              src="./assets/Images/reviewhue-logo.png"
+              alt="review cảnh đẹp Huế"
+              width="100%"
+            />
+          </a>
+          <!-- tiêu đề -->
+          <p class="header-letter">KHÁM PHÁ NÉT ĐẸP ĐẤT CỐ ĐÔ THỪA THIÊN HUẾ</p>
+          <!-- tạo nút search -->
+          <div class="search-container">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Nhập từ khóa tìm kiếm..."
+            />
+            <button onclick="search()" class="search-btn">
+              <i class="bx bx-search"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Navigation bar -->
+      <nav class="nav-bar">
+        <div class="container">
+          <div id="toggle"><i class="fa-solid fa-bars"></i></div>
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="./index.html" class="navbar-link">TRANG CHỦ</a>
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./1chuachien.html" class="navbar-link"
+                >CHÙA CHIỀN</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./2ditichlichsu.html" class="navbar-link"
+                >DI TÍCH LỊCH SỬ</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./3canhdepthienhien.html" class="navbar-link"
+                >CẢNH ĐẸP THIÊN NHIÊN</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./4songsuoibaitam.html" class="navbar-link"
+                >HỆ THỐNG SÔNG SUỐI BÃI TĂM</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./5kientrucnghethuat.html" class="navbar-link"
+                >KIẾN TRÚC NGHỆ THUẬT</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./6hethonglangtam.html" class="navbar-link"
+                >HỆ THỐNG LĂNG TẨM</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- header main content -->
+    <main class="main_content">
+      <div class="container lv1">        
+        <div class="old-info">
+          <h3>CẢNH ĐẸP THIÊN NHIÊN</h3>
+          <div class="old-title">Đầm Lập An</div>
+          <h4><i class='bx bxs-calendar'></i> Ngày đăng: 7/10/2024 - 22:10</h4>
+          <hr>  
+          <h3 class="slogan">Đầm Lập An - Sự thanh lịch từ lòng tự nhiên</h3>        
+          <div class="description">
+            <h2>Giới thiệu chung</h2>
+            <img src="./assets/Images/dam-lap-an.png" alt="Đầm Lập An" class="old-img">
+            <p>Đầm Lập An là một trong những địa điểm đẹp mê hồn nằm tại chân đèo Phú Gia, thuộc thị trấn Lăng Cô, huyện Phú Lộc, cách trung tâm thành phố Huế khoảng 60km. Được bao quanh bởi dãy núi hùng vĩ Bạch Mã và nằm bên cạnh vịnh Lăng Cô yên bình, nơi này tự hào là một điểm đến hấp dẫn cho những ai yêu thích sự hòa mình vào thiên nhiên.</p>
+            <p>Với vẻ đẹp đến mức khiến du khách thường phải ngỡ ngàng, Đầm được mệnh danh là “Tuyệt Tình Cốc” trong lòng xứ Huế. Đây là một điểm đến mơ mộng, hấp dẫn không chỉ đối với giới trẻ địa phương mà còn thu hút sự quan tâm của du khách cả trong và ngoài nước.</p>
+            <h2>Lịch sử hình thành</h2>
+            <img src="./assets/Images/DamLapAn (1).jpg" alt="Đầm Lập An" class="old-img">
+            <p>Theo lời kể của người dân, Đầm Lập An ban đầu có tên gọi là Đầm Làng Cò, vì lúc bấy giờ, hệ sinh thái bao phủ quanh đầm còn rất phong phú nên thu hút nhiều đàn cò về trú ngụ. Đến thời Pháp thuộc, đầm được người Pháp đọc thành "Lăng Cô". Sau Chiến tranh Việt Nam, đầm được đổi tên thành Lập An.</p>
+            <p>Theo sách Đại Nam nhất thống chí, vào triều nhà Nguyễn, Đầm Lập An có tên gọi là Đầm Sam, vì trong đầm có nhiều con sam. Ngoài tên Đầm Sam thì đầm còn có tên khác là Đầm Hậu, Đầm An Cư, Vịnh Sò.</p>
+            <h2>Đặc điểm nổi bật</h2>
+            <img src="./assets/Images/DamLapAn (2).jpg" alt="Đầm Lập An" class="old-img">
+            <p>Đầm Lập An Huế thật sự là một bức tranh thơ mộng, trữ tình với vẻ đẹp tinh tế. Đây là nơi núi đồi xanh mướt ôm trọn, dòng nước trong xanh lay động, như một dải lụa mềm mại. Ở mọi thời điểm, du khách đều có cơ hội khám phá vẻ đẹp đặc biệt của Đầm: từ ánh nắng rọi sáng sớm, tạo ra những tia sáng mơ hồ trên tầng sương, đến bầu trời xanh thẳm phản chiếu trên mặt nước trong vắt vào buổi trưa chiều, và thậm chí cả khi chiều tà buông xuống, ánh nắng le lói len lỏi qua những góc cạnh. Điều này tạo ra một không gian thơ ngây, đong đầy cảm xúc, làm say đắm lòng người khi đặt chân đến nơi này.</p>
+            <p style="font-weight: bold;">Cảnh đẹp</p>
+            <img src="./assets/Images/DamLapAn (4).jpg" alt="Đầm Lập An" class="old-img">
+            <p>Mỗi khi thủy triều rút, một kỳ quan tự nhiên ẩn hiện tại Đầm chính là lối đi bí mật giữa lòng hồ. Tại đây, bạn sẽ bắt gặp một bãi cát trắng mịn, với hai bên bờ được trang trí bởi hàng ngàn vỏ ốc nhỏ xinh tạo nên một lối đi lãng mạn đến bất ngờ. Đây sẽ là điểm hẹn lý tưởng cho bạn và người yêu, nơi mang đến không gian tuyệt vời và những bức ảnh lãng mạn, đậm chất ảo diệu. Khi đứng trên “hòn đảo” nhỏ này, bạn sẽ bao quanh bởi biển cả rộng lớn, với những thuyền nhỏ và các căn nhà chồi xa xa, một khung cảnh huyền bí và bình yên đến lạ thường. Chắc chắn, “lối đi bí mật” này sẽ là địa điểm lý tưởng cho những tấm ảnh “check-in” Huế đẹp lung linh, thu hút hàng triệu lượt like từ mọi người.</p>
+            <p style="font-weight: bold;">Bình minh – Hoàng hôn đầm Lập An.</p>
+            <img src="./assets/Images/DamLapAn (3).jpg" alt="Đầm Lập An" class="old-img">
+            <p>Bình minh và hoàng hôn là hai khoảnh khắc đặc biệt mà mọi du khách đều ao ước được chiêm ngưỡng khi đặt chân đến Đầm Lập An Huế. </p>
+            <p>Dưới ánh bình minh, cảnh sắc trở nên lãng mạn và đẹp đến ngỡ ngàng, với những tia nắng vàng rực rỡ xuyên qua những lớp sương mờ phủ trên mặt nước. Cảnh tượng này mang đến một cảm giác êm đềm và thanh bình, khiến cho mỗi khoảnh khắc trở nên đáng nhớ và sâu lắng trong lòng du khách.</p>
+            <p>Khung cảnh của hoàng hôn cũng không kém phần ấn tượng, khi những tia nắng đỏ hồng rực rỡ dần khuất sau dãy núi Bạch Mã. Đây là thời điểm khiến lòng người đắm chìm trong sự nhớ thương và cảm xúc, với vẻ đẹp huyền ảo và thú vị của bầu trời khi chuyển từ ánh sáng ban ngày sang bầu không gian đêm tối.</p>
+            <p style="font-weight: bold;">Hải sản</p>
+            <p>Hải sản hấp là một trải nghiệm không thể bỏ qua khi đến Đầm, nơi mà đa số người dân sống bằng nghề đánh cá, nên nguồn hải sản ở đây rất phong phú và đa dạng. Mỗi loại hải sản đều tươi ngon và hấp dẫn, chỉ cần hấp chúng lên và chấm với gia vị là đã đủ khiến thực khách phải say mê.</p>
+            <p>Trong danh sách các món hải sản ngon, hàu nướng mỡ hành là một lựa chọn đặc biệt và không thể bỏ qua. Ngoài ra, còn có nhiều món ăn khác được chế biến từ hàu như hàu xào hành tây, hàu nấu cháo, hàu nướng trui, gỏi hàu, nhưng hàu nướng mỡ hành chắc chắn sẽ làm hài lòng bất kỳ thực khách nào.</p>
+            <p>Không chỉ hàu, cá biển nướng cũng là một món ăn đặc trưng của vùng đất xứ Huế, miền Trung. Thơm lừng và ngọt ngào, cá biển nướng không chỉ giữ được độ tươi mà còn cung cấp nhiều chất dinh dưỡng quý giá. Với cách chế biến độc đáo, món ăn này không chỉ loại bỏ mùi tanh của cá biển mà còn mang lại trải nghiệm ẩm thực đầy hấp dẫn cho thực khách.</p>
+            <h2>Vị trí</h2>
+            <p>Đầm Lập An là một địa điểm du lịch nằm cạnh quốc lộ 1A, đoạn qua thị trấn Lăng Cô, huyện Phú Lộc, thuộc tỉnh Thừa Thiên – Huế. Đây cũng là một trong các đầm nước lợ lớn nhất ở xứ Huế, với diện tích lên tới khoảng 800 ha. </p>
+
+          </div>
+        </div>  
+        <div class="new-info">
+          <div class="contact-to-me">
+            <p>LIÊN HỆ ĐỂ ĐẶT TOUR:</p>
+          </div>
+          <div class="booking">
+            <a href="tel:+84819931165" class="btn booking-call"><i class='bx bxs-phone-call'></i> Call to me</a>
+            <a href="mailto:canhdephue@gmail.com" class="btn booking-mail"><i class='bx bxl-gmail' ></i>  Mail to me</a>
+          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3831.0340818507298!2d108.05911257604546!3d16.218687484482647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142273dc4ef0a27%3A0x4d10cf2063696ea1!2zxJDhuqdtIEzhuq1wIEFu!5e0!3m2!1svi!2s!4v1728628407057!5m2!1svi!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="book-des">
+            <p>Để có được trải nghiệm tuyệt vời nhất khi đến với vùng đất cố đô. Quy khách vui lòng gọi điện hoặc email liên hệ với chúng tôi !</p>
+            <a href="tel:+84819931165"><i class='bx bx-phone-call' ></i></a><span> SĐT: +84 819 931 165</span> <br>
+            <a href="mailto:canhdephue@gmail.com"><i class='bx bx-envelope' ></i></a><span> Email: canhdephue@gmail.com</span>
+          </div> 
+        </div>           
+      </div>
+    </main>
+    <script src="assets/JS/main.js"></script>
+    <footer>
+      <div class="footer-container">
+        <div class="container">
+          <div class="footer-section about">
+            <h3>Review Huế</h3>
+            <p>
+              Huế, cố đô của Việt Nam, nổi tiếng với vẻ đẹp cổ kính, các công
+              trình kiến trúc lịch sử và di sản văn hóa phong phú. Hãy khám phá
+              các danh lam thắng cảnh và nét đẹp riêng có của Huế.
+            </p>
+          </div>
+
+          <div class="footer-section links">
+            <h3>Danh mục</h3>
+            <ul>
+              <li>
+                <a href="./index.html" class="navbar-link">Trang chủ</a>
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./1chuachien.html">Chùa chiền</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./2ditichlichsu.html">Di tích lịch sử</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./3canhdepthienhien.html">Cảnh đẹp thiên nhiên</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./4songsuoibaitam.html">Hệ thống sông suối bãi tắm</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./5kientrucnghethuat.html">Kiến trúc nghệ thuật</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./6hethonglangtam.html">Hệ thống lăng tẩm</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h3>Liên hệ</h3>
+            <a href="mailto:canhdephue@gmail.com"
+              ><i class="bx bxl-gmail"></i
+            ></a>
+            <a href="tel:+84819931165"
+              ><i class='bx bxs-phone-call' ></i></i
+            ></a>
+            <a href="https://maps.app.goo.gl/YY6NmZg5LfjnAxcK6"
+              ><i class='bx bx-map' ></i></a>
+            <p>Email: canhdephue@gmail.com</p>
+            <p>Điện thoại: +84 819 931 165</p>
+            <p>Địa chỉ: 184 Phan Chu Trinh, TP.Huế, Thừa Thiên Huế, Việt Nam</p>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="footer-bottom">
+        <a href="gioithieu.html">Giới thiệu</a>
+        <a href="baomatthongtin.html">  /  Chính sách bảo mật</a>
+        <a href="dieukhoan.html">  /  Điều khoản</a>
+        <a href="lienhe.html">  /  Liên hệ</a>
+        <p class="copyright">
+          &copy; 2024 canhdephue.click | Thiết kế bởi
+          <span style="font-weight: bold">Its.Co</span>
+        </p>
+      </div>
+    </footer>
+    <!-- Nút "Về đầu trang" -->
+    <button onclick="topFunction()" id="btnTop" title="Về đầu trang">
+      <i class="bx bx-up-arrow-circle"></i>
+    </button>
+    <!-- nút gọi điện -->
+    <button class="call-button" onclick="makeCall()"><i class='bx bxs-phone-call' ></i></button>
+    <!-- nút email -->
+    <button class="email-button" onclick="makeEmail()"><i class='bx bx-envelope'></i></button>
+  </body>
+</html>
