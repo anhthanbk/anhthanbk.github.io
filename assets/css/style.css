@@ -234,13 +234,13 @@ a {
 .main_content .index-images {
   display: flex;
   position: absolute;
-  bottom: 0.7vh;
+  bottom: 1vh;
   left: 50%;
   transform: translateX(-50%);
 }
 .main_content .index-item {
-  border: 4px solid #999;
-  padding: 1vh;
+  border: 3px solid #999;
+  padding: 0.7vh;
   margin: 0.5vh;
   border-radius: 50%;
 }
