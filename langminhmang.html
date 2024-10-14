@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- link reset CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- link box icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Review cảnh đẹp Huế - Việt Nam</title>
+    <!-- Link Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- embed font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="content">
+    <header class="header">
+      <div class="header-top">
+        <div class="container">
+          <!-- logo web -->
+          <a href="./index.html" class="web-logo">
+            <img
+              src="./assets/Images/reviewhue-logo.png"
+              alt="review cảnh đẹp Huế"
+              width="100%"
+            />
+          </a>
+          <!-- tiêu đề -->
+          <p class="header-letter">KHÁM PHÁ NÉT ĐẸP ĐẤT CỐ ĐÔ THỪA THIÊN HUẾ</p>
+          <!-- tạo nút search -->
+          <div class="search-container">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Nhập từ khóa tìm kiếm..."
+            />
+            <button onclick="search()" class="search-btn">
+              <i class="bx bx-search"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Navigation bar -->
+      <nav class="nav-bar">
+        <div class="container">
+          <div id="toggle"><i class="fa-solid fa-bars"></i></div>
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="./index.html" class="navbar-link">TRANG CHỦ</a>
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./1chuachien.html" class="navbar-link"
+                >CHÙA CHIỀN</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./2ditichlichsu.html" class="navbar-link"
+                >DI TÍCH LỊCH SỬ</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./3canhdepthienhien.html" class="navbar-link"
+                >CẢNH ĐẸP THIÊN NHIÊN</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./4songsuoibaitam.html" class="navbar-link"
+                >HỆ THỐNG SÔNG SUỐI BÃI TĂM</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./5kientrucnghethuat.html" class="navbar-link"
+                >KIẾN TRÚC NGHỆ THUẬT</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./6hethonglangtam.html" class="navbar-link"
+                >HỆ THỐNG LĂNG TẨM</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- header main content -->
+    <main class="main_content">
+      <div class="container lv1">        
+        <div class="old-info">
+          <h3>Hệ Thống Lăng Tẩm</h3>
+          <div class="old-title">Lăng Minh Mạng</div>
+          <h4><i class='bx bxs-calendar'></i> Ngày đăng: 7/10/2024 - 10:15</h4>
+          <hr>  
+          <h3 class="slogan">Kiệt tác nghệ thuật điêu khắc giữa lòng cố đô</h3>  
+          <div class="description">
+            <h2>Giới thiệu chung</h2>
+            <img src="./assets/Images/LangMinhMang (4).jpg" alt="" class="old-img">          
+            <p>Lăng Minh Mạng (Hiếu Lăng) nằm trên ngọn núi Cẩm Kê cách thành phố Huế khoảng 14km, gần ngã ba Bằng Lãng, nơi hợp nguồn tạo thành sông Hương. Lăng được khởi công xây dựng vào tháng 9 năm 1840 và được Vua Thiệu Trị tiếp tục xây dựng hoàn tất vào năm 1843.</p>
+            <h2>Lịch sử hình thành</h2>
+            <p>Tháng 2 năm 1820 vua Gia Long băng hà, hoàng tử thứ tư là Nguyễn Phúc Đảm được đưa lên ngai vàng, lấy niên hiệu là Minh Mạng. Vua Minh Mạng là người có nhiều đóng góp đối với công việc mở mang đất nước, đưa nước Đại Nam lên hàng mạnh nhất trong các quốc gia Đông Nam Á lúc bấy giờ.</p>
+            <p>Làm vua được 7 năm, Minh Mạng cho người đi tìm đất để xây dựng Sơn lăng cho mình. Quan Địa lý Lê Văn Đức đã chọn được một cuộc đất tốt ở địa phận núi Cẩm Kê, gần ngã ba Bằng Lãng, nơi hợp lưu của hai nguồn Tả Trạch và Hữu Trạch để tạo thành con sông Hương thơ mộng. Nhưng phải ròng rã 14 năm cân nhắc, chọn lựa, đến năm 1840, nhà vua mới quyết định cho xây dựng lăng tẩm của mình ở nơi này. Nhà vua cho đổi tên núi Cẩm Kê (thuộc ấp An Bằng, huyện Hương Trà) thành Hiếu Sơn và gọi tên lăng là Hiếu Lăng. Đích thân nhà vua xem xét, phê chuẩn họa đồ thiết kế do các quan Bùi Công Huyên, Trương Đăng Quế và Giám thành vệ dâng lên. Tháng 4 năm 1840, công cuộc kiến thiết Hiếu Lăng bắt đầu. Vua sai các quan Lê Đăng Danh, Nguyễn Trung Mậu và Lý Văn Phức điều khiển lính và thợ thuyền lên đây đào hồ đắp La thành. Tháng 8 năm 1840, Minh Mạng lên kiểm tra thấy công việc đào hồ Trừng Minh không vừa ý nên giáng chức các quan trông coi và đình chỉ công việc. Một tháng sau, công việc vừa được tiếp tục thì Minh Mạng lâm bệnh và đột ngột băng hà vào tháng 1 năm 1841. Vua Thiệu Trị lên nối ngôi, chỉ một tháng sau (tháng 2-1841) đã sai các quan đại thần Tạ Quang Cự, Hà Duy Phiên, Nguyễn Tri Phương chỉ huy gần 10.000 lính và thợ thi công tiếp công trình theo đúng họa đồ của vua cha để lại. Ngày 20 tháng 8 năm 1841, thi hài vua Minh Mạng được đưa vào chôn ở Bửu Thành, nhưng công việc xây lăng mãi đến đầu năm 1843 mới hoàn tất. Từ một vùng núi đồi hoang vu, qua bàn tay lao động và óc sáng tạo của con người đã hình thành một khu lăng tẩm uy nghiêm, vừa rực rỡ về kiến trúc, vừa hài hòa với thiên nhiên lại vừa sâu sắc bởi giá trị tư tưởng.</p>
+            <h2>Đặc điểm nổi bật</h2>
+            <img src="./assets/Images/LangMinhMang (1).jpg" alt="" class="old-img">  
+            <p>Lăng Minh Mạng là một mô hình kiến trúc quy mô gồm 40 công trình lớn nhỏ, bao gồm cung điện, đền miếu và đài tạ... được bố trí trên một trục dọc theo đường Thần đạo dài 700m từ Đại Hồng môn ở ngoài cùng tới chân tường của la thành sau mộ vua. Hình thế của lăng tựa dáng một người đang nằm nghỉ trong tư thế đầu gối lên núi Kim Phụng, chân duỗi ra ngã ba sông trước mặt, hai nửa hồ Trừng Minh như đôi cánh tay buông xuôi tự nhiên.</p>
+            <img src="./assets/Images/LangMinhMang (2).jpg" alt="" class="old-img">
+            <p>Mở đầu Thần đạo là Đại Hồng môn (cổng chính vào Lăng), cao 9m, rộng 12m, cổng này có ba lối đi, lối đi giữa chỉ mở một lần để đưa quan tài nhà vua vào lăng sau đó đóng chặt, ngoài ra còn có hai cổng phụ Tả Hồng môn và Hữu Hồng môn. Sau Đại Hồng Môn là sân rộng 45m x 45m, hai bên có hai hàng tượng quan viên, voi ngựa. Cuối sân là Bi đình, trên bia có bài “Thánh Đức thần công” (ghi công của Vua Minh Mạng). Tiếp theo là sân triều lễ; Hiển Đức môn mở đầu cho khu vực tẩm điện, được giới hạn trong một lớp thành hình vuông biểu trưng cho mặt đất. Điện Sùng Ân nằm ở trung tâm, xung quanh có Tả, Hữu, Phối điện (trước) và Tả Hữu Tùng phòng (sau) cũng được giới hạn trong lớp tường thành hình vuông. Hoàng Trạch môn là công trình kết thúc khu vực tẩm điện. Đi qua ba cây cầu bắc qua hồ Trừng Minh là tới Minh Lâu, Minh Lâu là lầu sáng là nơi vua suy ngẫm và là nơi đi về của linh hồn Tiên đế. Một cái hồ hình trăng non tên Tân Nguyệt ôm lấy Bửu thành hình tròn nằm ở giữa, đây là nơi bắt đầu của thế giới vô biên, nơi yên nghỉ của nhà Vua giữa tâm một quả đồi mang tên Khai Trạch Sơn. Hai bên trục chính của lăng còn có nhiều công trình phụ nằm đối xứng nhau theo từng cặp.</p>
+            <img src="./assets/Images/LangMinhMang (3).jpg" alt="" class="old-img"><p>Lăng Minh mạng với hai hồ và kiến trúc trang hoàng tuyệt đẹp, là một trong những lăng tẩm uy nghi, đường bệ nhất trong các lăng tẩm của vua nhà Nguyễn. </p>
+            <h2>Vị trí</h2>
+            <p>Xã Hương Thọ, thành phố Huế, tỉnh Thừa Thiên Huế.</p>
+          </div>
+        </div>  
+        <div class="new-info">
+          <div class="contact-to-me">
+            <p>LIÊN HỆ ĐỂ ĐẶT TOUR:</p>
+          </div>
+          <div class="booking">
+            <a href="tel:+84819931165" class="btn booking-call"><i class='bx bxs-phone-call'></i> Call to me</a>
+            <a href="mailto:canhdephue@gmail.com" class="btn booking-mail"><i class='bx bxl-gmail' ></i>  Mail to me</a>
+          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6172.117622839918!2d107.5663367251998!3d16.38707640073445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3141a48171bcf4f9%3A0xaefcad54b905fa88!2zTMSDbmcgTWluaCBN4bqhbmc!5e1!3m2!1svi!2s!4v1728914257229!5m2!1svi!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>Để có được trải nghiệm tuyệt vời nhất khi đến với vùng đất cố đô. Quy khách vui lòng gọi điện hoặc email liên hệ với chúng tôi !</p>
+            <a href="tel:+84819931165"><i class='bx bx-phone-call' ></i></a><span> SĐT: +84 819 931 165</span> <br>
+            <a href="mailto:canhdephue@gmail.com"><i class='bx bx-envelope' ></i></a><span> Email: canhdephue@gmail.com</span>
+          </div> 
+        </div>
+             
+      </div>
+    </main>
+    <script src="assets/JS/main.js"></script>
+    <footer>
+      <div class="footer-container">
+        <div class="container">
+          <div class="footer-section about">
+            <h3>Review Huế</h3>
+            <p>
+              Huế, cố đô của Việt Nam, nổi tiếng với vẻ đẹp cổ kính, các công
+              trình kiến trúc lịch sử và di sản văn hóa phong phú. Hãy khám phá
+              các danh lam thắng cảnh và nét đẹp riêng có của Huế.
+            </p>
+          </div>
+
+          <div class="footer-section links">
+            <h3>Danh mục</h3>
+            <ul>
+              <li>
+                <a href="./index.html" class="navbar-link">Trang chủ</a>
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./1chuachien.html">Chùa chiền</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./2ditichlichsu.html">Di tích lịch sử</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./3canhdepthienhien.html">Cảnh đẹp thiên nhiên</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./4songsuoibaitam.html">Hệ thống sông suối bãi tắm</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./5kientrucnghethuat.html">Kiến trúc nghệ thuật</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./6hethonglangtam.html">Hệ thống lăng tẩm</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h3>Liên hệ</h3>
+            <a href="mailto:canhdephue@gmail.com"
+              ><i class="bx bxl-gmail"></i
+            ></a>
+            <a href="tel:+84819931165"
+              ><i class='bx bxs-phone-call' ></i></i
+            ></a>
+            <a href="https://maps.app.goo.gl/YY6NmZg5LfjnAxcK6"
+              ><i class='bx bx-map' ></i></a>
+            <p>Email: canhdephue@gmail.com</p>
+            <p>Điện thoại: +84 819 931 165</p>
+            <p>Địa chỉ: 184 Phan Chu Trinh, TP.Huế, Thừa Thiên Huế, Việt Nam</p>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="footer-bottom">
+        <a href="gioithieu.html">Giới thiệu</a>
+        <a href="baomatthongtin.html">  /  Chính sách bảo mật</a>
+        <a href="dieukhoan.html">  /  Điều khoản</a>
+        <a href="lienhe.html">  /  Liên hệ</a>
+        <p class="copyright">
+          &copy; 2024 canhdephue.click | Thiết kế bởi
+          <span style="font-weight: bold">Its.Co</span>
+        </p>
+      </div>
+    </footer>
+    <!-- Nút "Về đầu trang" -->
+    <button onclick="topFunction()" id="btnTop" title="Về đầu trang">
+      <i class="bx bx-up-arrow-circle"></i>
+    </button>
+    <!-- nút gọi điện -->
+    <button class="call-button" onclick="makeCall()"><i class='bx bxs-phone-call' ></i></button>
+    <!-- nút email -->
+    <button class="email-button" onclick="makeEmail()"><i class='bx bx-envelope'></i></button>
+  </body>
+</html>
