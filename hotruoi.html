@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- link reset CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- link box icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Review cảnh đẹp Huế - Việt Nam</title>
+    <!-- Link Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- embed font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="content">
+    <header class="header">
+      <div class="header-top">
+        <div class="container">
+          <!-- logo web -->
+          <a href="./index.html" class="web-logo">
+            <img
+              src="./assets/Images/reviewhue-logo.png"
+              alt="review cảnh đẹp Huế"
+              width="100%"
+            />
+          </a>
+          <!-- tiêu đề -->
+          <p class="header-letter">KHÁM PHÁ NÉT ĐẸP ĐẤT CỐ ĐÔ THỪA THIÊN HUẾ</p>
+          <!-- tạo nút search -->
+          <div class="search-container">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Nhập từ khóa tìm kiếm..."
+            />
+            <button onclick="search()" class="search-btn">
+              <i class="bx bx-search"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Navigation bar -->
+      <nav class="nav-bar">
+        <div class="container">
+          <div id="toggle"><i class="fa-solid fa-bars"></i></div>
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="./index.html" class="navbar-link">TRANG CHỦ</a>
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./1chuachien.html" class="navbar-link"
+                >CHÙA CHIỀN</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./2ditichlichsu.html" class="navbar-link"
+                >DI TÍCH LỊCH SỬ</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./3canhdepthienhien.html" class="navbar-link"
+                >CẢNH ĐẸP THIÊN NHIÊN</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./4songsuoibaitam.html" class="navbar-link"
+                >HỆ THỐNG SÔNG SUỐI BÃI TĂM</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./5kientrucnghethuat.html" class="navbar-link"
+                >KIẾN TRÚC NGHỆ THUẬT</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./6hethonglangtam.html" class="navbar-link"
+                >HỆ THỐNG LĂNG TẨM</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- header main content -->
+    <main class="main_content">
+      <div class="container lv1">        
+        <div class="old-info">
+          <h3>CẢNH ĐẸP THIÊN NHIÊN</h3>
+          <div class="old-title">Hồ Truồi</div>
+          <h4><i class='bx bxs-calendar'></i> Ngày đăng: 7/10/2024 - 22:10</h4>
+          <hr>  
+          <h3 class="slogan">Hồ Truồi – Nét xanh thiên nhiên, thanh tịnh giữa lòng Bạch Mã</h3>        
+          <div class="description">
+            <h2>Giới thiệu chung</h2>
+            <img src="./assets/Images/ho-truoi.png" alt="Hồ Truồi" class="old-img">
+            <p>Hồ Truồi là một điểm đến thiên nhiên nổi tiếng tại Huế, được biết đến với phong cảnh hữu tình và hệ sinh thái đa dạng. Hồ không chỉ có vai trò quan trọng trong việc cung cấp nước cho nông nghiệp mà còn là một địa điểm du lịch thu hút du khách bởi vẻ đẹp tự nhiên và không gian thanh bình.</p>
+            <p>Hồ Truồi là hồ nhân tạo lớn nhất tại tỉnh Thừa Thiên Huế, nằm dưới chân dãy núi Bạch Mã. Hồ được xây dựng nhằm mục đích cung cấp nước cho nông nghiệp và công nghiệp, đồng thời góp phần điều hòa lũ lụt cho khu vực. Ngày nay, hồ không chỉ đóng vai trò quan trọng về mặt thủy lợi mà còn trở thành một điểm du lịch sinh thái hấp dẫn với khung cảnh thiên nhiên thơ mộng.</p>
+            <h2>Lịch sử hình thành</h2>
+            <img src="./assets/Images/hotruoi2.png" alt="Hồ Truồi" class="old-img">
+            <p>Hồ Truồi được xây dựng từ những năm 1990 với mục đích chính là cung cấp nước tưới tiêu cho vùng đồng bằng sông Truồi và các khu vực lân cận. Với tổng diện tích mặt nước hơn 400 ha và dung tích gần 60 triệu mét khối, hồ đóng vai trò quan trọng trong việc ổn định nguồn nước cho sản xuất nông nghiệp, đồng thời cung cấp nước sinh hoạt cho người dân địa phương.</p>
+            <p>Ngoài ra, hồ cũng có vai trò phòng chống lũ lụt, đặc biệt trong mùa mưa lũ ở miền Trung, giúp giảm thiểu nguy cơ ngập úng cho khu vực đồng bằng.</p>
+            <h2>Đặc điểm nổi bật</h2>
+            <img src="./assets/Images/hotruoi3.png" alt="Hồ Truồi" class="old-img">
+            <p><span style="font-weight: bold;">Cảnh quan thiên nhiên:</span> Hồ Truồi nằm giữa một khu vực thiên nhiên tuyệt đẹp, với mặt nước xanh ngắt được bao bọc bởi dãy núi Bạch Mã hùng vĩ. Du khách có thể chèo thuyền trên hồ để khám phá vẻ đẹp của dòng nước trong xanh, hoặc đi bộ dọc theo các con đường mòn quanh hồ để chiêm ngưỡng khung cảnh núi non và rừng rậm.</p>
+            <img src="./assets/Images/hotruoi4.png" alt="Hồ Truồi" class="old-img">
+            <p><span style="font-weight: bold;">Hệ sinh thái đa dạng: </span>Khu vực xung quanh hồ Truồi là nơi sinh sống của nhiều loài động thực vật quý hiếm. Đặc biệt, hồ nằm gần vườn quốc gia Bạch Mã, nơi bảo tồn nhiều loài động vật hoang dã và thảm thực vật phong phú. Đây là nơi lý tưởng để khám phá thiên nhiên và thực hiện các hoạt động du lịch sinh thái.</p>
+            <img src="./assets/Images/hotruoi1.png" alt="Hồ Truồi" class="old-img">
+            <p><span style="font-weight: bold;">Thiền viện Trúc Lâm Bạch Mã:</span> Một trong những điểm đến nổi bật nhất của Hồ Truồi là Thiền viện Trúc Lâm Bạch Mã, tọa lạc trên một ngọn núi giữa lòng hồ. Thiền viện là một công trình Phật giáo nổi tiếng, được xây dựng vào năm 2006, là nơi lý tưởng để du khách tìm về chốn thanh tịnh, thư giãn tinh thần và hòa mình vào không gian yên bình.</p>
+            <h2>Vị trí</h2>
+            <p>Hồ Truồi nằm ở xã Lộc Hòa, huyện Phú Lộc, tỉnh Thừa Thiên Huế, cách trung tâm thành phố Huế khoảng 30 km về phía nam. Để đến hồ, du khách có thể di chuyển theo Quốc lộ 1A, sau đó rẽ vào đường dẫn lên hồ Truồi. Từ đây, du khách có thể dễ dàng tham quan các điểm đến lân cận như Thiền viện Trúc Lâm Bạch Mã và vườn quốc gia Bạch Mã.</p>
+
+          </div>
+        </div>  
+        <div class="new-info">
+          <div class="contact-to-me">
+            <p>LIÊN HỆ ĐỂ ĐẶT TOUR:</p>
+          </div>
+          <div class="booking">
+            <a href="tel:+84819931165" class="btn booking-call"><i class='bx bxs-phone-call'></i> Call to me</a>
+            <a href="mailto:canhdephue@gmail.com" class="btn booking-mail"><i class='bx bxl-gmail' ></i>  Mail to me</a>
+          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15322.646254931558!2d107.785694514553!3d16.23782960146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31419161bfdc8397%3A0x888dc9e3e0c096f2!2zSOG7kyBUcnXhu5Np!5e0!3m2!1svi!2s!4v1728702749639!5m2!1svi!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="book-des">
+            <p>Để có được trải nghiệm tuyệt vời nhất khi đến với vùng đất cố đô. Quy khách vui lòng gọi điện hoặc email liên hệ với chúng tôi !</p>
+            <a href="tel:+84819931165"><i class='bx bx-phone-call' ></i></a><span> SĐT: +84 819 931 165</span> <br>
+            <a href="mailto:canhdephue@gmail.com"><i class='bx bx-envelope' ></i></a><span> Email: canhdephue@gmail.com</span>
+          </div> 
+        </div>           
+      </div>
+    </main>
+    <script src="assets/JS/main.js"></script>
+    <footer>
+      <div class="footer-container">
+        <div class="container">
+          <div class="footer-section about">
+            <h3>Review Huế</h3>
+            <p>
+              Huế, cố đô của Việt Nam, nổi tiếng với vẻ đẹp cổ kính, các công
+              trình kiến trúc lịch sử và di sản văn hóa phong phú. Hãy khám phá
+              các danh lam thắng cảnh và nét đẹp riêng có của Huế.
+            </p>
+          </div>
+
+          <div class="footer-section links">
+            <h3>Danh mục</h3>
+            <ul>
+              <li>
+                <a href="./index.html" class="navbar-link">Trang chủ</a>
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./1chuachien.html">Chùa chiền</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./2ditichlichsu.html">Di tích lịch sử</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./3canhdepthienhien.html">Cảnh đẹp thiên nhiên</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./4songsuoibaitam.html">Hệ thống sông suối bãi tắm</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./5kientrucnghethuat.html">Kiến trúc nghệ thuật</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./6hethonglangtam.html">Hệ thống lăng tẩm</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h3>Liên hệ</h3>
+            <a href="mailto:canhdephue@gmail.com"
+              ><i class="bx bxl-gmail"></i
+            ></a>
+            <a href="tel:+84819931165"
+              ><i class='bx bxs-phone-call' ></i></i
+            ></a>
+            <a href="https://maps.app.goo.gl/YY6NmZg5LfjnAxcK6"
+              ><i class='bx bx-map' ></i></a>
+            <p>Email: canhdephue@gmail.com</p>
+            <p>Điện thoại: +84 819 931 165</p>
+            <p>Địa chỉ: 184 Phan Chu Trinh, TP.Huế, Thừa Thiên Huế, Việt Nam</p>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="footer-bottom">
+        <a href="gioithieu.html">Giới thiệu</a>
+        <a href="baomatthongtin.html">  /  Chính sách bảo mật</a>
+        <a href="dieukhoan.html">  /  Điều khoản</a>
+        <a href="lienhe.html">  /  Liên hệ</a>
+        <p class="copyright">
+          &copy; 2024 canhdephue.click | Thiết kế bởi
+          <span style="font-weight: bold">Its.Co</span>
+        </p>
+      </div>
+    </footer>
+    <!-- Nút "Về đầu trang" -->
+    <button onclick="topFunction()" id="btnTop" title="Về đầu trang">
+      <i class="bx bx-up-arrow-circle"></i>
+    </button>
+    <!-- nút gọi điện -->
+    <button class="call-button" onclick="makeCall()"><i class='bx bxs-phone-call' ></i></button>
+    <!-- nút email -->
+    <button class="email-button" onclick="makeEmail()"><i class='bx bx-envelope'></i></button>
+  </body>
+</html>

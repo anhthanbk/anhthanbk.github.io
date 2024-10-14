@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- link reset CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- link box icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Review cảnh đẹp Huế - Việt Nam</title>
+    <!-- Link Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- embed font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="content">
+    <header class="header">
+      <div class="header-top">
+        <div class="container">
+          <!-- logo web -->
+          <a href="./index.html" class="web-logo">
+            <img
+              src="./assets/Images/reviewhue-logo.png"
+              alt="review cảnh đẹp Huế"
+              width="100%"
+            />
+          </a>
+          <!-- tiêu đề -->
+          <p class="header-letter">KHÁM PHÁ NÉT ĐẸP ĐẤT CỐ ĐÔ THỪA THIÊN HUẾ</p>
+          <!-- tạo nút search -->
+          <div class="search-container">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Nhập từ khóa tìm kiếm..."
+            />
+            <button onclick="search()" class="search-btn">
+              <i class="bx bx-search"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Navigation bar -->
+      <nav class="nav-bar">
+        <div class="container">
+          <div id="toggle"><i class="fa-solid fa-bars"></i></div>
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="./index.html" class="navbar-link">TRANG CHỦ</a>
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./1chuachien.html" class="navbar-link"
+                >CHÙA CHIỀN</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./2ditichlichsu.html" class="navbar-link"
+                >DI TÍCH LỊCH SỬ</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./3canhdepthienhien.html" class="navbar-link"
+                >CẢNH ĐẸP THIÊN NHIÊN</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./4songsuoibaitam.html" class="navbar-link"
+                >HỆ THỐNG SÔNG SUỐI BÃI TĂM</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./5kientrucnghethuat.html" class="navbar-link"
+                >KIẾN TRÚC NGHỆ THUẬT</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./6hethonglangtam.html" class="navbar-link"
+                >HỆ THỐNG LĂNG TẨM</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- header main content -->
+    <main class="main_content">
+      <div class="container lv1">        
+        <div class="old-info">
+          <h3>CẢNH ĐẸP THIÊN NHIÊN</h3>
+          <div class="old-title">Sông Hương</div>
+          <h4><i class='bx bxs-calendar'></i> Ngày đăng: 7/10/2024 - 22:10</h4>
+          <hr>  
+          <h3 class="slogan">Ngọt ngào dòng Hương, quyện hồn xứ Huế</h3>        
+          <div class="description">
+            <h2>Giới thiệu chung</h2>
+            <img src="./assets/Images/cau-truong-tien.png" alt="Sông Hương" class="old-img">
+            <p>Với nét tĩnh lặng vốn có của mình, dòng sông Hương đã khiến cho rất nhiều du khách bồi hồi khi tới đây. Mỗi khi đứng trước dòng sông Hương Huế một nét vấn vương đầy cảm xúc sẽ chạy trong tâm trí mỗi người. Sông Hương Huế không chỉ là niềm tự hào của người dân cố đô, khi tới nơi đây sông Hương còn mang tới cho du khách rất nhiều kỷ niệm.</p>
+            <h2>Lịch sử hình thành</h2>
+            <img src="./assets/Images/SongHuong (1).jpeg" alt="Sông Hương" class="old-img">
+            <p>Từ xa xưa, dòng sông Hương ở Huế chảy qua rất nhiều những cánh rừng nhiều thảo mộc có hương thơm của cỏ cây hoa lá thiên nhiên, nên khi vào thành phố Huế, dòng sông đem theo hương thơm tự nhiên và từ đó tên gọi sông Hương ra đời.</p>
+            <p>Có rất nhiều du khách có băn khoăn sông Hương (Huế) còn có tên gọi khác là gì? Sông Hương Huế còn được biết tới với nhiều tên khác như: sông Linh Giang, sông Lô Dung, sông Hương Trà, sông Yên Lục...</p>
+            <h2>Đặc điểm nổi bật</h2>
+            <img src="./assets/Images/SongHuong (1).jpg" alt="Sông Hương" class="old-img">
+            <p>Dòng sông Hương chảy lượn uốn quanh qua Kinh thành, Hoàng thành, Tử cấm thành và qua Đại nội. Càng làm tô điểm thêm nét đẹp tự nhiên của một kinh đô phong kiến độc đáo này. Sông Hương có chiều dài tới tận 80km, riêng đoạn từ Bằng Lãng đến cửa Thuận An dài 30km.</p>
+            <p>Độ dốc của dòng nước so với mặt biển không chênh lệch nhiều nên nước sông chảy chậm. Đoạn sông chảy qua Huế uốn lượn như sự sắp đặt của tự nhiên. Nhằm tôn tạo thêm vẻ kiều diễm cho thành phố Huế. Sông Hương là quà tặng vô giá mà tạo hóa đã dành riêng cho miền đất này. Con sông này là yếu tố có tính quyết định để người xưa chọn Huế làm kinh đô, là nơi hội tụ của cảnh quan và di sản văn hóa Huế.</p>
+            <p>Nước sông Hương quanh năm đều xanh biếc ngoại trừ những lúc lũ lụt nước dâng cao. Từ ngã ba Bằng Lãng, sông Hương chảy nhẹ nhàng, chậm rãi qua các làng mạc trù phú của vùng ngoại vi Huế, đi sâu vào giữa lòng thành phố, rồi tiếp tục uốn lượn qua các miền quê ở hạ lưu trước khi ra biển.</p>
+            <p style="font-weight: bold;">Nét đẹp của tạo hóa</p>
+            <img src="./assets/Images/SongHuong (2).jpg" alt="Sông Hương" class="old-img">
+            <p>Thành quách, lầu xá, những công trình kiến trúc hai bên bờ soi hình bóng xuống dòng sông tựa như bức tranh phong thủy hữu tình đẹp như tranh vẽ. Dòng sông Hương duyên dáng như cô gái Huế e ấp nụ cười dưới vành nón lá. Màu trắng bạc của sông càng tô điểm hơn khi chiếc cầu Tràng Tiền bắc ngang qua sông Hương.</p>
+            <p>Sông Hương dẫn đường xuôi dòng nước đưa du khách đến thăm vẻ đẹp miệt vườn Vỹ Dạ với vườn hoa thảm cỏ xanh mướt. Còn gì tuyệt vời hơn khi được ngược dòng lên Thiên Mụ thả hồn phiêu diêu theo tiếng chuông chùa văng vẳng. Từ chùa, bạn có thể ngắm toàn diện sắc đẹp của Hương giang như chiếc áo thiếu nữ mấy lần đổi thay màu sắc trong ngày.</p>
+            <p>Ngược dòng lên thượng nguồn, để thuyền cập bến điện Hòn Chén. Sông Hương càng tô điểm nét đẹp bình yên nơi đây. Tâm hồn bạn được thả hồn cùng với cảnh núi non. Tạm gác mọi ưu phiền cuộc sống sang một bên.</p>
+            <p>Dưới ánh sáng mặt trời ban ngày, màu xanh ngọc bích trong vắt lung linh của dòng sông. Những con thuyền lênh đênh trên mặt nước làm du khách lưu luyến khó quên. Đi thuyền ngắm vẻ đẹp Hương Giang, thả hoa đăng hay nghe ca trù, điệu hò xứ Huế vào lúc giữa đêm thanh vắng là thú vui tao nhã khó gì sánh bằng được.</p>
+            <p>Các công trình kiến trúc gắn liền với sông Hương như :Cầu Tràng Tiền bắc qua sông Hương, cầu đi bộ Gỗ Lim ven sông, Chùa Thiên Mụ, Văn Miếu… cũng tô điểm thêm cho sự lãng mạn, êm đềm và trường tồn theo thời gian của dòng sông này.</p>
+            <p style="font-weight: bold;">Nét đẹp của con người tạo nên</p>
+            <img src="./assets/Images/SongHuong (3).jpg" alt="Sông Hương" class="old-img">
+            <p>Nếu  thiên nhiên “cho” Huế một con sông thơ mộng, trữ tình thì người dân Huế đã bảo tổn và phát huy nét đẹp ấy trở thành điểm đến khác biệt mà không thành phố nào có được. Có bao giờ bạn đã nhìn thấy Huế với vẻ đẹp lấp lánh bởi những chiếc thuyền rồng truyền thống và trên sông lại văng vẳng điệu hò mượt mà, thấm đậm lòng người chưa?</p>
+            <p>Người Huế phát triển các dịch vụ trên dòng sông này theo một hướng tích cực và tốt nhất cho thành phố.  Mỗi buổi sáng sớm, sông Hương lại rộn ràng tiếng cười  của những bạn trẻ nô đùa chèo thuyền sub, cùng nhau reo hò, cùng nhau trò chuyện tán ngẩu. Sông Hương lại là “chứng nhân” lưu giữ lại khoảnh khắc tuổi thanh xuân đẹp nhất trong đời của tuổi trẻ để khi trở về lại Huế, người ta cũng ngậm ngùi về những gì đã qua. </p>
+            <p>Mỗi năm, người dân Huế lại tổ chức “lễ hội đua thuyền trên sông Hương”. Với mục đích tạo điều kiện thuận lợi cho tất cả các thanh niên nam, nữ có cơ hội thi thố tài năng, sức mạnh giữa các tay chèo trên sông nước. Hơn thế nữa, còn bảo tồn và phát huy loại hình thể   thao truyền thống của làng quê vùng sông nước của tỉnh Thừa Thiên Huế. Đó là nét văn hóa đặc sắc, góp phần thu hút du khách đến Huế vào các dịp Festival. </p>
+            <p>Huế không chỉ dừng lại chỉ là một trung tâm chính trị, văn hoá, tôn giáo của triều đại nhà Nguyễn cho đến 1945 mà còn đẹp hơn khi được dòng sông Hương chảy qua tô điểm thêm vẻ đẹp tự nhiên của một kinh đô phong kiến độc đáo này. Nếu có cơ hội du lịch Huế xin đừng bỏ quên việc du thuyền rồng ngắm nhìn dòng sông thơ mộng qua từng khoảnh khắc, chắc hẳn bạn sẽ khó quên trong chuyến hành trình về miền đất Kinh kỳ xa xưa.</p>
+            <h2>Vị trí</h2>
+            <p>Sông Hương Huế nằm ngay trên trục đường Trần Hưng Đạo và Lê Lợi, ngay ở vị trí trung tâm thành phố Huế.</p>
+
+          </div>
+        </div>  
+        <div class="new-info">
+          <div class="contact-to-me">
+            <p>LIÊN HỆ ĐỂ ĐẶT TOUR:</p>
+          </div>
+          <div class="booking">
+            <a href="tel:+84819931165" class="btn booking-call"><i class='bx bxs-phone-call'></i> Call to me</a>
+            <a href="mailto:canhdephue@gmail.com" class="btn booking-mail"><i class='bx bxl-gmail' ></i>  Mail to me</a>
+          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122429.97228970558!2d107.51250784304789!3d16.478745932659614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3141a1326d3ed341%3A0x2d09b58bb1f483fd!2zU8O0bmcgSMawxqFuZw!5e0!3m2!1svi!2s!4v1728632067807!5m2!1svi!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="book-des">
+            <p>Để có được trải nghiệm tuyệt vời nhất khi đến với vùng đất cố đô. Quy khách vui lòng gọi điện hoặc email liên hệ với chúng tôi !</p>
+            <a href="tel:+84819931165"><i class='bx bx-phone-call' ></i></a><span> SĐT: +84 819 931 165</span> <br>
+            <a href="mailto:canhdephue@gmail.com"><i class='bx bx-envelope' ></i></a><span> Email: canhdephue@gmail.com</span>
+          </div> 
+        </div>           
+      </div>
+    </main>
+    <script src="assets/JS/main.js"></script>
+    <footer>
+      <div class="footer-container">
+        <div class="container">
+          <div class="footer-section about">
+            <h3>Review Huế</h3>
+            <p>
+              Huế, cố đô của Việt Nam, nổi tiếng với vẻ đẹp cổ kính, các công
+              trình kiến trúc lịch sử và di sản văn hóa phong phú. Hãy khám phá
+              các danh lam thắng cảnh và nét đẹp riêng có của Huế.
+            </p>
+          </div>
+
+          <div class="footer-section links">
+            <h3>Danh mục</h3>
+            <ul>
+              <li>
+                <a href="./index.html" class="navbar-link">Trang chủ</a>
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./1chuachien.html">Chùa chiền</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./2ditichlichsu.html">Di tích lịch sử</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./3canhdepthienhien.html">Cảnh đẹp thiên nhiên</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./4songsuoibaitam.html">Hệ thống sông suối bãi tắm</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./5kientrucnghethuat.html">Kiến trúc nghệ thuật</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./6hethonglangtam.html">Hệ thống lăng tẩm</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h3>Liên hệ</h3>
+            <a href="mailto:canhdephue@gmail.com"
+              ><i class="bx bxl-gmail"></i
+            ></a>
+            <a href="tel:+84819931165"
+              ><i class='bx bxs-phone-call' ></i></i
+            ></a>
+            <a href="https://maps.app.goo.gl/YY6NmZg5LfjnAxcK6"
+              ><i class='bx bx-map' ></i></a>
+            <p>Email: canhdephue@gmail.com</p>
+            <p>Điện thoại: +84 819 931 165</p>
+            <p>Địa chỉ: 184 Phan Chu Trinh, TP.Huế, Thừa Thiên Huế, Việt Nam</p>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="footer-bottom">
+        <a href="gioithieu.html">Giới thiệu</a>
+        <a href="baomatthongtin.html">  /  Chính sách bảo mật</a>
+        <a href="dieukhoan.html">  /  Điều khoản</a>
+        <a href="lienhe.html">  /  Liên hệ</a>
+        <p class="copyright">
+          &copy; 2024 canhdephue.click | Thiết kế bởi
+          <span style="font-weight: bold">Its.Co</span>
+        </p>
+      </div>
+    </footer>
+    <!-- Nút "Về đầu trang" -->
+    <button onclick="topFunction()" id="btnTop" title="Về đầu trang">
+      <i class="bx bx-up-arrow-circle"></i>
+    </button>
+    <!-- nút gọi điện -->
+    <button class="call-button" onclick="makeCall()"><i class='bx bxs-phone-call' ></i></button>
+    <!-- nút email -->
+    <button class="email-button" onclick="makeEmail()"><i class='bx bx-envelope'></i></button>
+  </body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- link reset CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- link box icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Review cảnh đẹp Huế - Việt Nam</title>
+    <!-- Link Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- embed font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="content">
+    <header class="header">
+      <div class="header-top">
+        <div class="container">
+          <!-- logo web -->
+          <a href="./index.html" class="web-logo">
+            <img
+              src="./assets/Images/reviewhue-logo.png"
+              alt="review cảnh đẹp Huế"
+              width="100%"
+            />
+          </a>
+          <!-- tiêu đề -->
+          <p class="header-letter">KHÁM PHÁ NÉT ĐẸP ĐẤT CỐ ĐÔ THỪA THIÊN HUẾ</p>
+          <!-- tạo nút search -->
+          <div class="search-container">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Nhập từ khóa tìm kiếm..."
+            />
+            <button onclick="search()" class="search-btn">
+              <i class="bx bx-search"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Navigation bar -->
+      <nav class="nav-bar">
+        <div class="container">
+          <div id="toggle"><i class="fa-solid fa-bars"></i></div>
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="./index.html" class="navbar-link">TRANG CHỦ</a>
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./1chuachien.html" class="navbar-link"
+                >CHÙA CHIỀN</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./2ditichlichsu.html" class="navbar-link"
+                >DI TÍCH LỊCH SỬ</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./3canhdepthienhien.html" class="navbar-link"
+                >CẢNH ĐẸP THIÊN NHIÊN</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./4songsuoibaitam.html" class="navbar-link"
+                >HỆ THỐNG SÔNG SUỐI BÃI TĂM</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./5kientrucnghethuat.html" class="navbar-link"
+                >KIẾN TRÚC NGHỆ THUẬT</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./6hethonglangtam.html" class="navbar-link"
+                >HỆ THỐNG LĂNG TẨM</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- header main content -->
+    <main class="main_content">
+      <div class="container lv1">        
+        <div class="old-info">
+          <h3>DI TÍCH LỊCH SỬ</h3>
+          <div class="old-title">Chín Hầm</div>
+          <h4><i class='bx bxs-calendar'></i> Ngày đăng: 15/08/2024 - 13:10</h4>
+          <hr>  
+          <h3 class="slogan">Chín Hầm – Chứng nhân lịch sử, khúc ca kiên trung</h3>            
+          <div class="description">
+            <h2>Giới thiệu chung</h2>
+            <img src="./assets/Images/ChinHam (1).jpg" alt="Chín Hầm" class="old-img">
+            <p>Khu di tích lịch sử Chín Hầm nằm giữa một vùng đồi thông nhỏ, ở độ cao khoảng 35m so với mực nước biển thuộc núi Thiên Thai, có diện tích 1.190m2 cách thành phố Huế hơn 6km về hướng Tây Nam thuộc thôn Ngũ Tây, phường An Tây.</p>
+            <h2>Lịch sử hình thành</h2>
+            <img src="./assets/Images/ChinHam (3).jpg" alt="Chín Hầm" class="old-img">
+            <p>Sự hình thành của Khu Chín Hầm, nguyên trước trước đây được Thực dân Pháp xây dựng vào năm 1941 để làm nơi cất giấu vũ khí. Khi Nhật đảo chính Pháp ngày 9/3/1945 quân đội Nhật đã tịch thu những kho vũ khí này và để lại các căn hầm trống rỗng. Sau khi Pháp quay trở lại xâm lược nước ta lần thứ hai vào ngày 23/9/1945, chúng sử dụng các hầm để làm nơi giam giữ tù binh chủ yếu là những chiến sĩ Việt Minh. Mãi đến sau năm 1954 sau hiệp định Giơnevơ, đất nước chúng ta tạm thời bị chia đôi. Ở miền Nam Việt Nam dưới chế độ Ngô Đình Diệm, em trai của Diệm là Ngô Đình Cẩn lãnh chúa miền Trung, đã cho cải tạo lại khu Chín Hầm trở thành hệ thống nhà tù đặc biệt, một số căn hầm được phân chia bên trong thành những ô xà lim kết cấu theo kiểu chuồng cọp để biệt giam các chiến sĩ Cộng sản và đồng bào yêu nước, trong đó có đủ mọi tầng lớp Nhân dân như trí thức, thương gia, tiểu tư sản, học sinh, sinh viên, tu sĩ Phật giáo và Đảng phái chính trị đối lập…</p>
+            <h2>Đặc điểm nổi bật</h2> 
+            <img src="./assets/Images/ChinHam (1).png" alt="Chín Hầm" class="old-img">
+            <p>Các hầm được phân bố trên 2/3 quả đồi, cửa hầm hướng xuống chân đồi, hầm có hình chữ nhật, chiều rộng bằng 2/3 chiều dài. Trừ hầm số 1 chìm sâu xuống lòng đất, các hầm còn lại đều nổi lên mặt đất từ 1/3 đến 2/3 chiều cao của hầm. Hầm được xây dựng kiên cố bằng bê tông cốt sắt, trần hầm có độ dày 0,5m.</p>
+            <img src="./assets/Images/ChinHam (2).jpg" alt="Chín Hầm" class="old-img">
+            <p>Những hầm này còn được gọi là chuồng cọp, trong hầm được chia thành 2 dãy xà lim chuồng cọp, mỗi chuồng rộng 0,9m, dài 0,2m, cao 1,5m phía trên đầu là một lưới sắt, mỗi hầm có 1 lỗ thông hơi nhỏ.</p>
+            <p>Tùy theo thành phần và đối tượng mà thực dân Pháp và đội ngũ tay sai tổ chức giam giữ ở các hầm khác nhau. Ngoài giam giữ tội phạm về hình sự của các tôn giáo (chủ yếu là Phật giáo), người trong các tổ chức chính trị đối lập, những người tham gia các cuộc đấu tranh biểu tình như học sinh, sinh viên, tiểu thương..., nhà giam Chín Hầm là trung tâm giam giữ các cán bộ chiến sĩ cách mạng mà chúng bắt về từ nhiều nơi trên cả nước.</p>
+            <p>Các khu hầm này được phân chia theo từng đối tượng tù nhân như sau:</p>
+            <p>Các căn hầm số 1, 6, 7, 8 là nơi giam giữ những tù nhân cộng sản, chiến sĩ chống đối chế độ Ngô Đình Diệm hay Việt cộng nằm vùng</p>
+            <p>Căn số 3 là nơi giam cầm những thương gia giàu có nhưng bị vu oan và bắt giữ tra tấn nhằm buộc gia đình họ phải nộp tiền vàng ra để chuộc thân</p>
+            <p>Căn số 4 là nơi bắt nhốt những người đối lập, những quan chức sĩ quan của chính quyền hiện thời không tuân theo chủ trương của Ngô Đình Cẩn</p>
+            <p>Căn số 5 là nơi giam giữ các tăng ni, phật tử, những người có liên quan đến tôn giáo và học sinh sinh viên phản kháng lại chế độ.</p>
+            <p>Cuối cùng, căn số 9 chính là bốt gác, là nơi tra tấn, khảo cung những tù nhân bị bắt giam.</p>
+            <p>Đáng kể nhất là căn hầm số 8 - căn hầm được gọi là "Địa ngục trần gian". Hầm có diện tích 72,88m2, tường dày 0,40m, về cấu trúc xây dựng cũng tương tự các hầm khác, tuy nhiên được thiết kế hơi chìm sâu xuống lòng đất. Hầm chỉ có một cửa chính ra vào (rộng 1,5m và cao 2m) làm bằng thép đặc biệt, bên trên có một lỗ thông hơi khoảng 30cm. Trong hầm được phân chia thành 20 ô xà lim biệt giam, chia làm hai dãy, mỗi dãy 10 xà lim, ở giữa có lối đi rộng gần 2m. Mỗi xà lim có chiều dài 1,8m, rộng 0,80m, cao 1,8m; tường ngăn cách giữa các xà lim dày 0,2m, bên trên xà lim có chắn các song sắt với 16 thanh ngang và 2 thanh dọc đan chắn trên đầu; phía trước xà lim đóng kín bằng một cánh cửa rộng 0,6m, cao khoảng 1,5m. Mỗi xà lim được lót một tấm ván hẹp để tù nhân nằm và một cái xô sắt để đi vệ sinh. Đây là căn hầm Ngô Đình Cẩn sử dụng giam giữ những chiến sĩ công sản như Phan Trọng Tịnh, Nguyễn Minh Vân, Nguyễn Văn Quý, Nguyễn Đình Trân, Nguyễn Văn Hội, Nguyễn Văn Nại, Lê Văn Hoàng, Lý Văn Liễn, Nguyễn Hữu Đà, Nguyễn Đình Tỉnh, Bùi Bá Vu... và rất nhiều chiến sĩ Cộng sản trung kiên khác.</p>
+            <p>Từ khi Chín Hầm được xây dựng xong hàng ngàn người yêu nước của bao thế hệ con người Việt Nam đấu tranh chống lại chế độ tay sai thực dân, đế quốc xâm lược đã phải sống và chết nơi chốn lao tù này. Sau năm 1954, Chín Hầm là trung tâm giam giữ những chiến sĩ cách mạng. Đây là một kiểu nhà tù đặc biệt điển hình của chế độ gia đình trị họ Ngô ở miền Trung.</p>
+            <h2>Vị trí</h2>
+            <p>112 đường Thiên Thai, phường An Tây, thành phố Huế.</p>
+          </div>
+        </div>  
+        <div class="new-info">
+          <div class="contact-to-me">
+            <p>LIÊN HỆ ĐỂ ĐẶT TOUR:</p>
+          </div>
+          <div class="booking">
+            <a href="tel:+84819931165" class="btn booking-call"><i class='bx bxs-phone-call'></i> Call to me</a>
+            <a href="mailto:canhdephue@gmail.com" class="btn booking-mail"><i class='bx bxl-gmail' ></i>  Mail to me</a>
+          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3827.1760830241838!2d107.60325067474518!3d16.41588123006533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3141a3c6ee855a27%3A0xa01c15d6603624b6!2zS2h1IERpIFTDrWNoIEzhu4tjaCBT4butIENow61uIEjhuqdt!5e0!3m2!1svi!2s!4v1728617498924!5m2!1svi!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="book-des">
+            <p>Để có được trải nghiệm tuyệt vời nhất khi đến với vùng đất cố đô. Quy khách vui lòng gọi điện hoặc email liên hệ với chúng tôi !</p>
+            <a href="tel:+84819931165"><i class='bx bx-phone-call' ></i></a><span> SĐT: +84 819 931 165</span> <br>
+            <a href="mailto:canhdephue@gmail.com"><i class='bx bx-envelope' ></i></a><span> Email: canhdephue@gmail.com</span>
+          </div> 
+          </div> 
+        </div>           
+      </div>
+    </main>
+    <script src="assets/JS/main.js"></script>
+    <footer>
+      <div class="footer-container">
+        <div class="container">
+          <div class="footer-section about">
+            <h3>Review Huế</h3>
+            <p>
+              Huế, cố đô của Việt Nam, nổi tiếng với vẻ đẹp cổ kính, các công
+              trình kiến trúc lịch sử và di sản văn hóa phong phú. Hãy khám phá
+              các danh lam thắng cảnh và nét đẹp riêng có của Huế.
+            </p>
+          </div>
+
+          <div class="footer-section links">
+            <h3>Danh mục</h3>
+            <ul>
+              <li>
+                <a href="./index.html" class="navbar-link">Trang chủ</a>
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./1chuachien.html">Chùa chiền</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./2ditichlichsu.html">Di tích lịch sử</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./3canhdepthienhien.html">Cảnh đẹp thiên nhiên</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./4songsuoibaitam.html">Hệ thống sông suối bãi tắm</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./5kientrucnghethuat.html">Kiến trúc nghệ thuật</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./6hethonglangtam.html">Hệ thống lăng tẩm</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h3>Liên hệ</h3>
+            <a href="mailto:canhdephue@gmail.com"
+              ><i class="bx bxl-gmail"></i
+            ></a>
+            <a href="tel:+84819931165"
+              ><i class='bx bxs-phone-call' ></i></i
+            ></a>
+            <a href="https://maps.app.goo.gl/YY6NmZg5LfjnAxcK6"
+              ><i class='bx bx-map' ></i></a>
+            <p>Email: canhdephue@gmail.com</p>
+            <p>Điện thoại: +84 819 931 165</p>
+            <p>Địa chỉ: 184 Phan Chu Trinh, TP.Huế, Thừa Thiên Huế, Việt Nam</p>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="footer-bottom">
+        <a href="gioithieu.html">Giới thiệu</a>
+        <a href="baomatthongtin.html">  /  Chính sách bảo mật</a>
+        <a href="dieukhoan.html">  /  Điều khoản</a>
+        <a href="lienhe.html">  /  Liên hệ</a>
+        <p class="copyright">
+          &copy; 2024 canhdephue.click | Thiết kế bởi
+          <span style="font-weight: bold">Its.Co</span>
+        </p>
+      </div>
+    </footer>
+    <!-- Nút "Về đầu trang" -->
+    <button onclick="topFunction()" id="btnTop" title="Về đầu trang">
+      <i class="bx bx-up-arrow-circle"></i>
+    </button>
+    <!-- nút gọi điện -->
+    <button class="call-button" onclick="makeCall()"><i class='bx bxs-phone-call' ></i></button>
+    <!-- nút email -->
+    <button class="email-button" onclick="makeEmail()"><i class='bx bx-envelope'></i></button>
+  </body>
+</html>

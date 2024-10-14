@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- link reset CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- link box icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Review cảnh đẹp Huế - Việt Nam</title>
+    <!-- Link Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- embed font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="content">
+    <header class="header">
+      <div class="header-top">
+        <div class="container">
+          <!-- logo web -->
+          <a href="./index.html" class="web-logo">
+            <img
+              src="./assets/Images/reviewhue-logo.png"
+              alt="review cảnh đẹp Huế"
+              width="100%"
+            />
+          </a>
+          <!-- tiêu đề -->
+          <p class="header-letter">KHÁM PHÁ NÉT ĐẸP ĐẤT CỐ ĐÔ THỪA THIÊN HUẾ</p>
+          <!-- tạo nút search -->
+          <div class="search-container">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Nhập từ khóa tìm kiếm..."
+            />
+            <button onclick="search()" class="search-btn">
+              <i class="bx bx-search"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Navigation bar -->
+      <nav class="nav-bar">
+        <div class="container">
+          <div id="toggle"><i class="fa-solid fa-bars"></i></div>
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="./index.html" class="navbar-link">TRANG CHỦ</a>
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./1chuachien.html" class="navbar-link"
+                >CHÙA CHIỀN</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./2ditichlichsu.html" class="navbar-link"
+                >DI TÍCH LỊCH SỬ</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./3canhdepthienhien.html" class="navbar-link"
+                >CẢNH ĐẸP THIÊN NHIÊN</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./4songsuoibaitam.html" class="navbar-link"
+                >HỆ THỐNG SÔNG SUỐI BÃI TĂM</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./5kientrucnghethuat.html" class="navbar-link"
+                >KIẾN TRÚC NGHỆ THUẬT</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./6hethonglangtam.html" class="navbar-link"
+                >HỆ THỐNG LĂNG TẨM</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- header main content -->
+    <main class="main_content">
+      <div class="container lv1">        
+        <div class="old-info">
+          <h3>HỆ THỐNG SUỐI VÀ BÃI TẮM</h3>
+          <div class="old-title">Bãi tắm Lăng Cô</div>
+          <h4><i class='bx bxs-calendar'></i> Ngày đăng: 21/09/2024 - 10:15</h4>
+          <hr>  
+          <h3 class="slogan">Vẻ đẹp tiềm ẩn của thiên nhiên</h3>              
+          <div class="description">
+            <h2>Giới thiệu chung</h2>
+            <img src="./assets/Images/bien-lang-co.png" alt="lăng cô" class="old-img">
+            <p>Bãi biển Lăng Cô nằm ở thị trấn Lăng Cô, huyện Phú Lộc, tỉnh Thừa Thiên-Huế. Đây là một trong những bãi biển đẹp nhất Việt Nam, nổi tiếng với vẻ đẹp hoang sơ, nước biển trong xanh, bãi cát dài trắng mịn. Lăng Cô nằm giữa hai điểm du lịch nổi tiếng là Huế và Đà Nẵng, và gần đèo Hải Vân, một trong những cung đường đẹp và hùng vĩ nhất của Việt Nam.</p>
+            <p>Bãi biển Lăng Cô còn là một phần của vịnh Lăng Cô, được xếp vào danh sách các vịnh đẹp nhất thế giới năm 2009 bởi Câu lạc bộ các vịnh đẹp nhất thế giới (Worldbays Club). Đây là điểm đến hấp dẫn cho những ai muốn tận hưởng không gian thiên nhiên yên bình và khám phá văn hóa địa phương.</p>
+            <h2>Lịch sử hình thành</h2>
+            <img src="./assets/Images/langco3.png" alt="lăng cô" class="old-img">
+            <p>Bãi biển Lăng Cô đã được người dân địa phương biết đến từ rất lâu, nhưng chỉ thực sự nổi tiếng từ thời kỳ Pháp thuộc khi các sĩ quan và du khách nước ngoài tìm đến đây để nghỉ dưỡng. Tên gọi "Lăng Cô" được cho là bắt nguồn từ cách đọc trại của người Pháp khi nghe từ "Làng Cò", do khu vực này từng là nơi tập trung rất nhiều cò trắng sinh sống. Bãi biển này ngày càng phát triển, đặc biệt là sau khi Việt Nam mở cửa phát triển du lịch, trở thành một điểm đến lý tưởng không chỉ cho du khách trong nước mà còn cả quốc tế.</p>
+            <h2>Đặc điểm nổi bật</h2>
+            <img src="./assets/Images/langco4.png" alt="lăng cô" class="old-img">
+            <p><span style="font-weight: bold;">Cảnh quan thiên nhiên:</span> Nước biển xanh ngọc bích, bãi cát trắng dài hơn 10 km, và rừng núi bao quanh tạo nên khung cảnh yên bình và hùng vĩ.</p>
+            <img src="./assets/Images/langco1.png" alt="lăng cô" class="old-img">
+            <p><span style="font-weight: bold;">Khí hậu: </span>Lăng Cô có khí hậu nhiệt đới gió mùa, mát mẻ quanh năm với nhiệt độ trung bình khoảng 25°C, là điều kiện lý tưởng để nghỉ dưỡng.</p>
+            <img src="./assets/Images/langco2.png" alt="lăng cô" class="old-img">
+            <p><span style="font-weight: bold;">Đa dạng hoạt động du lịch:</span> Du khách có thể tham gia nhiều hoạt động như lặn ngắm san hô, câu cá, leo núi, và tham quan các làng chài truyền thống.</p>
+            <p><span style="font-weight: bold;">Vị trí địa lý thuận lợi:</span> Nằm gần các địa điểm du lịch nổi tiếng như cố đô Huế, Đà Nẵng và Hội An, Lăng Cô dễ dàng tiếp cận và kết nối với nhiều danh thắng khác.</p>
+            <h2>Vị trí</h2>            
+            <p><span style="font-weight: bold;">Địa chỉ:</span> Thị trấn Lăng Cô, huyện Phú Lộc, tỉnh Thừa Thiên-Huế</p>  
+            <p style="font-weight: bold;">Khoảng cách:</p>  
+            <p>Cách thành phố Huế khoảng 70 km về phía Nam.</p>  
+            <p>Cách thành phố Đà Nẵng khoảng 30 km về phía Bắc.</p>  
+            <p>Nằm gần đèo Hải Vân, một cung đường nổi tiếng với cảnh quan hùng vĩ.</p>  
+          </div>
+        </div>  
+        <div class="new-info">
+          <div class="contact-to-me">
+            <p>LIÊN HỆ ĐỂ ĐẶT TOUR:</p>
+          </div>
+          <div class="booking">
+            <a href="tel:+84819931165" class="btn booking-call"><i class='bx bxs-phone-call'></i> Call to me</a>
+            <a href="mailto:canhdephue@gmail.com" class="btn booking-mail"><i class='bx bxl-gmail' ></i>  Mail to me</a>
+          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61280.923591843835!2d108.02302142232631!3d16.268811766481534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142270b4503f9d7%3A0x812ddac020790670!2zQsOjaSBiaeG7g24gTMSDbmcgQ8O0!5e0!3m2!1svi!2s!4v1728541716889!5m2!1svi!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            <p>Để có được trải nghiệm tuyệt vời nhất khi đến với vùng đất cố đô. Quy khách vui lòng gọi điện hoặc email liên hệ với chúng tôi !</p>
+          <div class="book-des">
+            <p>Để có được trải nghiệm tuyệt vời nhất khi đến với vùng đất cố đô. Quy khách vui lòng gọi điện hoặc email liên hệ với chúng tôi !</p>
+            <a href="tel:+84819931165"><i class='bx bx-phone-call' ></i></a><span> SĐT: +84 819 931 165</span> <br>
+            <a href="mailto:canhdephue@gmail.com"><i class='bx bx-envelope' ></i></a><span> Email: canhdephue@gmail.com</span>
+          </div> 
+        </div>           
+      </div>
+    </main>
+    <script src="assets/JS/main.js"></script>
+    <footer>
+      <div class="footer-container">
+        <div class="container">
+          <div class="footer-section about">
+            <h3>Review Huế</h3>
+            <p>
+              Huế, cố đô của Việt Nam, nổi tiếng với vẻ đẹp cổ kính, các công
+              trình kiến trúc lịch sử và di sản văn hóa phong phú. Hãy khám phá
+              các danh lam thắng cảnh và nét đẹp riêng có của Huế.
+            </p>
+          </div>
+
+          <div class="footer-section links">
+            <h3>Danh mục</h3>
+            <ul>
+              <li>
+                <a href="./index.html" class="navbar-link">Trang chủ</a>
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./1chuachien.html">Chùa chiền</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./2ditichlichsu.html">Di tích lịch sử</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./3canhdepthienhien.html">Cảnh đẹp thiên nhiên</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./4songsuoibaitam.html">Hệ thống sông suối bãi tắm</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./5kientrucnghethuat.html">Kiến trúc nghệ thuật</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./6hethonglangtam.html">Hệ thống lăng tẩm</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h3>Liên hệ</h3>
+            <a href="mailto:canhdephue@gmail.com"
+              ><i class="bx bxl-gmail"></i
+            ></a>
+            <a href="tel:+84819931165"
+              ><i class='bx bxs-phone-call' ></i></i
+            ></a>
+            <a href="https://maps.app.goo.gl/YY6NmZg5LfjnAxcK6"
+              ><i class='bx bx-map' ></i></a>
+            <p>Email: canhdephue@gmail.com</p>
+            <p>Điện thoại: +84 819 931 165</p>
+            <p>Địa chỉ: 184 Phan Chu Trinh, TP.Huế, Thừa Thiên Huế, Việt Nam</p>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="footer-bottom">
+        <a href="gioithieu.html">Giới thiệu</a>
+        <a href="baomatthongtin.html">  /  Chính sách bảo mật</a>
+        <a href="dieukhoan.html">  /  Điều khoản</a>
+        <a href="lienhe.html">  /  Liên hệ</a>
+        <p class="copyright">
+          &copy; 2024 canhdephue.click | Thiết kế bởi
+          <span style="font-weight: bold">Its.Co</span>
+        </p>
+      </div>
+    </footer>
+    <!-- Nút "Về đầu trang" -->
+    <button onclick="topFunction()" id="btnTop" title="Về đầu trang">
+      <i class="bx bx-up-arrow-circle"></i>
+    </button>
+    <!-- nút gọi điện -->
+    <button class="call-button" onclick="makeCall()"><i class='bx bxs-phone-call' ></i></button>
+    <!-- nút email -->
+    <button class="email-button" onclick="makeEmail()"><i class='bx bx-envelope'></i></button>
+  </body>
+</html>
