@@ -126,7 +126,7 @@
                 phố Huế. Cầu được xây dựng vào cuối thế kỷ 19 và đã trở thành
                 biểu tượng của thành phố.</p>              
             </a>
-            <hr>
+            
             <a href="./kinhthanhhue.html" class="location-info">
               <h1 class="lct-title">Kinh Thành Huế</h1>
               <img src="./assets/Images/kinh-thanh-hue.png" alt="kinh thành huế" class="lct-img">
@@ -135,7 +135,7 @@
                 gồm Hoàng Cung, các cung điện, đền đài và các công trình phụ
                 trợ.</p>              
             </a>   
-            <hr>         
+                   
             <a href="./caugolim.html" class="location-info">
               <h1 class="lct-title">Cầu gỗ lim</h1>
               <img src="./assets/Images/cau-go-lim.png" alt="cầu gỗ lim" class="lct-img">
@@ -143,7 +143,7 @@
                 Nam. Đây là một trong những cây cầu gỗ có giá trị lịch sử và
                 văn hóa đặc biệt tại khu vực này.</p>              
             </a> 
-            <hr>           
+                      
             <a href="./truongquochoc.html" class="location-info">
               <h1 class="lct-title">Trường Quốc Học</h1>
               <img src="./assets/Images/truong-quoc-hoc.png" alt="trường quốc học" class="lct-img">
@@ -151,7 +151,7 @@
                 phổ thông lâu đời và danh tiếng nhất ở Việt Nam, gắn liền với
                 lịch sử giáo dục của đất nước.</p>              
             </a>            
-            <hr>           
+                    
             <a href="./nhahangsonghuong.html" class="location-info">
               <h1 class="lct-title">Nhà Hàng Sông Hương</h1>
               <img src="./assets/Images/nha-hang-song-huong.png" alt="nhà hàng sông hương" class="lct-img">
@@ -159,21 +159,76 @@
                 sen, một biểu tượng văn hóa và tinh thần đặc trưng của Việt
                 Nam.</p>              
             </a>            
-            <hr>           
+                    
             <a href="./cungandinh.html" class="location-info">
               <h1 class="lct-title">Cung An Định</h1>
               <img src="./assets/Images/cung-an=dinh.png" alt="cung anh định" class="lct-img">
               <p class="lct-description">Cung An Định kết hợp giữa phong cách kiến trúc truyền thống
                 Việt Nam và ảnh hưởng của kiến trúc phương Tây.</p>              
             </a>            
-            <hr>           
+                    
             <a href="./bentoakham.html" class="location-info">
               <h1 class="lct-title">Bến Tòa Khâm</h1>
               <img src="./assets/Images/ben-toa-kham.png" alt="bến tòa khâm" class="lct-img">
               <p class="lct-description">Bến Tòa Khâm là một trong những công trình nổi bật ở Huế, liên
                 quan đến lịch sử và kiến trúc của thành phố này. Đây là một
                 địa điểm quan trọng trong lịch sử phát triển đô thị của Huế.</p>              
-            </a>        
+            </a>   
+            <ul class="listPage">            
+            </ul>
+            <script>            
+             let thisPage = 1;
+             let limit = 5;
+            let list = document.querySelectorAll(
+             '.main_content .List-location .location-info'
+             );
+  
+            function loadItem() {
+            let beginGet = limit * (thisPage - 1);
+            let endGet = limit * thisPage - 1;
+            list.forEach((item, key) => {
+             if (key >= beginGet && key <= endGet) {
+              item.style.display = 'block';
+             } else {
+                item.style.display = 'none';
+             }
+              });
+             listPage();
+             }
+            loadItem();
+              function listPage() {
+               let count = Math.ceil(list.length / limit);
+               document.querySelector('.listPage').innerHTML = '';
+  
+               if (thisPage != 1) {
+                let prev = document.createElement('li');
+                prev.innerText = '<';
+                prev.setAttribute('onclick', 'changePage(' + (thisPage - 1) + ')');
+                document.querySelector('.listPage').appendChild(prev);
+               }
+  
+               for (i = 1; i <= count; i++) {
+                let newPage = document.createElement('li');
+                newPage.innerText = i;
+               if (i == thisPage) {
+                newPage.classList.add('active');
+               }
+               newPage.setAttribute('onclick', 'changePage(' + i + ')');
+               document.querySelector('.listPage').appendChild(newPage);
+               }
+  
+               if (thisPage != count) {
+               let next = document.createElement('li');
+               next.innerText = '>';
+               next.setAttribute('onclick', 'changePage(' + (thisPage + 1) + ')');
+               document.querySelector('.listPage').appendChild(next);
+               }
+               }
+              function changePage(i) {
+               thisPage = i;
+               loadItem();
+              }
+            </script>              
           </div>  
           <hr>
           <div class="new-location">
