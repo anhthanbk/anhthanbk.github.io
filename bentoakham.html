@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- link reset CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- link box icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Review cảnh đẹp Huế - Việt Nam</title>
+    <!-- Link Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- embed font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="content">
+    <header class="header">
+      <div class="header-top">
+        <div class="container">
+          <!-- logo web -->
+          <a href="./index.html" class="web-logo">
+            <img
+              src="./assets/Images/reviewhue-logo.png"
+              alt="review cảnh đẹp Huế"
+              width="100%"
+            />
+          </a>
+          <!-- tiêu đề -->
+          <p class="header-letter">KHÁM PHÁ NÉT ĐẸP ĐẤT CỐ ĐÔ THỪA THIÊN HUẾ</p>
+          <!-- tạo nút search -->
+          <div class="search-container">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Nhập từ khóa tìm kiếm..."
+            />
+            <button onclick="search()" class="search-btn">
+              <i class="bx bx-search"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Navigation bar -->
+      <nav class="nav-bar">
+        <div class="container">
+          <div id="toggle"><i class="fa-solid fa-bars"></i></div>
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="./index.html" class="navbar-link">TRANG CHỦ</a>
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./1chuachien.html" class="navbar-link"
+                >CHÙA CHIỀN</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./2ditichlichsu.html" class="navbar-link"
+                >DI TÍCH LỊCH SỬ</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./3canhdepthienhien.html" class="navbar-link"
+                >CẢNH ĐẸP THIÊN NHIÊN</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./4songsuoibaitam.html" class="navbar-link"
+                >HỆ THỐNG SÔNG SUỐI BÃI TĂM</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./5kientrucnghethuat.html" class="navbar-link"
+                >KIẾN TRÚC NGHỆ THUẬT</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./6hethonglangtam.html" class="navbar-link"
+                >HỆ THỐNG LĂNG TẨM</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- header main content -->
+    <main class="main_content">
+      <div class="container lv1">        
+        <div class="old-info">
+          <h3>Kiến Trúc Nghệ Thuật</h3>
+          <div class="old-title">Bến Tòa Khâm</div>
+          <h4><i class='bx bxs-calendar'></i> Ngày đăng: 7/10/2024 - 10:15</h4>
+          <hr>  
+          <h3 class="slogan">Bến thuyền rồng Huế trên sông Hương</h3>  
+          <div class="description">
+            <h2>Giới thiệu chung</h2>   
+            <img src="./assets/Images/Bentoakham (3).jpg" alt="" class="old-img">   
+            <p>Bến thuyền Tòa Khâm xứ Huế là một trong những địa điểm du lịch nổi tiếng ở Huế. Ngày xưa, bến thuyền được gọi là Đò Hàng Me nối chợ Đông Ba với xóm Hàng Me, có lịch sử liên quan đến Tòa khâm sứ Trung Kỳ. Ngày nay, bến Tòa Khâm được quy hoạch phục vụ cho việc đón và trả khách tham quan, du lịch tham dự các tour nghe ca Huế về đêm, cũng như các dịch vụ thuê thuyền rồng tại Huế.</p>
+            <h2>Lịch sử hình thành</h2>
+            <img src="./assets/Images/Bentoakham (2).jpg" alt="" class="old-img">
+            <p>Tên gọi Bến thuyền Tòa Khâm liên quan đến Tòa Khâm sứ Trung Kỳ, nằm đối diện bến thuyền Tòa Khâm ngày nay, trường Đại Học Sư Phạm Huế.</p>
+            <p>Toà Khâm sứ Trung kỳ (hoàn thành vào 07/1878) là thủ phủ của chế độ thực dân tại Trung kỳ, chi phối toàn bộ hoạt động của triều đình phong kiến nhà Nguyễn. Tại đây, vào tháng 04/1908 diễn ra cuộc biểu tình chống thuế của nhân dân Thừa Thiên Huế. Cuộc biểu tình kéo dài từ ngày 09/04 đến 13/04 năm 1908, với cao trào vào ngày 11/04/1908. Nông dân từ 6 huyện trong tỉnh kéo về bao vây Toà Khâm sứ Trung kỳ đưa đơn đòi yêu sách. Phong trào chống thuế thu hút mạnh mẽ mọi tầng lớp nhân dân Huế. Nguyễn Tất Thành, sau này được biết đến là Chủ tịch Hồ Chí Minh, cũng tham gia vào đoàn biểu tình với tư cách là người phiên dịch.</p>
+            <p>Tòa Khâm sứ Trung kỳ đã bị hủy hoại hoàn toàn vào năm 1945, cùng với chế độ thực dân phong kiến. Để ghi nhớ sự kiện Nguyễn Tất Thành tham gia phong trào chống thuế, lãnh đạo tỉnh Thừa Thiên Huế đã giao cho Bảo tàng Hồ Chí Minh Thừa Thiên Huế xây dựng một biểu tượng hoành tráng, đánh dấu sự kiện quan trọng trong lịch sử này. Di tích Địa điểm Tòa Khâm sứ Trung kỳ đã được UBND tỉnh Thừa Thiên Huế công nhận là Di tích Lịch sử cấp Tỉnh vào ngày 28/9/2007.</p>
+            <h2>Đặc điểm nổi bật</h2> 
+            <img src="./assets/Images/Bentoakham (4).jpg" alt="" class="old-img">
+            <p>Với bến dài nối dài tới phố đi bộ Nguyễn Đình Chiều và vị trí ngay dưới cầu Trường Tiền, du khách có thể dạo chơi ngắm nhìn thành phố Huế bên dòng sông Hương. Đối diện phía Bắc của sông là chợ Đông Ba... điều này giúp du khách có điều kiện thuận lợi để du thuyền trên sông Hương.</p>
+            <p>Bến thuyền Tòa Khâm là nơi lý tưởng để du khách thưởng ngoạn phong cảnh đẹp của sông Hương và thành phố Huế từ xa. Du khách có thể tham gia các tour du thuyền, thăm quan các điểm du lịch lân cận và tận hưởng không gian yên bình, lãng mạn trên dòng sông lịch sử.</p>
+            <img src="./assets/Images/Bentoakham (1).jpg" alt="" class="old-img"> 
+            <p>Khác hẳn hình ảnh ban ngày, hình ảnh sông Hương về đêm bỗng dưng trở nên thật thơ mộng và huyền ảo. Những ánh đèn lung linh chiếu xuống mặt nước làm nên một bức tranh đầy sắc màu. Khi đi thuyền rồng sông Hương, bạn sẽ cảm nhận về Huế một cách rõ rệt và cảm xúc hơn.</p>
+            <h2>Vị trí</h2>
+            <p>Bến thuyền Tòa tọa lạc 49 Lê Lợi, TP Huế. Giáp với khách sạn Hương Giang, nhà hàng nổi sông Hương và cầu Trường Tiền, nằm ngay ngã tư nối dài của đường Đội Cung và đường Lê Lợi.</p>
+          </div>
+        </div>  
+        <div class="new-info">
+          <div class="contact-to-me">
+            <p>LIÊN HỆ ĐỂ ĐẶT TOUR:</p>
+          </div>
+          <div class="booking">
+            <a href="tel:+84819931165" class="btn booking-call"><i class='bx bxs-phone-call'></i> Call to me</a>
+            <a href="mailto:canhdephue@gmail.com" class="btn booking-mail"><i class='bx bxl-gmail' ></i>  Mail to me</a>
+          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3462.430302855821!2d107.58983717460801!3d16.46995952858663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3141a13b50d9e1a1%3A0x8a114ed124cbf228!2zQuG6v24gdGh1eeG7gW4gVMOyYSBLaMOibQ!5e1!3m2!1svi!2s!4v1729184602893!5m2!1svi!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>Để có được trải nghiệm tuyệt vời nhất khi đến với vùng đất cố đô. Quy khách vui lòng gọi điện hoặc email liên hệ với chúng tôi !</p>
+            <a href="tel:+84819931165"><i class='bx bx-phone-call' ></i></a><span> SĐT: +84 819 931 165</span> <br>
+            <a href="mailto:canhdephue@gmail.com"><i class='bx bx-envelope' ></i></a><span> Email: canhdephue@gmail.com</span>
+          </div> 
+        </div>
+             
+      </div>
+    </main>
+    <script src="assets/JS/main.js"></script>
+    <footer>
+      <div class="footer-container">
+        <div class="container">
+          <div class="footer-section about">
+            <h3>Review Huế</h3>
+            <p>
+              Huế, cố đô của Việt Nam, nổi tiếng với vẻ đẹp cổ kính, các công
+              trình kiến trúc lịch sử và di sản văn hóa phong phú. Hãy khám phá
+              các danh lam thắng cảnh và nét đẹp riêng có của Huế.
+            </p>
+          </div>
+
+          <div class="footer-section links">
+            <h3>Danh mục</h3>
+            <ul>
+              <li>
+                <a href="./index.html" class="navbar-link">Trang chủ</a>
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./1chuachien.html">Chùa chiền</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./2ditichlichsu.html">Di tích lịch sử</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./3canhdepthienhien.html">Cảnh đẹp thiên nhiên</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./4songsuoibaitam.html">Hệ thống sông suối bãi tắm</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./5kientrucnghethuat.html">Kiến trúc nghệ thuật</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./6hethonglangtam.html">Hệ thống lăng tẩm</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h3>Liên hệ</h3>
+            <a href="mailto:canhdephue@gmail.com"
+              ><i class="bx bxl-gmail"></i
+            ></a>
+            <a href="tel:+84819931165"
+              ><i class='bx bxs-phone-call' ></i></i
+            ></a>
+            <a href="https://maps.app.goo.gl/YY6NmZg5LfjnAxcK6"
+              ><i class='bx bx-map' ></i></a>
+            <p>Email: canhdephue@gmail.com</p>
+            <p>Điện thoại: +84 819 931 165</p>
+            <p>Địa chỉ: 184 Phan Chu Trinh, TP.Huế, Thừa Thiên Huế, Việt Nam</p>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="footer-bottom">
+        <a href="gioithieu.html">Giới thiệu</a>
+        <a href="baomatthongtin.html">  /  Chính sách bảo mật</a>
+        <a href="dieukhoan.html">  /  Điều khoản</a>
+        <a href="lienhe.html">  /  Liên hệ</a>
+        <p class="copyright">
+          &copy; 2024 canhdephue.click | Thiết kế bởi
+          <span style="font-weight: bold">Its.Co</span>
+        </p>
+      </div>
+    </footer>
+    <!-- Nút "Về đầu trang" -->
+    <button onclick="topFunction()" id="btnTop" title="Về đầu trang">
+      <i class="bx bx-up-arrow-circle"></i>
+    </button>
+    <!-- nút gọi điện -->
+    <button class="call-button" onclick="makeCall()"><i class='bx bxs-phone-call' ></i></button>
+    <!-- nút email -->
+    <button class="email-button" onclick="makeEmail()"><i class='bx bx-envelope'></i></button>
+  </body>
+</html>
