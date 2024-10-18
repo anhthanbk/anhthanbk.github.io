@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- link reset CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- link box icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Review cảnh đẹp Huế - Việt Nam</title>
+    <!-- Link Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- embed font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="content">
+    <header class="header">
+      <div class="header-top">
+        <div class="container">
+          <!-- logo web -->
+          <a href="./index.html" class="web-logo">
+            <img
+              src="./assets/Images/reviewhue-logo.png"
+              alt="review cảnh đẹp Huế"
+              width="100%"
+            />
+          </a>
+          <!-- tiêu đề -->
+          <p class="header-letter">KHÁM PHÁ NÉT ĐẸP ĐẤT CỐ ĐÔ THỪA THIÊN HUẾ</p>
+          <!-- tạo nút search -->
+          <div class="search-container">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Nhập từ khóa tìm kiếm..."
+            />
+            <button onclick="search()" class="search-btn">
+              <i class="bx bx-search"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Navigation bar -->
+      <nav class="nav-bar">
+        <div class="container">
+          <div id="toggle"><i class="fa-solid fa-bars"></i></div>
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="./index.html" class="navbar-link">TRANG CHỦ</a>
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./1chuachien.html" class="navbar-link"
+                >CHÙA CHIỀN</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./2ditichlichsu.html" class="navbar-link"
+                >DI TÍCH LỊCH SỬ</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./3canhdepthienhien.html" class="navbar-link"
+                >CẢNH ĐẸP THIÊN NHIÊN</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./4songsuoibaitam.html" class="navbar-link"
+                >HỆ THỐNG SÔNG SUỐI BÃI TĂM</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./5kientrucnghethuat.html" class="navbar-link"
+                >KIẾN TRÚC NGHỆ THUẬT</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./6hethonglangtam.html" class="navbar-link"
+                >HỆ THỐNG LĂNG TẨM</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- header main content -->
+    <main class="main_content">
+      <div class="container lv1">        
+        <div class="old-info">
+          <h3>DI TÍCH LỊCH SỬ</h3>
+          <div class="old-title">Phố Cổ Bao Vinh</div>
+          <h4><i class='bx bxs-calendar'></i> Ngày đăng: 7/10/2024 - 22:10</h4>
+          <hr>  
+          <h3 class="slogan">Bao Vinh - Miền cổ tích của một thời thương cảng.</h3>        
+          <div class="description">
+            <h2>Giới thiệu chung</h2>
+            <img src="./assets/Images/phocobaovinh (1).jpg" alt="" class="old-img">
+            <p>Bao Vinh từng là nơi tập trung của nhiều thương nhân đến từ các nước như Trung Quốc, Ma Cao, Nhật Bản, Ấn Độ hay thậm chí là châu Âu. Họ đến đây để mua bán các mặt hàng như vải vóc, hương liệu, gốm sứ...</p>
+            <h2>Lịch sử hình thành</h2>
+            <img src="./assets/Images/phocobaovinh (2).jpg" alt="" class="old-img">
+            <p>Theo các nhà nghiên cứu, phố cổ Bao Vinh được hình thành từ đầu thế kỷ 17, cùng với sự phát triển của cảng Thanh Hà. Bao Vinh nằm ở vị trí thuận lợi, gần với kinh thành Huế, lại có sông Hương là tuyến đường thủy huyết mạch, nối liền với các tỉnh, thành phố trong cả nước và cả nước ngoài. Nhờ đó, Bao Vinh trở thành trung tâm giao lưu, trao đổi hàng hóa sầm uất bậc nhất tại Đàng Trong.</p>
+            <p>Sự phát triển của phố cổ Bao Vinh đã góp phần quan trọng vào sự thịnh vượng của xứ Đàng Trong. Đây cũng là nơi lưu giữ nhiều giá trị văn hóa, lịch sử của vùng đất Cố đô.</p>
+            <p>Năm 1885, kinh đô Huế thất thủ vào tay thực dân Pháp, Bao Vinh bị tàn phá và mai một dần. Một phần nguyên nhân là do vua Thành Thái cho lập phố chợ Đông Ba sát kinh thành, khiến cho hoạt động buôn bán ở Bao Vinh bị thu hẹp.</p>
+            <h2>Đặc điểm nổi bật</h2>
+            <p>Kiến trúc của phố cổ Bao Vinh mang đậm dấu ấn của phong cách kiến trúc truyền thống Việt Nam, kết hợp với một số nét kiến trúc của Trung Quốc.</p>
+            <img src="./assets/Images/phocobaovinh (3).jpg" alt="" class="old-img">
+            <p>Các ngôi nhà ở phố cổ Bao Vinh thường được xây dựng theo kiểu nhà rường, với khung gỗ vững chắc, mái ngói lợp âm dương. Những ngôi nhà này có kích thước không quá lớn, thường là ba gian hai chái.</p>
+            <p>Tường nhà được làm bằng gỗ hoặc gạch, được sơn màu vàng hoặc đỏ tươi. Mái nhà được lợp bằng ngói âm dương, có độ dốc cao để thoát nước mưa.</p>
+            <p>Ngoài ra, phố cổ Bao Vinh còn có một số ngôi nhà được xây dựng theo kiểu kiến trúc Pháp, với mái ngói hình chóp tứ giác (nhà bánh ú). Những ngôi nhà này thường được xây dựng vào thời Pháp thuộc, bởi các thương nhân người Pháp.</p>
+            <p>Nhìn chung, kiến trúc của phố cổ Bao Vinh là một tổng hòa của nhiều phong cách kiến trúc khác nhau, tạo nên một nét đẹp độc đáo, mang đậm dấu ấn lịch sử.</p>
+            <img src="./assets/Images/phocobaovinh (4).jpg" alt="" class="old-img">
+            <p>Dù ngày nay phố cổ Bao Vinh đã dần phai đi hình hài vẹn nguyên của ngày xưa nhưng nó vẫn mang trong mình nhiều nét cổ điển hoài niệm. Thời gian đã khiến nhiều ngôi nhà cổ xuống cấp, những mái ngói, kèo cột giờ đây không còn vững chắc nhưng những gì còn sót lại cũng đủ để làm cho những du khách hiếu kỳ khám phá và hoài niệm về một thương cảng sầm uất một thời.</p>
+            <p>Tuy không còn là một trung tâm thương mại sầm uất như xưa, nhưng phố cổ Bao Vinh vẫn là một khu vực có giá trị lịch sử - văn hóa quan trọng. Dạo bước quanh khu phố cổ này, bạn sẽ cảm nhận được một Bao Vinh bình dị, mộc mạc khôn xiết. Từ đình làng, bãi chợ, bến đò ngang đến ngôi cổ tự nơi đây.</p>
+            <h2>Vị trí</h2>
+            <p>Phố cổ, Bao Vinh, Hương Vang, Hương Trà, Thừa Thiên Huế.</p>
+
+          </div>
+        </div>  
+        <div class="new-info">
+          <div class="contact-to-me">
+            <p>LIÊN HỆ ĐỂ ĐẶT TOUR:</p>
+          </div>
+          <div class="booking">
+            <a href="tel:+84819931165" class="btn booking-call"><i class='bx bxs-phone-call'></i> Call to me</a>
+            <a href="mailto:canhdephue@gmail.com" class="btn booking-mail"><i class='bx bxl-gmail' ></i>  Mail to me</a>
+          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3461.98015011208!2d107.57449937460848!3d16.495136927896432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3141a11f84e6ce5f%3A0xf1d2c8ff078efb35!2zUGjhu5EgY-G7lSBCYW8gVmluaA!5e1!3m2!1svi!2s!4v1729269747660!5m2!1svi!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="book-des">
+            <p>Để có được trải nghiệm tuyệt vời nhất khi đến với vùng đất cố đô. Quy khách vui lòng gọi điện hoặc email liên hệ với chúng tôi !</p>
+            <a href="tel:+84819931165"><i class='bx bx-phone-call' ></i></a><span> SĐT: +84 819 931 165</span> <br>
+            <a href="mailto:canhdephue@gmail.com"><i class='bx bx-envelope' ></i></a><span> Email: canhdephue@gmail.com</span>
+          </div> 
+        </div>           
+      </div>
+    </main>
+    <script src="assets/JS/main.js"></script>
+    <footer>
+      <div class="footer-container">
+        <div class="container">
+          <div class="footer-section about">
+            <h3>Review Huế</h3>
+            <p>
+              Huế, cố đô của Việt Nam, nổi tiếng với vẻ đẹp cổ kính, các công
+              trình kiến trúc lịch sử và di sản văn hóa phong phú. Hãy khám phá
+              các danh lam thắng cảnh và nét đẹp riêng có của Huế.
+            </p>
+          </div>
+
+          <div class="footer-section links">
+            <h3>Danh mục</h3>
+            <ul>
+              <li>
+                <a href="./index.html" class="navbar-link">Trang chủ</a>
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./1chuachien.html">Chùa chiền</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./2ditichlichsu.html">Di tích lịch sử</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./3canhdepthienhien.html">Cảnh đẹp thiên nhiên</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./4songsuoibaitam.html">Hệ thống sông suối bãi tắm</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./5kientrucnghethuat.html">Kiến trúc nghệ thuật</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./6hethonglangtam.html">Hệ thống lăng tẩm</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h3>Liên hệ</h3>
+            <a href="mailto:canhdephue@gmail.com"
+              ><i class="bx bxl-gmail"></i
+            ></a>
+            <a href="tel:+84819931165"
+              ><i class='bx bxs-phone-call' ></i></i
+            ></a>
+            <a href="https://maps.app.goo.gl/YY6NmZg5LfjnAxcK6"
+              ><i class='bx bx-map' ></i></a>
+            <p>Email: canhdephue@gmail.com</p>
+            <p>Điện thoại: +84 819 931 165</p>
+            <p>Địa chỉ: 184 Phan Chu Trinh, TP.Huế, Thừa Thiên Huế, Việt Nam</p>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="footer-bottom">
+        <a href="gioithieu.html">Giới thiệu</a>
+        <a href="baomatthongtin.html">  /  Chính sách bảo mật</a>
+        <a href="dieukhoan.html">  /  Điều khoản</a>
+        <a href="lienhe.html">  /  Liên hệ</a>
+        <p class="copyright">
+          &copy; 2024 canhdephue.click | Thiết kế bởi
+          <span style="font-weight: bold">Its.Co</span>
+        </p>
+      </div>
+    </footer>
+    <!-- Nút "Về đầu trang" -->
+    <button onclick="topFunction()" id="btnTop" title="Về đầu trang">
+      <i class="bx bx-up-arrow-circle"></i>
+    </button>
+    <!-- nút gọi điện -->
+    <button class="call-button" onclick="makeCall()"><i class='bx bxs-phone-call' ></i></button>
+    <!-- nút email -->
+    <button class="email-button" onclick="makeEmail()"><i class='bx bx-envelope'></i></button>
+  </body>
+</html>
