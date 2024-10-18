@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- link reset CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- link box icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Review cảnh đẹp Huế - Việt Nam</title>
+    <!-- Link Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- embed font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="content">
+    <header class="header">
+      <div class="header-top">
+        <div class="container">
+          <!-- logo web -->
+          <a href="./index.html" class="web-logo">
+            <img
+              src="./assets/Images/reviewhue-logo.png"
+              alt="review cảnh đẹp Huế"
+              width="100%"
+            />
+          </a>
+          <!-- tiêu đề -->
+          <p class="header-letter">KHÁM PHÁ NÉT ĐẸP ĐẤT CỐ ĐÔ THỪA THIÊN HUẾ</p>
+          <!-- tạo nút search -->
+          <div class="search-container">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Nhập từ khóa tìm kiếm..."
+            />
+            <button onclick="search()" class="search-btn">
+              <i class="bx bx-search"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Navigation bar -->
+      <nav class="nav-bar">
+        <div class="container">
+          <div id="toggle"><i class="fa-solid fa-bars"></i></div>
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="./index.html" class="navbar-link">TRANG CHỦ</a>
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./1chuachien.html" class="navbar-link"
+                >CHÙA CHIỀN</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./2ditichlichsu.html" class="navbar-link"
+                >DI TÍCH LỊCH SỬ</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./3canhdepthienhien.html" class="navbar-link"
+                >CẢNH ĐẸP THIÊN NHIÊN</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./4songsuoibaitam.html" class="navbar-link"
+                >HỆ THỐNG SÔNG SUỐI BÃI TĂM</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./5kientrucnghethuat.html" class="navbar-link"
+                >KIẾN TRÚC NGHỆ THUẬT</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./6hethonglangtam.html" class="navbar-link"
+                >HỆ THỐNG LĂNG TẨM</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- header main content -->
+    <main class="main_content">
+      <div class="container lv1">        
+        <div class="old-info">
+          <h3>Kiến Trúc Nghệ Thuật</h3>
+          <div class="old-title">Nhà Thờ Phủ Cam</div>
+          <h4><i class='bx bxs-calendar'></i> Ngày đăng: 7/10/2024 - 10:15</h4>
+          <hr>  
+          <h3 class="slogan">Nhà thờ Phủ Cam – dấu ấn kiến trúc hiện đại ở thành phố Huế</h3>  
+          <div class="description">
+            <h2>Giới thiệu chung</h2>            
+            <img src="./assets/Images/nhathophucam (2).jpg" alt="" class="old-img">
+            <p>Nhà thờ Phủ Cam là nhà thờ chính tòa của Tổng Giáo phận Huế, nằm trên đồi Phước Quả, thuộc phường Phước Vĩnh. Đây là một giáo đường lâu đời, có quy mô lớn và nổi tiếng của Huế, được xây dựng theo lối kiến trúc hiện đại, do Kiến trúc sư Ngô Viết Thụ thiết kế. </p>
+            <h2>Lịch sử hình thành</h2>
+            <img src="./assets/Images/nhathophucam (1).jpg" alt="" class="old-img">
+            <p>Nơi đây, từ năm 1682, dưới thời chúa Nguyễn Phúc Tần, linh mục Langlois đã xây dựng nhà nguyện Phủ Cam đơn giản, bằng tranh tre tại xóm Đá, sát bờ sông Phủ Cam. Hai năm sau, linh mục đã mua đất trên đồi Phước Quả và cho triệt giải nhà nguyện để xây một nhà thờ lớn bằng đá, quay mặt về hướng Tây, ngôi nhà thờ kiên cố này đã được chúa Nguyễn Phúc Tần thán phục. Nhưng đến thời chúa Nguyễn Phúc Chu, với chủ trương cấm đạo, năm 1698, ngôi nhà thờ Phủ Cam đã bị triệt bỏ.</p>
+            <p>Năm 1898, linh mục Eugène Marie Allys (cha Lý) lại cho xây mới nhà thờ Phủ Cam bằng gạch, mái lợp ngói, quy mô khá đồ sộ ở địa điểm cũ, nhưng quay mặt về hướng Bắc, nhìn về Kỳ Đài Huế. Chính linh mục là người thiết kế và trực tiếp giám sát thi công, năm 1902, công trình mới hoàn thành. Khi kế nhiệm Giám mục Marie Antoine Gaspar (cha Lộc) cai quản Giáo phận năm 1908, Giám mục Eugène Marie Allys đã di chuyển Tòa Giám mục từ Kim Long về Phủ Cam, lấy nhà thờ Phủ Cam làm nhà thờ chính tòa.</p>
+            <p>Năm 1960, sau khi Giáo phận Huế được nâng lên thành Tổng Giáo phận, Tổng Giám mục Phêrô Martinô Ngô Đình Thục về nhận chức Tổng Giám mục Huế, nhà thờ Phủ Cam đã bị phá bỏ để khởi công xây nhà thờ chính tòa mới do Kiến trúc sư Ngô Viết Thụ thiết kế. Công trình đang tiến hành thì chế độ Ngô Đình Diệm sụp đổ, Tổng Giám mục Ngô Đình Thục đang ở Roma không về nước, việc xây dựng bị chững lại, tiến độ rất chậm, đến năm 1967 mới lên được phần cung thánh. Cuộc chiến 1968 lại làm công trình bị hư hại nặng, nhiều biến động sau đó càng làm chậm tiến độ, đến năm 1995, phần thân nhà thờ mới cơ bản hoàn thành. Đến tháng 5 năm 2000, nhân dịp kỷ niệm 150 ngày thành lập Giáo phận Huế, toàn bộ công trình mới hoàn thành dưới sự đôn đốc quyết liệt của Tổng Giám mục Stêphanô Nguyễn Như Thể. Như vậy, phải gần 40 năm, trải qua ba đời Tổng Giám mục Ngô Đình Thục, Nguyễn Kim Điền, Nguyễn Như Thể, nhà thờ Phủ Cam mới hoàn thành.</p>
+            <h2>Đặc điểm nổi bật</h2>
+            <img src="./assets/Images/nhathophucam (3).jpg" alt="" class="old-img">
+            <p>Nhìn tổng thể, nhà thờ Phủ Cam hài hòa với cảnh quan xung quanh ở lưng chừng đồi, có khuôn viên rộng với sân nhà thờ nổi bật tượng Chúa Giê Su. Mặt bằng xây dựng nhà thờ mang dạng thánh giá, đầu hướng về phía Nam, đuôi hướng Bắc. Đỉnh nhà thờ trải ra với hai tháp chuông cách điệu nằm hai bên, mỗi tháp bảy tầng, cao 43,5m, vươn lên trời nhưng vẫn giữ được vóc dáng thanh thoát. Phía trước nhà thờ có tượng Thánh Phêrô bên phải, Thánh Phaolô bên trái, những vị thánh bổn mạng của nhà thờ Phủ Cam. Đặc biệt, mặt tiền nhà thờ có một hệ thống cửa chính, cửa phụ được thiết kế theo kiểu kiến trúc Ngọ Môn ở Hoàng Thành Huế, với “ba cửa thẳng hai cửa quanh”, hai bên có 10 cửa phụ ra vào.</p>
+            <img src="./assets/Images/nhathophucam (4).jpg" alt="" class="old-img">
+            <p>Nhà thờ được kết cấu theo kỹ thuật xây dựng hiện đại, nhưng phần trang trí vẫn theo nghệ thuật cổ điển của phương Tây. Lòng nhà thờ rộng, có thể chứa được một lúc 2.500 người cùng đến dự lễ, hai dãy cửa kính màu nằm ở phần trên trong lòng nhà thờ, vừa tạo ấn tượng thẩm mỹ đẹp, vừa cung cấp ánh sáng tự nhiên lấp lánh cho nội thất. Trong giáo đường, khung trần có hình vòm cung cao 21,5m, với các trụ đỡ sát tường, chạy cong dần lên cao một cách mềm mại, như bàn tay của giáo dân lúc nguyện cầu, lòng giáo đường như một lòng tàu Noah được mở ra, chuyên chở con chiên đến với Chúa của mình. Cung thánh là một hình tròn có ba bậc cấp đi lên, tượng trưng cho tam tài thiên, địa, nhân, trên cùng là hình tròn nhỏ hơn với bàn thờ bằng đá cẩm thạch nguyên khối. Từ nơi đó, vị linh mục hướng về người dự lễ để giảng kinh. Ở phía trang nghiêm trên cao là cây thông làm thánh giá, có tượng Chúa Giê Su chịu đóng đinh, bên trên là bức họa Chúa Giê Su dang tay với dòng chữ “Chúc tụng Thiên Chúa đến muôn đời”. Bên trong nhà thờ, phía cánh trái là phần mộ cố Tổng Giám mục Philippe Nguyễn Kim Điền, cánh phải đối diện là bàn thờ Thánh tử đạo Tống Viết Bường, người gốc Phủ Cam, mất năm 1833.</p>
+            <p>Phủ Cam là ngôi giáo đường đồ sộ, mang tính lịch sử, có giá trị tiêu biểu của Tổng Giáo phận Công giáo Huế.</p>
+            <h2>Vị trí</h2>
+            <p>Nhà thờ Phủ Cam tọa lạc tại số 01 Đoàn Hữu Trưng, phường Phước Vĩnh, thành phố Huế.</p>
+
+          </div>
+        </div>  
+        <div class="new-info">
+          <div class="contact-to-me">
+            <p>LIÊN HỆ ĐỂ ĐẶT TOUR:</p>
+          </div>
+          <div class="booking">
+            <a href="tel:+84819931165" class="btn booking-call"><i class='bx bxs-phone-call'></i> Call to me</a>
+            <a href="mailto:canhdephue@gmail.com" class="btn booking-mail"><i class='bx bxl-gmail' ></i>  Mail to me</a>
+          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3462.7357708188742!2d107.58515357460767!3d16.452853129054997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3141a145d957db7f%3A0x70ddae85173e67ec!2zTmjDoCBUaOG7nSBDaMOtbmggVMOyYSBQaOG7pyBDYW0!5e1!3m2!1svi!2s!4v1729269336296!5m2!1svi!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="book-des">
+            <p>Để có được trải nghiệm tuyệt vời nhất khi đến với vùng đất cố đô. Quy khách vui lòng gọi điện hoặc email liên hệ với chúng tôi !</p>
+            <a href="tel:+84819931165"><i class='bx bx-phone-call' ></i></a><span> SĐT: +84 819 931 165</span> <br>
+            <a href="mailto:canhdephue@gmail.com"><i class='bx bx-envelope' ></i></a><span> Email: canhdephue@gmail.com</span>
+          </div> 
+        </div>
+             
+      </div>
+    </main>
+    <script src="assets/JS/main.js"></script>
+    <footer>
+      <div class="footer-container">
+        <div class="container">
+          <div class="footer-section about">
+            <h3>Review Huế</h3>
+            <p>
+              Huế, cố đô của Việt Nam, nổi tiếng với vẻ đẹp cổ kính, các công
+              trình kiến trúc lịch sử và di sản văn hóa phong phú. Hãy khám phá
+              các danh lam thắng cảnh và nét đẹp riêng có của Huế.
+            </p>
+          </div>
+
+          <div class="footer-section links">
+            <h3>Danh mục</h3>
+            <ul>
+              <li>
+                <a href="./index.html" class="navbar-link">Trang chủ</a>
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./1chuachien.html">Chùa chiền</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./2ditichlichsu.html">Di tích lịch sử</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./3canhdepthienhien.html">Cảnh đẹp thiên nhiên</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./4songsuoibaitam.html">Hệ thống sông suối bãi tắm</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./5kientrucnghethuat.html">Kiến trúc nghệ thuật</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./6hethonglangtam.html">Hệ thống lăng tẩm</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h3>Liên hệ</h3>
+            <a href="mailto:canhdephue@gmail.com"
+              ><i class="bx bxl-gmail"></i
+            ></a>
+            <a href="tel:+84819931165"
+              ><i class='bx bxs-phone-call' ></i></i
+            ></a>
+            <a href="https://maps.app.goo.gl/YY6NmZg5LfjnAxcK6"
+              ><i class='bx bx-map' ></i></a>
+            <p>Email: canhdephue@gmail.com</p>
+            <p>Điện thoại: +84 819 931 165</p>
+            <p>Địa chỉ: 184 Phan Chu Trinh, TP.Huế, Thừa Thiên Huế, Việt Nam</p>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="footer-bottom">
+        <a href="gioithieu.html">Giới thiệu</a>
+        <a href="baomatthongtin.html">  /  Chính sách bảo mật</a>
+        <a href="dieukhoan.html">  /  Điều khoản</a>
+        <a href="lienhe.html">  /  Liên hệ</a>
+        <p class="copyright">
+          &copy; 2024 canhdephue.click | Thiết kế bởi
+          <span style="font-weight: bold">Its.Co</span>
+        </p>
+      </div>
+    </footer>
+    <!-- Nút "Về đầu trang" -->
+    <button onclick="topFunction()" id="btnTop" title="Về đầu trang">
+      <i class="bx bx-up-arrow-circle"></i>
+    </button>
+    <!-- nút gọi điện -->
+    <button class="call-button" onclick="makeCall()"><i class='bx bxs-phone-call' ></i></button>
+    <!-- nút email -->
+    <button class="email-button" onclick="makeEmail()"><i class='bx bx-envelope'></i></button>
+  </body>
+</html>
