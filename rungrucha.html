@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- link reset CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- link box icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Review cảnh đẹp Huế - Việt Nam</title>
+    <!-- Link Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- embed font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="content">
+    <header class="header">
+      <div class="header-top">
+        <div class="container">
+          <!-- logo web -->
+          <a href="./index.html" class="web-logo">
+            <img
+              src="./assets/Images/reviewhue-logo.png"
+              alt="review cảnh đẹp Huế"
+              width="100%"
+            />
+          </a>
+          <!-- tiêu đề -->
+          <p class="header-letter">KHÁM PHÁ NÉT ĐẸP ĐẤT CỐ ĐÔ THỪA THIÊN HUẾ</p>
+          <!-- tạo nút search -->
+          <div class="search-container">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Nhập từ khóa tìm kiếm..."
+            />
+            <button onclick="search()" class="search-btn">
+              <i class="bx bx-search"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Navigation bar -->
+      <nav class="nav-bar">
+        <div class="container">
+          <div id="toggle"><i class="fa-solid fa-bars"></i></div>
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="./index.html" class="navbar-link">TRANG CHỦ</a>
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./1chuachien.html" class="navbar-link"
+                >CHÙA CHIỀN</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./2ditichlichsu.html" class="navbar-link"
+                >DI TÍCH LỊCH SỬ</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./3canhdepthienhien.html" class="navbar-link"
+                >CẢNH ĐẸP THIÊN NHIÊN</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./4songsuoibaitam.html" class="navbar-link"
+                >HỆ THỐNG SÔNG SUỐI BÃI TĂM</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./5kientrucnghethuat.html" class="navbar-link"
+                >KIẾN TRÚC NGHỆ THUẬT</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./6hethonglangtam.html" class="navbar-link"
+                >HỆ THỐNG LĂNG TẨM</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- header main content -->
+    <main class="main_content">
+      <div class="container lv1">        
+        <div class="old-info">
+          <h3>CẢNH ĐẸP THIÊN NHIÊN</h3>
+          <div class="old-title">Rừng Rú Chá</div>
+          <h4><i class='bx bxs-calendar'></i> Ngày đăng: 7/10/2024 - 22:10</h4>
+          <hr>  
+          <h3 class="slogan">Rừng Rú Chá - Vẻ đẹp hoang sơ khó tìm</h3>        
+          <div class="description">
+            <h2>Giới thiệu chung</h2>
+            <img src="./assets/Images/rungrucha (2).jpg" alt="Rừng Rú Chá" class="old-img">
+            <p>Rú Chá là tên của một khu rừng ngập mặn nguyên sinh vô cùng đặc biệt nằm tại làng Thuận Hòa, xã Hương Phong, thành Phố Huế, tỉnh Thừa Thiên Huế (cách trung tâm thành phố Huế khoảng 15km). Nơi đây được biết đến là khu rừng ngập mặn duy nhất còn tồn tại trên hệ đầm phá Tam Giang - hệ đầm phá lớn nhất tại khu vực Đông Nam Á.</p>
+            <h2>Lịch sử hình thành</h2>
+            <img src="./assets/Images/rungrucha (3).jpg" alt="Rừng Rú Chá" class="old-img">
+            <p>Cái tên “rừng ngập mặn Rú Chá” đã hình thành từ xa xưa bởi nơi đây mọc đa phần là cây chá, chiếm diện tích lớn của rừng. Cây chá tuy không cao nhưng lại có bộ rễ to, bám chặt vào lòng đất, nơi có còng nước lợ trú ẩn.</p>
+            <h2>Đặc điểm nổi bật</h2>
+            <p>Rừng ngập mặn Rú Chá ở Huế có tổng diện tích khoảng 5 ha. Địa danh này hấp dẫn du khách ngay từ cái tên hoang sơ, đầy bí ẩn và ma mị của nó. </p>
+            <p>Phong cảnh và vẻ đẹp nguyên sơ của Rú Chá thu hút rất đông du khách đến tham quan. Đến đây, thuê một chiếc thuyền nan nhỏ, chèo thuyền len lỏi trong rừng, tự mình khám phá khu rừng nguyên sinh ngập tràn tiếng hót của chim muông quý hiếm hoặc đi dạo trên những con đường bê tông uốn lượn xuyên qua khu rừng, được bao bọc xung quanh bởi những bộ rễ chá với hình thù lạ mắt bạn sẽ có được những trải nghiệm vô cùng thú vị. </p>
+            <p>Rú Chá đẹp nhất là vào khoảng tháng 9 hằng năm, lúc này cả khu rừng ngập mặn chuyển sang sắc vàng và đỏ, tạo nên một khung cảnh tuyệt đẹp và thời tiết cũng trở nên dễ chịu. Tuy nhiên, du khách cần lưu ý thời điểm này cố đô Huế thường xuyên có những cơn mưa chiều, nên buổi sáng sẽ là chọn lựa lý tưởng nhất để đến đây "sống ảo".</p>
+            <img src="./assets/Images/rungrucha (1).jpg" alt="Rừng Rú Chá" class="old-img">
+            <p>Giao mùa giữa hạ và thu, khi những chiếc lá xanh của cây rú chá bắt đầu ngả vàng, rừng lại chuyển sang vẻ đẹp của mùa thay lá. Mùa này thu hút du khách đến nhìn ngắm, chụp ảnh và là nguồn cảm hứng sáng tác dồi dào cho các nhiếp ảnh gia.</p>
+            <img src="./assets/Images/rungrucha (4).jpg" alt="Rừng Rú Chá" class="old-img">
+            <p>Đến rừng ngập mặn Rú Chá, ngoài đi bộ dưới tán lá rừng, du khách có thể chèo thuyền chiêm ngưỡng quanh khu rừng hàng trăm năm tuổi vừa hít thở không khí dịu nhẹ trong tiết thu.</p>
+            <img src="./assets/Images/rungrucha (5).jpg" alt="Rừng Rú Chá" class="old-img">
+            <p>Rú chá dần trở thành điểm du lịch được quan tâm của khách đến Huế và cũng là nơi nhiều người yêu nghệ thuật tìm đến thưởng thức cái đẹp của thiên nhiên và thời tiết giao hòa.</p>
+            <h2>Vị trí</h2>
+            <p>Thôn Thuận Hòa, Xã Hương Phong, Thành phố Huế</p>
+
+          </div>
+        </div>  
+        <div class="new-info">
+          <div class="contact-to-me">
+            <p>LIÊN HỆ ĐỂ ĐẶT TOUR:</p>
+          </div>
+          <div class="booking">
+            <a href="tel:+84819931165" class="btn booking-call"><i class='bx bxs-phone-call'></i> Call to me</a>
+            <a href="mailto:canhdephue@gmail.com" class="btn booking-mail"><i class='bx bxl-gmail' ></i>  Mail to me</a>
+          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3460.8631073624333!2d107.60885447460966!3d16.557453226184002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31410ba06f500907%3A0x21385a9fe1ce4184!2zUsO6IENow6E!5e1!3m2!1svi!2s!4v1729270084558!5m2!1svi!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="book-des">
+            <p>Để có được trải nghiệm tuyệt vời nhất khi đến với vùng đất cố đô. Quy khách vui lòng gọi điện hoặc email liên hệ với chúng tôi !</p>
+            <a href="tel:+84819931165"><i class='bx bx-phone-call' ></i></a><span> SĐT: +84 819 931 165</span> <br>
+            <a href="mailto:canhdephue@gmail.com"><i class='bx bx-envelope' ></i></a><span> Email: canhdephue@gmail.com</span>
+          </div> 
+        </div>           
+      </div>
+    </main>
+    <script src="assets/JS/main.js"></script>
+    <footer>
+      <div class="footer-container">
+        <div class="container">
+          <div class="footer-section about">
+            <h3>Review Huế</h3>
+            <p>
+              Huế, cố đô của Việt Nam, nổi tiếng với vẻ đẹp cổ kính, các công
+              trình kiến trúc lịch sử và di sản văn hóa phong phú. Hãy khám phá
+              các danh lam thắng cảnh và nét đẹp riêng có của Huế.
+            </p>
+          </div>
+
+          <div class="footer-section links">
+            <h3>Danh mục</h3>
+            <ul>
+              <li>
+                <a href="./index.html" class="navbar-link">Trang chủ</a>
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./1chuachien.html">Chùa chiền</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./2ditichlichsu.html">Di tích lịch sử</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./3canhdepthienhien.html">Cảnh đẹp thiên nhiên</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./4songsuoibaitam.html">Hệ thống sông suối bãi tắm</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./5kientrucnghethuat.html">Kiến trúc nghệ thuật</a
+                >
+              </li>
+              <hr>
+              <li>
+                <a
+                  href="./6hethonglangtam.html">Hệ thống lăng tẩm</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h3>Liên hệ</h3>
+            <a href="mailto:canhdephue@gmail.com"
+              ><i class="bx bxl-gmail"></i
+            ></a>
+            <a href="tel:+84819931165"
+              ><i class='bx bxs-phone-call' ></i></i
+            ></a>
+            <a href="https://maps.app.goo.gl/YY6NmZg5LfjnAxcK6"
+              ><i class='bx bx-map' ></i></a>
+            <p>Email: canhdephue@gmail.com</p>
+            <p>Điện thoại: +84 819 931 165</p>
+            <p>Địa chỉ: 184 Phan Chu Trinh, TP.Huế, Thừa Thiên Huế, Việt Nam</p>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="footer-bottom">
+        <a href="gioithieu.html">Giới thiệu</a>
+        <a href="baomatthongtin.html">  /  Chính sách bảo mật</a>
+        <a href="dieukhoan.html">  /  Điều khoản</a>
+        <a href="lienhe.html">  /  Liên hệ</a>
+        <p class="copyright">
+          &copy; 2024 canhdephue.click | Thiết kế bởi
+          <span style="font-weight: bold">Its.Co</span>
+        </p>
+      </div>
+    </footer>
+    <!-- Nút "Về đầu trang" -->
+    <button onclick="topFunction()" id="btnTop" title="Về đầu trang">
+      <i class="bx bx-up-arrow-circle"></i>
+    </button>
+    <!-- nút gọi điện -->
+    <button class="call-button" onclick="makeCall()"><i class='bx bxs-phone-call' ></i></button>
+    <!-- nút email -->
+    <button class="email-button" onclick="makeEmail()"><i class='bx bx-envelope'></i></button>
+  </body>
+</html>
